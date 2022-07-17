@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta property="og:type" content="website">
+        <meta property="og:url" content="wonikwebzine.com">
+        <meta property="og:title" content="원익 웹진">
+        <meta property="og:description" content="2022 봄호 Vol.67">
+        <meta property="og:image" content="https://wonikwebzine.com/Wonikin_SPRING/static/images/main_pp.jpg"/>
+        <title>Wonikin_SPRING</title>
+        <!-- favicon은 선물입니다! 맘에 드시면 써주세요. -->
+        <link rel="shortcut icon" href="./static/images/Wonikin_Spring_2022/Wonikin_favicon.png" type="image/x-icon">
+        <link rel="stylesheet" href="./static/css/swiper-bundle.css">
+        <link rel="stylesheet" href="./static/css/iconfont.css">
+        <link rel="stylesheet" href="static/css/aos.css">
+        <link rel="stylesheet" href="./static/css/style.css">
+        <link rel="stylesheet" href="./static/css/common.css">
+        <link rel="stylesheet" href="./static/css/Wonikin_Spring_2022.css">
+        <script type="text/javascript" src="./static/js/jquery-1.12.1.min.js" defer></script>
+        <!-- <script type="text/javascript" src="./static/js/jquery-migrate-1.4.1.min.js"></script> -->
+        <script type="text/javascript" src="./static/js/swiper-bundle.min.js" defer></script>
+        <script type="text/javascript" src="./static/js/front.js" defer></script>
+        <script type="text/javascript" src="./static/js/Wonikin_Spring_2022.js" defer></script>
+    </head>
+    <body>
+        <!-- body 대체할 wrap -->
+        <div class="wis_wrap">
+            <!-- fixed header -->
+            <header class="wis_h">
+                <!-- 반응형 용도 inner -->
+                <div class="wis_inner_wrap">
+                    <!-- 로고 -->
+                    <div class="wis_h_logo">
+                        <a href="index.html"><img src="./static/images/wonik_logo.gif" alt="WONIK 원익"></a>
+                    </div>
+
+                    <!-- gnb hover 영역 -->
+                    <div class="wis_h_top">
+                        <!-- gnb wrap / 모바일에선 숨겨집니다. -->
+                        <ul class="wis_h_gnb_wrap">
+                            <li>
+                                <!-- gnb -->
+                                <div class="wis_h_gnb"><a href="#">PASSION</a></div>
+                                <!-- hover시 나오는 lnb -->
+                                <ul class="wis_h_lnb">
+                                    <li><a href="passion_article_01.html">원익 예찬</a></li>
+                                    <li><a href="passion_article_02.html">전문가 칼럼</a></li>
+                                  
+                                    <li><a href="passion_article_04.html">원익 히어로</a></li>
+                                    <li><a href="passion_article_05.html">원익로그</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <!-- gnb -->
+                                <div class="wis_h_gnb"><a href="#">INSIGHT</a></div>
+                                 <!-- hover시 나오는 lnb -->
+                                <ul class="wis_h_lnb">
+                                  <li><a href="insight_article_01.html">케이스터디</a></li>
+                                    <li><a href="insight_article_02.html">언더커버리더</a></li>
+                                    <li><a href="insight_article_03.html">메타트랜드 ON</a></li>
+                                    <li><a href="insight_article_04.html">시니어클래스</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <!-- gnb -->
+                                <div class="wis_h_gnb"><a href="#">SIGNAL</a></div>
+                                 <!-- hover시 나오는 lnb -->
+                                <ul class="wis_h_lnb">
+                                   <li><a href="signal_article_01.html">케미스트리</a></li>
+                                    <li><a href="signal_article_02.html">호모나이트쿠스</a></li>
+                                    <li><a href="signal_article_03.html">원익반할지도</a></li>
+                                    <li><a href="signal_article_04.html">요즘, 원익은</a></li>
+                                    <li><a href="signal_article_05.html">원익 나눔 챌린지</a></li>
+                                    <li><a href="signal_article_06.html">롤링페이퍼</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <!-- gnb -->
+                                <div class="wis_h_gnb"><a href="#">NEWS</a></div>
+                                 <!-- hover시 나오는 lnb -->
+                                <ul class="wis_h_lnb">
+                                    <li><a href="news_main.html">원익 뉴스</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <!-- gnb -->
+                                <div class="wis_h_gnb"><a href="#">EVENT</a></div>
+                                 <!-- hover시 나오는 lnb -->
+                                <ul class="wis_h_lnb">
+                                    <li><a href="event_article_01.html">당신도 명탐정!</a></li>
+                                    <li><a href="event_article_02.html">QUIZ & COMMENTARY</a></li>
+ 
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <!-- 사이드 문구 -->
+                    <p class="wis_h_side">
+                        2022 봄호 Vol.67
+                    </p>
+
+                    <!-- 모바일 gnb 버튼 -->
+                    <button class="mo_wis_gnb_btn" type="button"></button>
+
+                    <!-- 모바일에서만 보입니다. -->
+                    <div class="mo_wis_h_gnb_wrap">
+                        <div class="mo_wis_h_gnb_list">
+                            <div class="mo_wis_h_gnb_top">
+                                <!-- 로고 -->
+                                <div class="wis_h_logo">
+                                    <a href="index.html"><img src="./static/images/wonik_logo.gif" alt="WONIK 원익"></a>
+                                </div>
+                                <!-- 모바일 gnb 버튼 -->
+                                <button class="mo_wis_gnb_btn" type="button"></button>
+                            </div>
+                            <div>
+                                <div class="mo_wis_h_gnb"><a href="#">Passion</a></div>
+                                <ul class="mo_wis_h_lnb">
+                                    <li><a href="passion_article_01.html">원익 예찬</a></li>
+                                    <li><a href="passion_article_02.html">전문가 칼럼</a></li>
+                                    
+                                    <li><a href="passion_article_04.html">원익 히어로</a></li>
+                                    <li><a href="passion_article_05.html">원익로그</a></li>
+                                </ul>
+                            </div>
+                            <div>
+                                <div class="mo_wis_h_gnb"><a href="#">Insight</a></div>
+                                <ul class="mo_wis_h_lnb">
+                                    <li><a href="insight_article_01.html">케이스터디</a></li>
+                                    <li><a href="insight_article_02.html">언더커버리더</a></li>
+                                    <li><a href="insight_article_03.html">메타트랜드 ON</a></li>
+                                    <li><a href="insight_article_04.html">시니어클래스</a></li>
+                                </ul>
+                            </div>
+                            <div>
+                                <div class="mo_wis_h_gnb"><a href="#">Signal</a></div>
+                                <ul class="mo_wis_h_lnb">
+                                      <li><a href="signal_article_01.html">케미스트리</a></li>
+                                    <li><a href="signal_article_02.html">호모나이트쿠스</a></li>
+                                    <li><a href="signal_article_03.html">원익반할지도</a></li>
+                                    <li><a href="signal_article_04.html">요즘, 원익은</a></li>
+                                    <li><a href="signal_article_05.html">원익 나눔 챌린지</a></li>
+                                    <li><a href="signal_article_06.html">롤링페이퍼</a></li>
+                                </ul>
+                            </div>
+                            <div>
+                                <div class="mo_wis_h_gnb"><a href="#">News</a></div>
+                                <ul class="mo_wis_h_lnb">
+                                    <li><a href="news_main.html">원익 뉴스</a></li>
+                                </ul>
+                            </div>
+                            <div>
+                                <div class="mo_wis_h_gnb"><a href="#">Event</a></div>
+                                <ul class="mo_wis_h_lnb">
+                                    <li><a href="event_article_01.html">당신도 명탐정!</a></li>
+                                     <li><a href="event_article_02.html">QUIZ & COMMENTARY</a></li>
+ 
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </header>
+            <!-- fixed header// -->
+
+        <div class="sub-contents npdn">
+            <h2 class="article-heading">요즘, 원익은</h2>
+            <div class="signal_now">
+                <div class="signal_now-top">
+                    <div class="pic">
+                        <img src="static/images/article_2022spring/signal_now_img_01.jpg" alt="" class="img">
+                    </div>
+                    <div class="text">
+                        <div class="text--typography">
+                            103세 철학자가<br>
+                            임직원에게 전하는<br>
+                            삶의 조언
+                        </div>
+                        <p class="txt-point1">
+                            씨엠에스랩<br>
+                            김형석 교수 초빙 강연
+                        <p class="txt-normal">
+                            백세시대, ‘나에게 주어진 삶을 어떻게<br>
+                            살아갈 것인가’에 대한 고민은 필수다.
+                        </p>
+                        <p class="txt-normal">
+                            씨엠에스랩은 103세 철학자, 김형석<br>
+                            교수를 모시고 그가 걸어온 삶과
+                        </p>
+                        <p class="txt-normal">
+                            그 속에서 배운 삶의 진리를 나누는 시간을 가졌다.
+                        </p>
+                        <p class="txt-normal">
+                            삶에 나침반이 되는 노(老) 교수의 값진<br>
+                            조언을 공유한다.
+                        </p>
+                    </div>
+                </div>
+                <div class="signal_now-btm">
+                    <div class="box box-1">   
+                        <div class="txt">
+                            <p class="title">씨엠에스랩 임직원을 위한 특별한 새해 선물</p>
+                            누구에게나 공평하게 주어지는 1년이라는 시간, 새해를 맞이하면서 나름의 계획을 세우고 
+                            각오를 다지는 이유다. 씨엠에스랩의 이수진 대표가 2022년을 시작하면서 임직원을 위해 
+                            특별한 강연을 준비했다. <br>
+                            김형석 연세대 명예교수를 모시고, 백세인생을 살아온 철학자의 삶과 지혜를 직접 들을 수 
+                            있는 기회. ‘임직원들이 어떻게 삶의 방향을 결정하고 어떤 마음으로 자신의 인생을 
+                            걸어가야 할지 생각하는 기회가 되었으면’ 하는 마음에서 준비한 값진 새해 선물이다.<br>
+                            김형석 교수는 국내 1세대 철학자다. 일본 조치대학 철학과를 졸업하고 연세대에서 30여 년간 
+                            철학과 교수로 재직하면서 한국 철학계의 기초를 다졌다. 1920년 출생이니 우리 나이로 103세. 
+                            도산 안창호로부터 가르침을 받고 윤동주 시인과 한 반에서 공부했다니,
+                            역사의 산증인이라 할 만하다. 시대의 석학이 전하는 메시지를 듣기 위해 모인 80여 명의 
+                            씨엠에스랩 임직원. 강연장은 103년의 인생을 관통하며 깨달은 삶의 지혜를 배우려는 열기로 
+                            가득하다. 직원들의 힘찬 박수와 함성을 받으며 등장한 김 교수는 꼿꼿한 자세를
+                            유지한 채, 1시간 30분 남짓의 강연을 꽉 채웠다. 담담한 말투에 담긴 노 교수의 진솔한 
+                            경험과 진심 어린 조언이 임직원들의 머리와 가슴에 오롯이 전해지는 순간이었다.
+                        </div>
+                    </div>
+                    <div class="box box-2">   
+                        <div class="pic"></div>
+                        <p class="txt">
+                            나이가 들수록 기억력이<br>
+                            떨어지지만, 사고력은 확장되어<br>
+                            비로소 인생의 열매를 맺게 된다.<br>
+                            사고력은 기억력보다 소중하다.
+                        </p>   
+                    </div>
+                    <div class="box box-3">   
+                        <div class="txt">
+                            <p class="title">인생에 뚜렷한 목적을 가진 사람은 걸어가는 길이 다르다</p>
+                            김형석 교수의 강연은 학창 시절을 함께 보낸 3명의 친구 이야기로부터 
+                            시작됐다. 김 교수의 중학교 동문인 윤동주 시인, 황순원 작가, 홍창의 박사는 10대 
+                            시절부터 명확한 인생의 목표를 가지고 있었다. 그 시절 시를 위해 태어났다고 얘기하던 
+                            윤동주 시인은 시대를 뛰어넘어 사랑받는 시를 남겼고, 중학생 시절부터 소설가가 되겠다고 
+                            했던 황순원 작가도 무수히 많은 명작을 남겼다. 서울대병원장을 지낸 홍창의 박사 역시 
+                            가난으로 인해 일찍 죽는 농촌의 아이들을 보며 소아과 의사라는 꿈을 키웠다.<br>
+                            김형석 교수는 그런 친구들을 보며 확고한 목표를 세우는 것이 얼마나 중요한지를 깨달았고, 
+                            중학교 3학년 때 철학을 공부하겠다는 목표를 세웠다. 그리고 10대 시절의 목표는 103세가 
+                            된 지금까지 그를 철학자의 삶으로 이끌고 있다.<br>
+                            “자신의 인생에 뚜렷한 목적과 자화상을 가진 사람과 아닌 사람은 걸어가는 길이 다르다”면서, 
+                            “흔들리지 않는 목표와 자화상을 그려보는 것이 중요하다”는 김교수의 메시지가 깊은 울림을 
+                            주는 것은 그가 삶을 통해 증명해냈기 때문이다.<br>
+                            “목표를 세우는 것만큼 중요한 것이 목적을 아는 것입니다. 예전에는 100가지 일이 있으면 
+                            100가지 목적이있다고 생각했는데, 100세를 살고 보니 목표는 다를지라도 목적은 하나입니다. 
+                            ‘내가 이 일을 함으로써 얼마나 많은 사람이 행복하고 인간답게 살 수 있는가’ 
+                            그 것이 우리가 일하는 유일한 목적입니다.”
+                        </div>
+                    </div>
+                    <div class="box box-4">   
+                        <div class="pic"></div>
+                        <p class="txt">
+                            0세까지는 배우고<br>
+                            60세까지는 성공하는<br>
+                            것이 행복이었다면,<br>
+                            이후의 삶은 보람있게<br>
+                            사는 것이 행복이다.
+                        </p>   
+                    </div>
+                    <div class="box box-5">   
+                        <div class="txt">
+                            <p class="title">100세를 살아보니 알게 된 것들</p>
+                            이어진 ‘생애주기별 추구해야 할 가치에 대한 이야기’는 많은 임직원의 공감을 얻었다. 
+                            지금 자신이 인생의 어느 주기에 서 있으며, 무엇을 위해 나아가고 있는지를 돌아볼 수 있는 
+                            계기가 되었음은 물론이다. 김형석 교수에 따르면 우리의 인생은 크게 0~30세, 30~60세, 
+                            60세 이후로 분류된다. 30세까지는 교육을 통해 배워가는 시기, 31세부터 60세까지 직업인으로서 
+                            일하는 시기라는 것. 예전에는 은퇴와 함께 모든 것이 마무리된다고 생각했지만, 김 교수는 
+                            “돌아보면 가장 많은 열매를 맺은 시기는 60세 이후”라고 지난 삶을 회상했다. 정년퇴직한 후 
+                            직장이나 자녀 양육에서 벗어나 비로소 나의 인생을 살며 온전하게 성장했다는 것. 강의실을 벗어나 
+                            다양한 세대를 만나 강연하기 시작한 것도, 의미 있는 책을 집필한 것도 60세 이후의 일이다.<br>
+                            “지난 3년 동안 책도 많이 쓰고 독자도 많아지고 강연도 1년에 160회 정도 나갑니다. 내가 봐도 
+                            놀라운 정 도죠. 100살 넘게 살길 잘했어요. 못 살았으면 내 인생에 소중한 것을 잃어버릴 뻔했지 
+                            뭐야. 30세까지는 즐겁게 사는 것이 행복이고 60세까지는 성공하는 것이 행복이었다면, 이후의 
+                            삶은 보람있게 사는 것이 행복입니다. 이웃과 사회, 나라에 관심을 가지고 내가 할 수 있는 일을 
+                            찾아 베풀면서 살아가세요. 그 안에 보람과 행복이 있습니다. 또 하나, 계속해서 배움을 이어가시기를 
+                            바랍니다. 배움은 콩나물에 물 주기와 같아서 물을 안 주면 말라버립니다. 대학 졸업과 함께 
+                            끝난다면 거기서 마르는 거고, 은퇴와 함께 끝난다면 거기서 성장하지 못하고 마르게 되죠. 
+                            콩나물 물 주기는 죽을 때까지 계속되어야 합니다.” <br>
+                            나의 열매들을 사회에 환원하며 인생을 연장하는 시기를 잘 보내기 위해 배우고 일하는 시기를 
+                            열정과 열심으로 채워야 한다는 조언. 100세를 살아보니 깨닫게 된 노 교수의 삶의 지혜다.
+                        </div>
+                    </div>
+                    <div class="box box-6">   
+                        <div class="sbox-1">
+                            <p class="title">내가 일하는 목적,<br>
+                                내 일의 가치를 다시 한번<br>
+                                깨달았어요</p>
+                            <div class="profile">
+                                <p class="role">RBD팀</p>
+                                <p class="name">노희석 님</p>
+                            </div>
+                            <p class="txt">“일을 사랑하고 즐기라”는 말씀이 기억에 남습니다. 평소 직업이 경제적 수단일 뿐만 
+                                아니라, 자아를 실현하고 사회를 더 나은 방향으로 나아가게 하는 원동력이라는 생각을 가지고 
+                                있었는데, 가끔은 현실과 부딪혀 흔들릴 때가 있었거든요. 오늘 강의를 들으면서 ‘내가 옳은 방향으로
+                                나아가고 있구나’ 확신할 수 있었습니다. 일하면서 매너리즘에 빠질 때도 있는데, 내가 무엇을 
+                                위해 이 일을 하고 있는지를 다시 한번 생각해보는 계기도 되었고요. ‘우리 브랜드의 가치가 
+                                소비자에게 잘 전달되고 이를 통해 더 많은 이들의 삶이 행복해졌으면 좋겠다’는 마음을 가지고, 
+                                2022년에도 제 일을 즐겨보겠습니다.</p>
+                        </div>
+                        <div class="sbox-2">
+                            <p class="title">멋진 열매를 맺기 위한<br>
+                                인생이라는 마라톤</p>
+                            <div class="profile">
+                                <p class="role">마케팅팀</p>
+                                <p class="name">안보라 님</p>
+                            </div>
+                            <p class="txt">다큐멘터리를 통해 교수님을 처음 알게 된 후로, 교수님의 삶에 대한 존경심을
+                                가지고 있었어요. 직접 얼굴을 마주하고 교수님이 전해주시는 삶의 지혜를 들을 수 있어서 
+                                정말 좋았습니다. 무엇보다 인생을 세 단계로 나누고 시기별 가치에 관해 얘기해주신 부분이 큰 
+                                인사이트로 다가왔습니다. 저는 이제 막 두번째 단계에 들어섰는데요. 인생의 마지막 시기에 값진 
+                                열매를 맺고 더 많은 것을 나눌 수 있도록 꾸준히 노력해야겠다는 생각이 들었습니다. 인생이라는 
+                                긴 마라톤, 저만의 목표를 향해 열심히 달려보겠습니다.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+<div class="quick">
+      <a href="#" class="btn-home"><span class="blind">home</span></a>
+      
+    </div>
+        <footer class="wis_ft">
+                <div class="wis_ft_info">
+                    <div class="wis_inner_wrap">
+                        <!-- 지난 호 보기 -->
+                        <div class="ft_select">
+                            <button class="ft_select_btn" type="button">2022 SPRING Vol.67</button>
+                            <div class="ft_select_list">
+                                <p class="ft_select_title">지난호 보기</p>
+                                <ul>
+                                   <li><a href="/Wonikin_SPRING/">2022 SPRING Vol.67 </a></li>
+                                   <li><a href="/Wonikin_WINTER/">2022 WINTER Vol.66 </a></li>
+                                   <li><a href="/Wonikin_AUTUMN/">2021 AUTUMN Vol.65</a></li>
+                                   <li><a href="/Wonikin_SUMMER/">2021 SUMMER Vol.64 </a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        
+                        <h1 class="wis_ft_logo">WONIK</h1>
+                        <p>본사 경기도 성남시 분당구 삼평동 612번지 <br>발행일 2022년 5월(통권 제67호) / 발행인 임창빈 / 발행처 원익 </p>
+                        <p>기획 디자인 제작 피플페이지 02-6674-0111</p>
+                    </div>
+                </div>
+                <div class="wis_ft_copy">
+                    <div class="wis_inner_wrap">
+                        <p>COPYRIGHT © WONIK. ALL RIGHTS RESERVED.</p>
+                    </div>
+                </div>
+            </footer>
+ </div>
+        <script src="static/js/jquery-1.12.1.min.js"></script>
+        <script src="static/js/jquery-migrate-1.4.1.min.js"></script>
+        <!--swiper slide-->
+        <script src="static/js/swiper-bundle.min.js"></script>
+        <script src="static/js/aos.js"></script>
+        <script src="static/js/front.js"></script>
+
+        <script>
+            //console.log(document.querySelector('.issue-icon path').getTotalLength()); //137
+        </script>
+<script type="text/javascript" src="//wcs.naver.net/wcslog.js"></script>
+<script type="text/javascript">
+if(!wcs_add) var wcs_add = {};
+wcs_add["wa"] = "12518c35fb268c0";
+if(window.wcs) {
+  wcs_do();
+}
+</script>
+    </body>
+
+</html>

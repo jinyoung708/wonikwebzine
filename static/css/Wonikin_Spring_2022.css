@@ -1,0 +1,576 @@
+@charset "UTF-8";
+/* 전체 워랩 */
+.wis_wrap { position: relative; width: 100%; min-height: 100%; overflow: hidden; }
+
+/* 이미지 여백 없애기 */
+.wis_wrap img { width: 100%; display: block; }
+
+.wis_wrap header.wis_h { position: fixed; z-index: 20; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; top: 0; left: 0; width: 100%; max-height: 113px; background-color: #fff; }
+.wis_wrap section.wis_container { padding-top: 113px; width: 100%;}
+
+/* 반응형을 위한 안쪽 wrap */
+.wis_wrap .wis_inner_wrap { width: 100%; height: 100%; }
+
+/* header 시작 */
+.wis_h .wis_inner_wrap { position: relative; max-width: 2560px; }
+
+/* 헤더 아래 라인 */
+.wis_h:after { content: ''; position: absolute; display: inline-block; z-index: 2; bottom: 0; left: 0; width: 100%; height: 1px; background-color: #ccc; pointer-events: none; }
+
+/* 로고 */
+.wis_h_logo { position: absolute; display: inline-block; top: 0; left: 0; padding: 34px 0 0 40px; width: 205px; height: 112px; z-index: 2; }
+.wis_h_logo > a { display: block; width: 165px; height: 54px; }
+
+/* GNB hover 영역 */
+.wis_h_top { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; width: 100%; height: 113px; padding: 51px 0 37px; }
+
+/* PC GNB */
+.wis_h_gnb_wrap { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; padding: 0 126px; max-width: 1490px; width: 100%; }
+.wis_h_gnb_wrap > li { display: block; }
+
+/* GNB hover시 내려오는 배경 */
+.wis_h_gnb_wrap:after { content: ''; position: absolute; top: -100%; left: -50%; background-color: #fff; width: 150vw; height: calc(100% + 30px); z-index: -1; -webkit-transition: top 0.3s linear; transition: top 0.3s linear; }
+
+/* PC GNB */
+.wis_h_gnb { height: 24px; }
+.wis_h_gnb > a { display: block; font-size: 22px; line-height: 24px; font-family: 'Poppins'; font-weight: 700; color: #000; }
+
+/* PC LNB */
+.wis_h_lnb { display: block; margin-top: 60px; opacity: 0; -webkit-transition: 0s; transition: 0s; pointer-events: none; }
+.wis_h_lnb > li { display: block; }
+.wis_h_lnb > li > a { display: block; height: 36px; line-height: 36px; font-style: 16px; color: #000; font-family: 'GmarketSans'; font-weight: 400; }
+
+/* 봄호 vol.67 */
+.wis_h_side { position: absolute; display: inline-block; top: 54px; right: 80px; font-size: 18px; line-height: 1; font-family: 'GmarketSans'; font-weight: 400; color: #000; }
+
+/* 모바일 GNB */
+.wis_wrap .wis_h .mo_wis_gnb_btn { width: 60px; height: 60px; position: absolute; display: none; top: 0; right: 0; border: 0; background: #9dcc3c url(../images/menu.svg) center/55% no-repeat; }
+.wis_wrap .wis_h .mo_wis_h_gnb_wrap { position: fixed; display: none; z-index: 5; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.8); }
+.wis_wrap .wis_h .mo_wis_h_gnb_wrap .mo_wis_h_gnb_top { width: 100%; height: 60px; border-bottom: 1px solid #ddd; }
+.wis_wrap .wis_h .mo_wis_h_gnb_wrap .mo_wis_gnb_btn { background: #9dcc3c url(../images/menu_close.svg) center/55% no-repeat; }
+.wis_wrap .wis_h .mo_wis_h_gnb_list { position: absolute; display: inline-block; top: 0; right: 0; width: 60%; min-width: 250px; max-width: 320px; height: 100%; background-color: #fff; }
+.wis_wrap .wis_h .mo_wis_h_gnb_list .wis_h_logo { padding: 10px 0 0 20px; width: 135px; height: 60px; }
+.wis_wrap .wis_h .mo_wis_h_gnb_list > div:not(.mo_wis_h_gnb_top) { position: relative; width: 100%; }
+.wis_wrap .wis_h .mo_wis_h_gnb_list > div:not(.mo_wis_h_gnb_top) a { display: block; width: 100%; height: 100%; padding: 0 20px; font-size: 14px; line-height: 54px; text-transform: uppercase; font-family: 'GmarketSans'; font-weight: 700; color: #333; }
+.wis_wrap .wis_h .mo_wis_h_gnb_list .mo_wis_h_gnb { width: 100%; height: 54px; border-bottom: 1px solid #ddd; }
+.wis_wrap .wis_h .mo_wis_h_gnb_list .mo_wis_h_lnb { display: -webkit-box; display: -ms-flexbox; display: flex; display: none; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; border-bottom: 1px solid #ddd; padding: 10px 0; background: #f9f9f9; }
+.wis_wrap .wis_h .mo_wis_h_gnb_list .mo_wis_h_lnb > li { display: block; width: 100%; }
+.wis_wrap .wis_h .mo_wis_h_gnb_list .mo_wis_h_lnb > li > a { padding: 10px 40px; font-size: 13px; line-height: 1; font-weight: 400; }
+
+/* GNB hover css */
+.wis_h .wis_h_top:hover { height: auto; }
+.wis_h .wis_h_top:hover .wis_h_gnb_wrap:after { top: 0%; }
+.wis_h .wis_h_top:hover .wis_h_lnb { pointer-events: visible; -webkit-transition: opacity 0.2s ease-in-out; transition: opacity 0.2s ease-in-out; -webkit-transition-delay: 0.2s; transition-delay: 0.2s; opacity: 1; }
+/* header 끝 */
+
+/* container 시작 */
+/* 본문 타이틀 */
+.wis_container .wis_h2 { display: block; width: 100%; line-height: 40px; font-size: 30px; color: #000; font-family: 'GmarketSans'; font-weight: 700; text-align: center; letter-spacing: -0.5px; }
+
+/* 본문 서브 타이틀 */
+.wis_container .wis_h3 { line-height: 24px; font-size: 22px; color: #000; font-family: 'GmarketSans'; font-weight: 400; }
+
+/* container 기본 세팅 */
+.wis_container > div { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; }
+.wis_container .wis_inner_wrap { position: relative; max-width: 1490px; }
+
+/* 메인 비쥬얼 */
+.wis_container .wis_visual_wrap { background-color: #fff; }
+.wis_container .wis_visual_wrap .wis_inner_wrap { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: horizontal; -webkit-box-direction: normal; -ms-flex-direction: row; flex-direction: row; padding-left: 126px; }
+.wis_container .wis_visual_wrap .wis_visual_img { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: end; -ms-flex-align: end; align-items: flex-end; width: 666px; width: 667px; }
+.wis_container .wis_visual_wrap .wis_visual_img1 { width: 343px; }
+.wis_container .wis_visual_wrap .wis_visual_img2 { width: 323px;}
+.wis_container .wis_visual_wrap .wis_visual_text { margin: 170px 0 0 190px; width: 430px; height: 400px; opacity: 0;}
+.wis_container .wis_visual_wrap .wis_visual_text1 { width: 100%; height: 115px; margin-bottom: 33px; }
+.wis_container .wis_visual_wrap .wis_visual_text2 { line-height: 30px; font-size: 18px; letter-spacing: -0.5px; color: #000; font-family: 'GmarketSans'; font-weight: 400; text-align: center; }
+/* 메인 비쥬얼 애니메이션 */
+@keyframes wis_visual_img2 {
+  0% {
+      transform: translateX(100%);
+    }
+  100% {
+      transform: translateX(0%);
+  }
+}
+@keyframes wis_visual_text {
+  0% {
+      opacity: 0;
+    }
+  100% {
+      opacity: 1;
+  }
+}
+.wis_container .wis_visual_wrap .wis_visual_img2 { transform: translateX(100%); animation: wis_visual_img2 2s ease-in-out 0.5s forwards;}
+.wis_container .wis_visual_wrap .wis_visual_text { opacity: 0; animation: wis_visual_text 2s ease-in-out 1.5s forwards;}
+
+/* passion & insight 슬라이드 공통 css */
+.wis_container .wis_psn_img, .wis_container .wis_ins_img { width: 315px; height: 379px; }
+.wis_container .wis_psn_img, .wis_container .wis_ins_img, .wis_container .wis_signal_img { overflow: hidden; }
+.wis_container .wis_psn_img > img, .wis_container .wis_ins_img > img, .wis_container .wis_signal_img > img { -webkit-transition: 0.8s ease-out; transition: 0.8s ease-out; }
+.wis_container .wis_psn_img:hover > img, .wis_container .wis_ins_img:hover > img, .wis_container .wis_signal_img:hover > img { position: relative; -webkit-transform: scale(1.1); transform: scale(1.1); }
+.wis_container .wis_psn_text, .wis_container .wis_ins_text { margin-top: 20px; margin-left: 8px; width: 100%; }
+.wis_container .wis_psn_text p.wis_h3, .wis_container .wis_ins_text p.wis_h3 { font-weight: 200; word-break: keep-all; }
+.wis_container .wis_psn_slide_wrap, .wis_container .wis_ins_slide_wrap { position: relative; margin-top: 55px; }
+.wis_container .wis_psn_slide_wrap .swiper-button-next, .wis_container .wis_psn_slide_wrap .swiper-button-prev, .wis_container .wis_ins_slide_wrap .swiper-button-next, .wis_container .wis_ins_slide_wrap .swiper-button-prev { width: 60px; height: 60px; }
+.wis_container .wis_psn_slide_wrap .swiper-button-next, .wis_container .wis_ins_slide_wrap .swiper-button-next { right: -115px; background: url(../images/Wonikin_Spring_2022/slide_arrow_bk_R.png) center/38.5% no-repeat; }
+.wis_container .wis_psn_slide_wrap .swiper-button-prev, .wis_container .wis_ins_slide_wrap .swiper-button-prev { left: -115px; background: url(../images/Wonikin_Spring_2022/slide_arrow_bk_L.png) center/38.5% no-repeat; }
+.wis_container .wis_psn_slide, .wis_container .wis_ins_slide { overflow: hidden; }
+.wis_container .wis_psn_slide .swiper-slide, .wis_container .wis_ins_slide .swiper-slide { position: relative; width: 348px; padding: 0 16px; }
+.wis_container .wis_psn_slide .swiper-slide > a, .wis_container .wis_ins_slide .swiper-slide > a { display: block; width: 100%; }
+/* passion & insight 슬라이드 공통 css// */
+
+/* passion */
+.wis_container .wis_passion_wrap { border-top: 1px solid #ccc; background-color: #fff; }
+.wis_container .wis_passion_wrap .wis_inner_wrap { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; -webkit-box-align: center; -ms-flex-align: center; align-items: center; padding: 60px 126px 100px; }
+.wis_container .wis_passion_wrap .wis_psn_slide_wrap { width: 1044px; height: 600px; }
+.wis_container .wis_passion_wrap .wis_psn_slide_wrap .swiper-button-next, .wis_container .wis_passion_wrap .wis_psn_slide_wrap .swiper-button-prev { top: 245px; }
+.wis_container .wis_passion_wrap .wis_psn_slide .swiper-slide { -webkit-transform: translateY(100px); transform: translateY(100px); height: 600px; -webkit-transition: -webkit-transform 1s ease; transition: -webkit-transform 1s ease; transition: transform 1s ease; transition: transform 1s ease, -webkit-transform 1s ease; }
+.wis_container .wis_passion_wrap .wis_psn_slide .swiper-slide.action { -webkit-transform: translateY(0px); transform: translateY(0px); }
+
+/* insight & event */
+.wis_container .wis_insight_event_wrap { background-color: #f2f1f1; }
+.wis_container .wis_insight_event_wrap .wis_inner_wrap { display: -webkit-box; display: -ms-flexbox; display: flex; padding: 60px 0 0; }
+
+/* insight */
+.wis_container .wis_insight_event_wrap .wis_insight { width: calc(100% - 385px); padding: 0px 86px 0 126px; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; -webkit-box-align: center; -ms-flex-align: center; align-items: center; }
+.wis_container .wis_insight_event_wrap .wis_ins_slide_wrap { width: 696px; height: 520px; }
+.wis_container .wis_insight_event_wrap .wis_ins_slide_wrap .swiper-button-next, .wis_container .wis_insight_event_wrap .wis_ins_slide_wrap .swiper-button-prev { top: 200px; }
+.wis_container .wis_insight_event_wrap .wis_ins_slide .swiper-slide { height: 520px; }
+
+/* event */
+.wis_container .wis_insight_event_wrap .wis_event { width: 385px; }
+.wis_container .wis_insight_event_wrap .wis_evt_slide { position: relative; overflow: hidden; width: 385px; height: 400px; margin-top: 55px; }
+.wis_container .wis_insight_event_wrap .wis_evt_slide.swiper-container-horizontal > .swiper-pagination-bullets { bottom: auto; left: auto; top: 15px; right: 15px; text-align: right; width: 100%; }
+.wis_container .wis_insight_event_wrap .wis_evt_slide .swiper-slide { width: 385px; height: 400px; overflow: hidden; }
+.wis_container .wis_insight_event_wrap .wis_evt_slide .swiper-pagination-bullet { width: 8px; height: 8px; opacity: 1; background: #f2f1f1; }
+.wis_container .wis_insight_event_wrap .wis_evt_slide .swiper-pagination-bullet-active { background: #000; }
+
+/* Trending Tags */
+.wis_container .wis_insight_event_wrap .wis_tag_wrap { background-color: #fff; padding: 20px; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; -webkit-box-align: center; -ms-flex-align: center; align-items: center; }
+.wis_container .wis_insight_event_wrap .wis_tag_wrap .wis_tag_list { display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    margin-top: 20px;
+    width: 100%;
+    max-width: 320px;
+    max-height: 250px;
+    overflow: hidden;
+    justify-content: center;
+    flex-direction: row;
+    align-content: center;
+    flex-wrap: wrap;  }
+.wis_container .wis_insight_event_wrap .wis_tag_wrap .wis_tag_list > li { display: block; background-color: #fff; border-radius: 50px; border: 1px solid #c9c9c9; margin: 5px 2px; }
+.wis_container .wis_insight_event_wrap .wis_tag_wrap .wis_tag_list > li > a { display: block; color: #000; padding: 14px; line-height: 1px; font-size: 12px; font-family: 'Poppins'; font-weight: 400; border-radius: inherit;
+    background-color: #ccff0063;}
+
+/* signal & news */
+.wis_container .wis_signal_news_wrap { background-color: #fff; }
+.wis_container .wis_signal_news_wrap .wis_inner_wrap { display: -webkit-box; display: -ms-flexbox; display: flex; }
+
+/* signal */
+.wis_container .wis_signal_news_wrap .wis_signal { padding: 60px 126px; width: calc(100% - 385px); display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; -webkit-box-align: center; -ms-flex-align: center; align-items: center; }
+.wis_container .wis_signal_news_wrap .wis_signal_list { margin-top: 55px; width: 853px; height: 527px; display: -webkit-box; display: -ms-flexbox; display: flex; -ms-flex-wrap: wrap; flex-wrap: wrap; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; -ms-flex-line-pack: justify; align-content: space-between; }
+.wis_container .wis_signal_news_wrap .wis_signal_list > li { display: block; width: 275px; height: 257px; }
+.wis_container .wis_signal_news_wrap .wis_signal_list > li > a { display: block; width: 100%; height: 100%; }
+.wis_container .wis_signal_img {
+    display: block;
+    position: relative;
+   
+    background-color: #000;
+    margin: 0 1px;
+  }
+  .wis_container .wis_signal_img > img  {
+  
+   
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    
+    width: auto;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    max-width: initial;
+  }
+  .wis_container .wis_signal_img:hover .more-plus {
+    display: none;
+  }
+.wis_container .wis_signal_img:hover img {
+    opacity: 0.3;
+  }
+  .wis_container .wis_signal_img:hover .item-text {
+    left: 0;
+    width: 100%;
+    text-align: center;
+   
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+  }
+  .wis_container .wis_signal_img:hover .item-text .title::before {
+    margin-left: auto;
+    margin-right: auto;
+  }
+   .wis_container .wis_signal_img:hover .hov-button-view {
+    display: block;
+    width: 128px;
+    height: 33px;
+    background: #3060a6;
+    border-radius: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    font-size: 13px;
+    color: #FFFFFF;
+    line-height: 33px;
+    margin-top:1rem;
+	font-family: 'GmarketSans';
+
+  }
+  .wis_container .wis_signal_img .more-plus {
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    background: url("./images/more_plus.svg") no-repeat center;
+  }
+    .wis_container .wis_signal_img .hov-button-view {
+    display: none;
+  }
+  .wis_container .wis_signal_img .item-text {
+    position: absolute;
+    left: 0rem;
+    bottom: 0rem;
+    color: #fff;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+  }
+.wis_container .wis_signal_img .item-text .title {
+   font-family: 'GmarketSans';
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+	font-weight: 700;
+    font-size: 1rem;
+    line-height: 1.6;
+    padding-bottom: 1rem;
+    letter-spacing: -0.05em;
+	padding-left:10px;
+  }
+  .wis_container .wis_signal_img .item-text .title::before {
+    content: '';
+    width: 40px;
+    height: 40px;
+    display: block;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: left bottom;
+    margin-bottom: 0rem;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+  }
+  .wis_container .wis_signal_img .item-text .title .title-doc::before {
+    background-image: url("../images/ico_docs.svg");
+  }
+  .wis_container .wis_signal_img .item-text .title .title-data::before {
+    background-image: url("../images/ico_data.svg");
+  }
+  .wis_container .wis_signal_img .item-text .title .title-creative::before {
+    background-image: url("../images/ico_creative.svg");
+  }
+/* signal 이미지 애니메이션 */
+.wis_container .wis_signal_img > img {animation: wis_signal_img 6s ease-in-out infinite;}
+.wis_container .wis_signal_img:hover > img {animation-play-state: paused ;}
+/*.wis_container .wis_signal_list > li:nth-child(2) img { animation-delay: 1s; }
+.wis_container .wis_signal_list > li:nth-child(3) img { animation-delay: 2s; }
+.wis_container .wis_signal_list > li:nth-child(4) img { animation-delay: 3s; }
+.wis_container .wis_signal_list > li:nth-child(5) img { animation-delay: 4s; }
+.wis_container .wis_signal_list > li:nth-child(6) img { animation-delay: 5s; }*/
+@keyframes wis_signal_img {
+  0%, 100% { -webkit-transform: scale(1); transform: scale(1); }
+  50% { -webkit-transform: scale(1.15); transform: scale(1.15); }
+}
+
+/* news */
+.wis_container .wis_signal_news_wrap .wis_news_wrap { padding: 60px 45px; width: 385px; background-color: #3060a6; }
+.wis_container .wis_signal_news_wrap .wis_news_wrap * { color: #fff; }
+.wis_container .wis_signal_news_wrap .wis_news_list { margin-top: 39px; width: 100%; }
+.wis_container .wis_signal_news_wrap .wis_news_list > li { position: relative; display: block; width: 100%; height: 152px; padding: 16px 0 15px; }
+.wis_container .wis_signal_news_wrap .wis_news_list > li + li { border-top: 1px solid #fff; }
+.wis_container .wis_signal_news_wrap .wis_news_list > li > a { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: end; -ms-flex-align: end; align-items: flex-end; width: 100%; height: 100%; }
+.wis_container .wis_signal_news_wrap .wis_news_list > li:hover .wis_news_img > img { position: relative; -webkit-transform: scale(1.1); transform: scale(1.1); }
+.wis_container .wis_signal_news_wrap .wis_news_img { width: 113px; height: 121px; overflow: hidden; }
+.wis_container .wis_signal_news_wrap .wis_news_img > img { -webkit-transition: 0.8s ease; transition: 0.8s ease; }
+.wis_container .wis_signal_news_wrap .wis_news_text { width: calc(100% - 113px); padding-left: 15px; }
+.wis_container .wis_signal_news_wrap .wis_news_text h3.wis_h3 { line-height: 40px; font-size: 24px; font-weight: 700; }
+.wis_container .wis_signal_news_wrap .wis_news_text p.wis_h3 { line-height: 24px; font-size: 18px; font-weight: 300; word-break: keep-all; }
+
+/* video wrap */
+.wis_container .wis_video_wrap { background-color: #2e2e2e; }
+.wis_container .wis_video_wrap .wis_inner_wrap { display: -webkit-box; display: -ms-flexbox; display: flex; padding: 60px 0; }
+.wis_container .wis_video_wrap .wis_video { width: calc(100% - 385px); padding: 0 126px; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; -webkit-box-align: center; -ms-flex-align: center; align-items: center; }
+.wis_container .wis_video_wrap .wis_video .wis_h2 { color: #fff; }
+
+/* video 박스 */
+.wis_container .wis_video_wrap .wis_video .wis_video_box { margin-top: 55px; width: 853px; height: 478px; background-color: #000;}
+
+/* video list */
+.wis_container .wis_video_wrap .wis_video_list_wrap { width: 385px; }
+/* 탭 */
+.wis_container .wis_video_wrap .wis_video_tab { display: -webkit-box; display: -ms-flexbox; display: flex; }
+.wis_container .wis_video_wrap .wis_video_tab > button { position: relative; font-family: 'GmarketSans'; font-size: 18px; line-height: 1; color: #e5e3e3; font-weight: 400; width: 193px; height: 55px; border: 1px solid; border-color: #575757 #575757 #fff #575757; background-color: transparent; z-index: 1; }
+.wis_container .wis_video_wrap .wis_video_tab > button.on { color: #fff; font-weight: 700; border-color: #fff #fff transparent #fff; z-index: 2; }
+.wis_container .wis_video_wrap .wis_video_tab > button + button { margin-left: -1px; }
+/* 리스트 */
+.wis_container .wis_video_wrap .wis_video_cont { margin-top: 15px; width: 100%; max-height: 480px; overflow: hidden; }
+.wis_container .wis_video_wrap .wis_video_cont > ul > li { position: relative; display: block; width: 100%; height: 120px; padding-top: 23px 0; border-bottom: 1px solid #fff; }
+.wis_container .wis_video_wrap .wis_video_cont > ul > li > a { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; width: 100%; height: 100%; }
+.wis_container .wis_video_wrap .wis_video_cont > ul > li:hover .wis_video_img > img { position: relative; -webkit-transform: scale(1.1); transform: scale(1.1); }
+.wis_container .wis_video_wrap .wis_video_img { width: 130px; height: 74px; overflow: hidden; }
+.wis_container .wis_video_wrap .wis_video_img > img { -webkit-transition: 0.8s ease; transition: 0.8s ease; }
+.wis_container .wis_video_wrap .wis_video_text { width: calc(100% - 130px); padding: 0 25px; }
+.wis_container .wis_video_wrap .wis_video_text p.wis_h3 { line-height: 24px; font-size: 18px; font-weight: 300; word-break: keep-all; color: #fff; }
+/* container 끝 */
+
+/* footer 시작 */
+.wis_ft { background-color: #505050; }
+.wis_ft * { font-family: 'GmarketSans'; color: #fff; }
+.wis_ft > div { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; }
+.wis_ft .wis_inner_wrap { position: relative; max-width: 1490px; padding: 0 126px; }
+
+/* footer 상단 */
+.wis_ft .wis_ft_info { padding: 50px 0 15px; }
+.wis_ft .wis_ft_info .wis_ft_logo { font-size: 36px; line-height: 40px; font-weight: 700; margin-bottom: 20px; }
+.wis_ft .wis_ft_info .wis_ft_logo ~ p { font-size: 18px; line-height: 30px; font-weight: 200; color: #fff; }
+
+/* 지난 호 보기 */
+.wis_ft .ft_select { position: absolute; display: inline-block; right: 125px; top: 40px; width: 260px; height: 50px; }
+/* 지난 호 보기 버튼 */
+.wis_ft .ft_select_btn { width: 100%; height: 100%; background-color: transparent; border: 1px solid #fff; font-size: 18px; font-weight: 400; line-height: 1; }
+.wis_ft .ft_select_btn:hover { font-weight: 700; }
+/* 지난 호 보기 리스트 */
+.wis_ft .ft_select_list { position: absolute; display: none; width: 100%; left: 0; bottom: 130%; border-radius: 2%; overflow: hidden; background-color: #fff; }
+.wis_ft .ft_select_title { padding: 18px 15px; background: #ddd; font-weight: 700; text-align: center; font-size: 18px; line-height: 18px; color: #000; }
+.wis_ft .ft_select_title + ul { text-transform: uppercase; }
+.wis_ft .ft_select_title + ul li:not(:first-child) { border-top: 1px solid #ddd; }
+.wis_ft .ft_select_title + ul a { text-align: center; font-size: 13px; line-height: 18px; font-weight: 400; padding: 15px 10px; display: block; background-color: transparent; text-decoration: none; color: #333; }
+.wis_ft .ft_select_title + ul a:hover { color: #db1919; font-size: 15px; }
+
+/* footer 하단 */
+.wis_ft .wis_ft_copy { padding: 40px 0; border-top: 1px solid #fff; }
+.wis_ft .wis_ft_copy p { font-size: 18px; line-height: 1; font-weight: 400; color: #fff; }
+/* footer 끝 */
+
+
+/* css 최하단 미디어쿼리 모음(내림차순):: 접을 수 있게 들여쓰기 합니다. */
+  /* 모바일 버젼 */
+    /* 500px 이하 전부 적용 */
+    @media screen and (max-width: 500px) { 
+      /* passion & insight 슬라이드 공통 css 반응형 */
+      .wis_container .wis_psn_img, .wis_container .wis_ins_img { width: 63vw; height: 75.8vw; }
+      .wis_container .wis_psn_img > img, .wis_container .wis_ins_img > img, .wis_container .wis_signal_img > img { -webkit-transition: 0; transition: 0; }
+      .wis_container .wis_psn_img:hover > img, .wis_container .wis_ins_img:hover > img, .wis_container .wis_signal_img:hover > img { -webkit-transform: scale(1); transform: scale(1); }
+      .wis_container .wis_psn_text, .wis_container .wis_ins_text { margin-top: 4vw; margin-left: 1.6vw; }
+      .wis_container .wis_psn_slide_wrap .swiper-button-next, .wis_container .wis_psn_slide_wrap .swiper-button-prev, .wis_container .wis_ins_slide_wrap .swiper-button-next, .wis_container .wis_ins_slide_wrap .swiper-button-prev { width: 12vw; height: 12vw; top: 40vw !important; }
+      .wis_container .wis_psn_slide .swiper-slide, .wis_container .wis_ins_slide .swiper-slide { width: 69.6vw; height: 104vw; padding: 0 3.2vw; }
+      .wis_container .wis_passion_wrap .wis_psn_slide_wrap, .wis_container .wis_insight_event_wrap .wis_ins_slide_wrap { width: 69.6vw; height: 104vw; }
+      .wis_container .wis_passion_wrap .wis_psn_slide .swiper-slide { height: 104vw; -webkit-transform: translateY(0px); transform: translateY(0px); -webkit-transition: 0; transition: 0; }
+      /* passion & insight 슬라이드 공통 css 반응형// */
+
+      /* 메인 비쥬얼 반응형 */
+      .wis_container .wis_visual_wrap .wis_visual_img { width: 100vw; height: 100.2vw; }
+      .wis_container .wis_visual_wrap .wis_visual_text { width: 86vw; height: 80vw; }
+      .wis_container .wis_visual_wrap .wis_visual_text1 { height: 23vw; margin-bottom: 6.6vw; }
+      .wis_container .wis_visual_wrap .wis_visual_text2 { line-height: 6vw; font-size: 3.6vw; letter-spacing: -0.1vw; } 
+
+      /* Trending Tags 반응형 */
+      .wis_container .wis_insight_event_wrap .wis_tag_wrap .wis_tag_list { max-width: 90%;}
+
+      /* event 반응형 */
+      .wis_container .wis_insight_event_wrap .wis_evt_slide,
+      .wis_container .wis_insight_event_wrap .wis_evt_slide .swiper-slide { width: 77vw; height: 80vw; }
+
+      /* 간격 반응형 */
+        /* PASSION */
+        .wis_container .wis_psn_slide_wrap, .wis_container .wis_ins_slide_wrap { margin-top: 7vw; }
+        /* event */
+        .wis_container .wis_insight_event_wrap .wis_evt_slide { margin-top: 7vw; }
+        /* Trending Tags */
+        .wis_container .wis_insight_event_wrap .wis_tag_wrap .wis_tag_list { margin-top: 7vw; }
+        /* SIGNAL */
+        .wis_container .wis_signal_news_wrap .wis_signal_list { margin-top: calc(7vw - 1%); }
+        /* video */
+        .wis_container .wis_video_wrap .wis_video .wis_video_box { margin-top: 7vw; }
+        .wis_container .wis_video_wrap .wis_video_list_wrap { margin-top: 7vw; }
+        /* news */
+        .wis_container .wis_signal_news_wrap .wis_news_list { margin-top: calc(7vw - 16px); }
+      /* 간격 반응형// */
+
+      /* footer 상단 */
+      .wis_ft .wis_ft_info { padding: 5vw 0; }
+      .wis_ft .wis_ft_info .wis_ft_logo { margin: 4vw 0 3vw; }
+      /* footer 하단 */
+      .wis_ft .wis_ft_copy { padding: 5vw 0; }
+      .wis_ft .wis_ft_copy p { font-size: 12px; }
+
+
+      /* footer 끝 */ 
+    }
+    /* 500px 이하 전부 적용// */
+
+    /* 950px 이하 전부 적용 */
+    @media screen and (max-width: 950px) { 
+      /* news 반응형 1줄로 돌아오기 */
+      .wis_container .wis_signal_news_wrap .wis_news_list { display: -webkit-box; display: -ms-flexbox; display: flex; -ms-flex-wrap: wrap; flex-wrap: wrap; }
+      .wis_container .wis_signal_news_wrap .wis_news_list > li { width: 100%; border-top: 0; }
+      .wis_container .wis_signal_news_wrap .wis_news_list > li > a { -webkit-box-align: center; -ms-flex-align: center; align-items: center; }
+      .wis_container .wis_signal_news_wrap .wis_signal_list > li { /*width: 40%;*/ height: auto; } 
+    }
+    /* 950px 이하 전부 적용// */
+
+    /* 501px ~ 1260px 적용 */
+    @media screen and (min-width: 501px) and (max-width: 1260px) { 
+      /* passion & insight 슬라이드 css 반응형 */
+      .wis_container .wis_passion_wrap .wis_psn_slide_wrap { width: 348px; height: 520px; }
+      .wis_container .wis_passion_wrap .wis_psn_slide .swiper-slide { -webkit-transform: translateY(0px); transform: translateY(0px); -webkit-transition: 0; transition: 0; height: 520px; }
+      .wis_container .wis_passion_wrap .wis_psn_slide_wrap .swiper-button-next, .wis_container .wis_passion_wrap .wis_psn_slide_wrap .swiper-button-prev { top: 200px; }
+      .wis_container .wis_insight_event_wrap .wis_ins_slide_wrap { width: 348px; height: 520px; }
+      /* passion & insight 슬라이드 css 반응형// */ 
+
+      /* 메인 비쥬얼 반응형 */
+      .wis_container .wis_visual_wrap .wis_visual_img { width: 500px; height: 501px; }
+
+      /* Trending Tags 반응형 */
+      .wis_container .wis_insight_event_wrap .wis_tag_wrap .wis_tag_list { max-width: 60%;}
+      
+      /* 간격 반응형 */
+        /* PASSION */
+        .wis_container .wis_psn_slide_wrap, .wis_container .wis_ins_slide_wrap { margin-top: 4vw; }
+        /* event */
+        .wis_container .wis_insight_event_wrap .wis_evt_slide { margin-top: 4vw; }
+        /* Trending Tags */
+        .wis_container .wis_insight_event_wrap .wis_tag_wrap .wis_tag_list { margin-top: 4vw; }
+        /* SIGNAL */
+        .wis_container .wis_signal_news_wrap .wis_signal_list { margin-top: calc(4vw - 1%); }
+        /* video */
+        .wis_container .wis_video_wrap .wis_video .wis_video_box { margin-top: 4vw; }
+        .wis_container .wis_video_wrap .wis_video_list_wrap { margin-top: 4vw; }
+        /* news */
+        .wis_container .wis_signal_news_wrap .wis_news_list { margin-top: calc(4vw - 16px); }
+      /* 간격 반응형// */
+      
+      /* footer 상단 */
+      .wis_ft .wis_ft_info { padding: 3vw 0; }
+      .wis_ft .wis_ft_info .wis_ft_logo { margin: 2vw 0 1.5vw; }
+      /* footer 하단 */
+      .wis_ft .wis_ft_copy { padding: 3vw 0; }
+      .wis_ft .wis_ft_copy p { font-size: 14px; }
+      /* footer 끝 */ 
+    }
+    /* 501px ~ 1260px 적용// */
+
+    /* 951px ~ 1260px 적용 */
+    @media screen and (min-width: 951px) and (max-width: 1260px) { 
+      /* news 반응형 2줄 */
+      .wis_container .wis_signal_news_wrap .wis_news_list { display: -webkit-box; display: -ms-flexbox; display: flex; -ms-flex-wrap: wrap; flex-wrap: wrap; }
+      .wis_container .wis_signal_news_wrap .wis_news_list > li { width: 50%; border-top: 1px solid #fff; }
+      .wis_container .wis_signal_news_wrap .wis_news_list > li > a { -webkit-box-align: center; -ms-flex-align: center; align-items: center; } 
+    }
+    /* 951px ~ 1260px 적용// */
+
+    /* 1260px 이하 전부 적용 */
+    @media screen and (max-width: 1260px) { 
+      /* 피시 GNB 숨기기 */
+      .wis_h_gnb_wrap { display: none; pointer-events: none; }
+      /* GNB hover 영역 줄이기 */
+      .wis_h_top { height: 60px; padding: 0; pointer-events: none;}
+      .wis_wrap section.wis_container { padding-top: 60px; }
+      /* 로고 줄이기 */
+      .wis_h_logo { position: absolute; display: inline-block; top: 0; left: 0; padding: 10px 0 0 20px; width: 135px; height: 60px; z-index: 2; }
+      .wis_h_logo > a { display: block; width: 115px; height: 38px; }
+      /* 봄호 vol.67 줄이기 */
+      .wis_h_side { top: 25px; font-size: 16px; }
+      /* 모바일 GNB 노출 */
+      .wis_wrap .wis_h .mo_wis_gnb_btn { display: inline-block; }
+      .wis_wrap .wis_h .mo_wis_h_gnb_wrap.on { display: inline-block; }
+      /* 메인 비쥬얼 반응형 */
+      .wis_container .wis_visual_wrap .wis_inner_wrap { -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; padding-left: 0; -webkit-box-align: center; -ms-flex-align: center; align-items: center; }
+      .wis_container .wis_visual_wrap .wis_visual_img1 { width: 51.5%; height: 100%; }
+      .wis_container .wis_visual_wrap .wis_visual_img2 { width: 48.5%; height: 100%; -webkit-transform: translateX(0%); transform: translateX(0%); -webkit-animation: none; animation: none; }
+      .wis_container .wis_visual_wrap .wis_visual_text { opacity: 1; -webkit-animation: none; animation: none; margin: 60px 0 50px; }
+      /* 반응형 용 wrap 조절 */
+      .wis_container .wis_insight_event_wrap .wis_inner_wrap, .wis_container .wis_signal_news_wrap .wis_inner_wrap, .wis_container .wis_video_wrap .wis_inner_wrap { -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; -webkit-box-align: center; -ms-flex-align: center; align-items: center; }
+      /* passion & insight 슬라이드 버튼 */
+      .wis_container .wis_psn_slide_wrap .swiper-button-next, .wis_container .wis_ins_slide_wrap .swiper-button-next { right: -12vw !important; }
+      .wis_container .wis_psn_slide_wrap .swiper-button-prev, .wis_container .wis_ins_slide_wrap .swiper-button-prev { left: -12vw !important; }
+      /* PASSION 반응형 */
+      .wis_container .wis_passion_wrap .wis_inner_wrap { padding: 60px 5vw; }
+      /* INSIGHT 반응형 */
+      .wis_container .wis_insight_event_wrap .wis_inner_wrap { padding: 60px 0 0;}
+      .wis_container .wis_insight_event_wrap .wis_insight { width: 100%; padding: 0 5vw 60px; }
+      /* event 반응형 */
+      .wis_container .wis_insight_event_wrap .wis_event { background-color: #fff; border-bottom: 1px solid #ccc; padding: 60px 0 0; width: 100%; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; -webkit-box-align: center; -ms-flex-align: center; align-items: center; }
+      /* Trending Tags 반응형 */
+      .wis_container .wis_insight_event_wrap .wis_tag_wrap .wis_tag_list {-webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; }
+      /* SIGNAL 반응형 */
+      .wis_container .wis_signal_news_wrap .wis_signal { padding: 60px 0; width: 100%; }
+      .wis_container .wis_signal_news_wrap .wis_signal_list { width: 90%; height: auto; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; -ms-flex-line-pack: center; align-content: center; }
+      .wis_container .wis_signal_news_wrap .wis_signal_list > li { margin: 1%; }
+	  .wis_container .wis_signal_news_wrap .wis_signal_list > li > a { width: 100%; height: 200PX; }
+	  .wis_container .wis_signal_img .item-text .title {left:0;}
+      /* video 반응형 */
+      .wis_container .wis_video_wrap .wis_inner_wrap { padding: 60px 0; }
+      .wis_container .wis_video_wrap .wis_video { width: 90%; padding: 0; }
+      .wis_container .wis_video_wrap .wis_video .wis_video_box {width: 90vw; height: 50.469vw; }
+      .wis_container .wis_video_wrap .wis_video_list_wrap { width: 90%; }
+      .wis_container .wis_video_wrap .wis_video_tab > button { width: 50%; }
+      /* news 반응형 */
+      .wis_container .wis_signal_news_wrap .wis_news_wrap { padding: 60px 5vw; width: 100%; }
+
+      /* footer 시작 */
+      .wis_ft .wis_inner_wrap { max-width: inherit; padding: 0 5vw; }
+      /* 지난 호 보기 */
+      .wis_ft .ft_select { position: relative; right: auto; top: auto; margin-bottom: 0; }
+      /* footer 상단 */
+      .wis_ft .wis_ft_info .wis_ft_logo {font-size: 28px;}
+      .wis_ft .wis_ft_info .wis_ft_logo ~ p { font-size: 13px; line-height: 20px; }
+      /* footer 끝 */ 
+    }
+    /* 1260px 이하 전부 적용// */
+  /* 모바일 버젼// */
+
+  /* 노트북 버젼 */
+    /* 1261px ~ 1390px 적용 */
+    @media screen and (min-width: 1261px) and (max-width: 1390px) { 
+      /* INSIGHT 슬라이드 버튼 */
+      .wis_container .wis_ins_slide_wrap .swiper-button-next { right: -70px !important; }
+      .wis_container .wis_ins_slide_wrap .swiper-button-prev { left: -70px !important; } 
+    }
+    /* 1261px ~ 1390px 적용// */
+
+    /* 1261px ~ 1489px 적용 */
+    @media screen and (min-width: 1261px) and (max-width: 1489px) { 
+      /* 반응형 용 wrap 조절 */
+      .wis_container .wis_inner_wrap { max-width: inherit; }
+      .wis_container .wis_visual_wrap .wis_inner_wrap { -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; padding-left: 0; }
+      /* insight, signal 간격 조절 */
+      .wis_container .wis_insight_event_wrap .wis_insight { padding: 0; }
+      .wis_container .wis_signal_news_wrap .wis_signal { padding: 60px; }
+      /* 풋터 지난호보기 */
+      .wis_ft .ft_select { right: 40px; } 
+    }
+    /* 1261px ~ 1489px 적용// */
+
+    /* 1261px ~ 1919px 적용 */
+    @media screen and (min-width: 1261px) and (max-width: 1919px) { 
+      /* 피시 GNB 조절 */
+      .wis_h_gnb_wrap { padding: 0 320px; max-width: inherit; }
+      /* 메인 비쥬얼 text 조절 */
+      .wis_container .wis_visual_wrap .wis_visual_text { margin: 170px 40px 0 150px; }
+      /* passion & insight 슬라이드 버튼 */
+      .wis_container .wis_psn_slide_wrap .swiper-button-next, .wis_container .wis_ins_slide_wrap .swiper-button-next { right: -90px; }
+      .wis_container .wis_psn_slide_wrap .swiper-button-prev, .wis_container .wis_ins_slide_wrap .swiper-button-prev { left: -90px; }
+      /* 풋터 반응형 용 wrap 조절 */
+      .wis_ft .wis_inner_wrap { max-width: inherit; padding: 0 5%; } 
+    }
+    /* 1261px ~ 1919px 적용// */
+  /* 노트북 버젼// */
+/* css 최하단 미디어쿼리 모음// */

@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta property="og:type" content="website">
+        <meta property="og:url" content="wonikwebzine.com">
+        <meta property="og:title" content="원익 웹진">
+        <meta property="og:description" content="2022 봄호 Vol.67">
+        <meta property="og:image" content="https://wonikwebzine.com/Wonikin_SPRING/static/images/main_pp.jpg"/>
+        <title>Wonikin_SPRING</title>
+        <!-- favicon은 선물입니다! 맘에 드시면 써주세요. -->
+        <link rel="shortcut icon" href="./static/images/Wonikin_Spring_2022/Wonikin_favicon.png" type="image/x-icon">
+        <link rel="stylesheet" href="./static/css/swiper-bundle.css">
+        <link rel="stylesheet" href="./static/css/iconfont.css">
+        <link rel="stylesheet" href="static/css/aos.css">
+        <link rel="stylesheet" href="./static/css/style.css">
+        <link rel="stylesheet" href="./static/css/common.css">
+        <link rel="stylesheet" href="./static/css/Wonikin_Spring_2022.css">
+        <script type="text/javascript" src="./static/js/jquery-1.12.1.min.js" defer></script>
+        <!-- <script type="text/javascript" src="./static/js/jquery-migrate-1.4.1.min.js"></script> -->
+        <script type="text/javascript" src="./static/js/swiper-bundle.min.js" defer></script>
+        <script type="text/javascript" src="./static/js/front.js" defer></script>
+        <script type="text/javascript" src="./static/js/Wonikin_Spring_2022.js" defer></script>
+    </head>
+    <body>
+        <!-- body 대체할 wrap -->
+        <div class="wis_wrap">
+            <!-- fixed header -->
+            <header class="wis_h">
+                <!-- 반응형 용도 inner -->
+                <div class="wis_inner_wrap">
+                    <!-- 로고 -->
+                    <div class="wis_h_logo">
+                        <a href="index.html"><img src="./static/images/wonik_logo.gif" alt="WONIK 원익"></a>
+                    </div>
+
+                    <!-- gnb hover 영역 -->
+                    <div class="wis_h_top">
+                        <!-- gnb wrap / 모바일에선 숨겨집니다. -->
+                        <ul class="wis_h_gnb_wrap">
+                            <li>
+                                <!-- gnb -->
+                                <div class="wis_h_gnb"><a href="#">PASSION</a></div>
+                                <!-- hover시 나오는 lnb -->
+                                <ul class="wis_h_lnb">
+                                    <li><a href="passion_article_01.html">원익 예찬</a></li>
+                                    <li><a href="passion_article_02.html">전문가 칼럼</a></li>
+                                    
+                                    <li><a href="passion_article_04.html">원익 히어로</a></li>
+                                    <li><a href="passion_article_05.html">원익로그</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <!-- gnb -->
+                                <div class="wis_h_gnb"><a href="#">INSIGHT</a></div>
+                                 <!-- hover시 나오는 lnb -->
+                                <ul class="wis_h_lnb">
+                                  <li><a href="insight_article_01.html">케이스터디</a></li>
+                                    <li><a href="insight_article_02.html">언더커버리더</a></li>
+                                    <li><a href="insight_article_03.html">메타트랜드 ON</a></li>
+                                    <li><a href="insight_article_04.html">시니어클래스</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <!-- gnb -->
+                                <div class="wis_h_gnb"><a href="#">SIGNAL</a></div>
+                                 <!-- hover시 나오는 lnb -->
+                                <ul class="wis_h_lnb">
+                                   <li><a href="signal_article_01.html">케미스트리</a></li>
+                                    <li><a href="signal_article_02.html">호모나이트쿠스</a></li>
+                                    <li><a href="signal_article_03.html">원익반할지도</a></li>
+                                    <li><a href="signal_article_04.html">요즘, 원익은</a></li>
+                                    <li><a href="signal_article_05.html">원익 나눔 챌린지</a></li>
+                                    <li><a href="signal_article_06.html">롤링페이퍼</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <!-- gnb -->
+                                <div class="wis_h_gnb"><a href="#">NEWS</a></div>
+                                 <!-- hover시 나오는 lnb -->
+                                <ul class="wis_h_lnb">
+                                    <li><a href="news_main.html">원익 뉴스</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <!-- gnb -->
+                                <div class="wis_h_gnb"><a href="#">EVENT</a></div>
+                                 <!-- hover시 나오는 lnb -->
+                                <ul class="wis_h_lnb">
+                                    <li><a href="event_article_01.html">당신도 명탐정!</a></li>
+                                <li><a href="event_article_02.html">QUIZ & COMMENTARY</a></li>
+ 
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <!-- 사이드 문구 -->
+                    <p class="wis_h_side">
+                        2022 봄호 Vol.67
+                    </p>
+
+                    <!-- 모바일 gnb 버튼 -->
+                    <button class="mo_wis_gnb_btn" type="button"></button>
+
+                    <!-- 모바일에서만 보입니다. -->
+                    <div class="mo_wis_h_gnb_wrap">
+                        <div class="mo_wis_h_gnb_list">
+                            <div class="mo_wis_h_gnb_top">
+                                <!-- 로고 -->
+                                <div class="wis_h_logo">
+                                    <a href="index.html"><img src="./static/images/wonik_logo.gif" alt="WONIK 원익"></a>
+                                </div>
+                                <!-- 모바일 gnb 버튼 -->
+                                <button class="mo_wis_gnb_btn" type="button"></button>
+                            </div>
+                            <div>
+                                <div class="mo_wis_h_gnb"><a href="#">Passion</a></div>
+                                <ul class="mo_wis_h_lnb">
+                                    <li><a href="passion_article_01.html">원익 예찬</a></li>
+                                    <li><a href="passion_article_02.html">전문가 칼럼</a></li>
+                                   
+                                    <li><a href="passion_article_04.html">원익 히어로</a></li>
+                                    <li><a href="passion_article_05.html">원익로그</a></li>
+                                </ul>
+                            </div>
+                            <div>
+                                <div class="mo_wis_h_gnb"><a href="#">Insight</a></div>
+                                <ul class="mo_wis_h_lnb">
+                                    <li><a href="insight_article_01.html">케이스터디</a></li>
+                                    <li><a href="insight_article_02.html">언더커버리더</a></li>
+                                    <li><a href="insight_article_03.html">메타트랜드 ON</a></li>
+                                    <li><a href="insight_article_04.html">시니어클래스</a></li>
+                                </ul>
+                            </div>
+                            <div>
+                                <div class="mo_wis_h_gnb"><a href="#">Signal</a></div>
+                                <ul class="mo_wis_h_lnb">
+                                      <li><a href="signal_article_01.html">케미스트리</a></li>
+                                    <li><a href="signal_article_02.html">호모나이트쿠스</a></li>
+                                    <li><a href="signal_article_03.html">원익반할지도</a></li>
+                                    <li><a href="signal_article_04.html">요즘, 원익은</a></li>
+                                    <li><a href="signal_article_05.html">원익 나눔 챌린지</a></li>
+                                    <li><a href="signal_article_06.html">롤링페이퍼</a></li>
+                                </ul>
+                            </div>
+                            <div>
+                                <div class="mo_wis_h_gnb"><a href="#">News</a></div>
+                                <ul class="mo_wis_h_lnb">
+                                    <li><a href="news_main.html">원익 뉴스</a></li>
+                                </ul>
+                            </div>
+                            <div>
+                                <div class="mo_wis_h_gnb"><a href="#">Event</a></div>
+                                <ul class="mo_wis_h_lnb">
+                                    <li><a href="event_article_01.html">당신도 명탐정!</a></li>
+                                   <li><a href="event_article_02.html">QUIZ & COMMENTARY</a></li>
+ 
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </header>
+            <!-- fixed header// -->
+
+
+        <div class="sub-contents npdn">
+            <h2 class="article-heading">당신도 명탐정!</h2>
+            <div class="signal_detective">
+                <div class="signal_detective-top">
+                    <div class="text">
+                        <p class="txt-point">추리퀴즈</p>
+                        <div class="text--typography">
+                            대저택 살인사건,<br>
+                            범인은 누구일까?
+                        </div>
+                        <p class="txt-normal">깊은 밤, 한 저택에서 끔찍한 살인사건이 벌어졌다.
+                            누군가 저택의 주인 강모 씨를 무참히 살해하고 금고
+                            속 돈과 보석을 모조리 가지고 사라진 것. 외부에서
+                            침입한 흔적은 없었다. 강 씨는 자신의 서재에서
+                            책상에 엎드린 채 사망했다. 사망 원인은 복부의
+                            깊은 자상으로 인한 과다출혈이었다. 범인은 금고의
+                            비밀번호를 알아내기 위해 장시간 사건현장에 머문
+                            것으로 보였다. 사건현장을 살펴보던 형사들은 한
+                            가지 단서를 발견했다. 온갖 문서들이 어지럽게 널린
+                            방 안에서 죽어간 그의 손이 가리키고 있던 숫자였다.<br>
+                            주변 문서들과 아무 연관성이 없는 이 숫자는 분명
+                            장시간 현장에 머문 범인의 눈에 띄지 않기 위해
+                            암호처럼 만든 ‘다잉 메시지’였다. 형사들은 저택의
+                            CCTV로 사건 당일 이곳에 출입한 사람들을 확인했다.
+                            그 결과, 총 3명의 용의자가 나타났다. 과연 범인은
+                            누구일까?</p>
+                    </div>
+                    <div class="pic">
+                        <img src="static/images/article_2022spring/signal_detective_img_02.png" alt="">
+                        <p class="hint">힌트 : 책상 위에 있는 물건을 주의 깊게 보세요.</p>
+                    </div>
+                </div>
+                <div class="signal_detective-btm">
+                    <div class="box box-1">
+                        <p class="pic"><img src="static/images/article_2022spring/signal_detective_img_03.png" alt="">
+                        </p>
+                        <div class="txt">
+                            <p class="title">첫 번째 용의자</p>
+                            <p class="name">
+                                <strong>이름</strong> 김영옥 (여/42세)<br>
+                                <strong>피해자와 관계</strong> 부인
+                            </p>
+                            사망한 저택 주인 강 씨의 아내로, 평소 사이가 매우 나빠 자녀와 다른 저택에서
+                            별거하는 것으로 확인됐다. 현재 강 씨와 이혼소송이 진행 중이며, 사망당일 이혼과
+                            자녀문제로 몇 가지 상의할 것이 있어 찾아와 1시간 정도 머물렀다고 진술했다.
+                        </div>
+                        <div class="txt">
+                            <p class="title">두 번째 용의자</p>
+                            <p class="name">
+                                <strong>이름</strong> 최예진 (여/29세)<br>
+                                <strong>피해자와 관계</strong> 비서
+                            </p>
+                            강 씨와 2년간 함께 일한 비서로, 능력이 워낙 출중해 짧은 시간에 큰 신임을 얻었다. 하지만 평소
+                            강 씨와 매우 가깝게 지내는 사이라 회사 내에는 두 사람이 부적절한 관계라는 소문이 있다.
+                            최예진은 이에 대해 강력히 부인하고 있으며, 강 씨의 사망 당일에는 여러 가지 회사
+                            업무와 강 씨의 스케줄을 확인하기 위해 2시간 정도 의논을 했다고 진술했다.
+                        </div>
+                        <div class="txt">
+                            <p class="title">세 번째 용의자</p>
+                            <p class="name">
+                                <strong>이름</strong> 서진호 (남/33세)<br>
+                                <strong>피해자와 관계</strong> 경쟁업체 CEO
+                            </p>
+                            스스로 자수성가한 젊은 CEO로, 현재 저택의 주인이 운영하는 회사에 가장 위협적인 업체 대표이다.
+                            몇 달 전, 한 프로젝트에서 서진호가 운영하는 회사에 크게 패배하는 수모를 당한 강 씨는 그가
+                            자신을 모욕했다며 엄청난 악감정을 품고 있었다고 한다. 사망 당일 서진호는 강 씨의 마음을 풀어주고
+                            협력 사업 모델을 제안하기 위해 찾아왔다고 진술했다.
+                        </div>
+                    </div>
+                    <div class="line">
+                        <img src="static/images/article_2022spring/signal_detective_img_04.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="comments-box">
+            <div class="footnote">
+                <strong>범인은 누구일까요? </strong></br></br>
+                <p>응모 기간 : 2022년 6월 7일(화)까지</p>
+            </div>
+            <div class="user-comment user-write">
+                <p class="profile"></p>
+                <div class="comment">
+                    <div class="user-comment-write">
+                 <textarea name="" id="uinfo" cols="30" rows="20" placeholder="당신의 생각을 적어주세요.
+정답은 아래 정답 칸에 따로 작성해주세요. 스포일러에게는 선물이 도착하지 않을 수도 있습니다. ^^ "></textarea>
+
+                        <div class="input-user-info">
+                                    <div class="input-box">
+                                         <div class="input-email">
+                                            <input type="text" id="mail" placeholder="퀴즈 정답을 적어주세요 " required>
+                                        </div>
+                                        <div class="input-username">
+                                            <input type="text" id="usrname" placeholder="이름/소속*" required>
+                                            <input type="hidden" id="menuid" value="500"/>
+                                            <input type="hidden" id="mid" value="2022 봄호 Vol.67"/>
+                                        </div>
+                                        <div class="input-contact">
+                                            <input type="text" id="phone" placeholder="전화번호*" required>
+                                        </div>
+                                       
+                                    </div>
+
+                                    <div class="btn-area">
+                                        <button class="btn-apply" id="sbtn">댓글등록</button>
+                                        <script type="text/javascript" src="static/js/jquery-1.12.1.min.js"></script>
+                        				<script type="text/javascript" src="static/js/common.js"></script>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+            <div class="sorting">
+                <p class="count" id="count">0 댓글</p>
+
+                <div class="sort">
+                    <select name="sort" id="sort">
+                        <option value="asc">등록순</option>
+                        <option value="desc">최신순</option>
+                    </select>
+                </div>
+            </div>
+
+      
+        </div>
+    <div class="quick">
+            <a href="#" class="btn-home"><span class="blind">home</span></a>
+
+        </div>
+        <footer class="wis_ft">
+                <div class="wis_ft_info">
+                    <div class="wis_inner_wrap">
+                        <!-- 지난 호 보기 -->
+                        <div class="ft_select">
+                            <button class="ft_select_btn" type="button">2022 SPRING Vol.67</button>
+                            <div class="ft_select_list">
+                                <p class="ft_select_title">지난호 보기</p>
+                                <ul>
+                                   <li><a href="/Wonikin_SPRING/">2022 SPRING Vol.67 </a></li>
+                                   <li><a href="/Wonikin_WINTER/">2022 WINTER Vol.66 </a></li>
+                                   <li><a href="/Wonikin_AUTUMN/">2021 AUTUMN Vol.65</a></li>
+                                   <li><a href="/Wonikin_SUMMER/">2021 SUMMER Vol.64 </a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        
+                        <h1 class="wis_ft_logo">WONIK</h1>
+                        <p>본사 경기도 성남시 분당구 삼평동 612번지 <br>발행일 2022년 5월(통권 제67호) / 발행인 임창빈 / 발행처 원익 </p>
+                        <p>기획 디자인 제작 피플페이지 02-6674-0111</p>
+                    </div>
+                </div>
+                <div class="wis_ft_copy">
+                    <div class="wis_inner_wrap">
+                        <p>COPYRIGHT © WONIK. ALL RIGHTS RESERVED.</p>
+                    </div>
+                </div>
+            </footer>
+ </div>
+                  </body>
+
+</html>

@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta property="og:type" content="website">
+        <meta property="og:url" content="wonikwebzine.com">
+        <meta property="og:title" content="원익 웹진">
+        <meta property="og:description" content="2022 봄호 Vol.67">
+        <meta property="og:image" content="https://wonikwebzine.com/Wonikin_SPRING/static/images/main_pp.jpg"/>
+        <title>Wonikin_SPRING</title>
+        <!-- favicon은 선물입니다! 맘에 드시면 써주세요. -->
+        <link rel="shortcut icon" href="./static/images/Wonikin_Spring_2022/Wonikin_favicon.png" type="image/x-icon">
+        <link rel="stylesheet" href="./static/css/swiper-bundle.css">
+        <link rel="stylesheet" href="./static/css/iconfont.css">
+        <link rel="stylesheet" href="static/css/aos.css">
+        <link rel="stylesheet" href="./static/css/style.css">
+        <link rel="stylesheet" href="./static/css/common.css">
+        <link rel="stylesheet" href="./static/css/Wonikin_Spring_2022.css">
+        <script type="text/javascript" src="./static/js/jquery-1.12.1.min.js" defer></script>
+        <!-- <script type="text/javascript" src="./static/js/jquery-migrate-1.4.1.min.js"></script> -->
+        <script type="text/javascript" src="./static/js/swiper-bundle.min.js" defer></script>
+        <script type="text/javascript" src="./static/js/front.js" defer></script>
+        <script type="text/javascript" src="./static/js/Wonikin_Spring_2022.js" defer></script>
+    </head>
+    <body>
+        <!-- body 대체할 wrap -->
+        <div class="wis_wrap">
+            <!-- fixed header -->
+            <header class="wis_h">
+                <!-- 반응형 용도 inner -->
+                <div class="wis_inner_wrap">
+                    <!-- 로고 -->
+                    <div class="wis_h_logo">
+                        <a href="index.html"><img src="./static/images/wonik_logo.gif" alt="WONIK 원익"></a>
+                    </div>
+
+                    <!-- gnb hover 영역 -->
+                    <div class="wis_h_top">
+                        <!-- gnb wrap / 모바일에선 숨겨집니다. -->
+                        <ul class="wis_h_gnb_wrap">
+                            <li>
+                                <!-- gnb -->
+                                <div class="wis_h_gnb"><a href="#">PASSION</a></div>
+                                <!-- hover시 나오는 lnb -->
+                                <ul class="wis_h_lnb">
+                                    <li><a href="passion_article_01.html">원익 예찬</a></li>
+                                    <li><a href="passion_article_02.html">전문가 칼럼</a></li>
+                                   
+                                    <li><a href="passion_article_04.html">원익 히어로</a></li>
+                                    <li><a href="passion_article_05.html">원익로그</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <!-- gnb -->
+                                <div class="wis_h_gnb"><a href="#">INSIGHT</a></div>
+                                 <!-- hover시 나오는 lnb -->
+                                <ul class="wis_h_lnb">
+                                  <li><a href="insight_article_01.html">케이스터디</a></li>
+                                    <li><a href="insight_article_02.html">언더커버리더</a></li>
+                                    <li><a href="insight_article_03.html">메타트랜드 ON</a></li>
+                                    <li><a href="insight_article_04.html">시니어클래스</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <!-- gnb -->
+                                <div class="wis_h_gnb"><a href="#">SIGNAL</a></div>
+                                 <!-- hover시 나오는 lnb -->
+                                <ul class="wis_h_lnb">
+                                   <li><a href="signal_article_01.html">케미스트리</a></li>
+                                    <li><a href="signal_article_02.html">호모나이트쿠스</a></li>
+                                    <li><a href="signal_article_03.html">원익반할지도</a></li>
+                                    <li><a href="signal_article_04.html">요즘, 원익은</a></li>
+                                    <li><a href="signal_article_05.html">원익 나눔 챌린지</a></li>
+                                    <li><a href="signal_article_06.html">롤링페이퍼</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <!-- gnb -->
+                                <div class="wis_h_gnb"><a href="#">NEWS</a></div>
+                                 <!-- hover시 나오는 lnb -->
+                                <ul class="wis_h_lnb">
+                                    <li><a href="news_main.html">원익 뉴스</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <!-- gnb -->
+                                <div class="wis_h_gnb"><a href="#">EVENT</a></div>
+                                 <!-- hover시 나오는 lnb -->
+                                <ul class="wis_h_lnb">
+                                    <li><a href="event_article_01.html">당신도 명탐정!</a></li>
+                                   <li><a href="event_article_02.html">QUIZ & COMMENTARY</a></li>
+ 
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <!-- 사이드 문구 -->
+                    <p class="wis_h_side">
+                        2022 봄호 Vol.67
+                    </p>
+
+                    <!-- 모바일 gnb 버튼 -->
+                    <button class="mo_wis_gnb_btn" type="button"></button>
+
+                    <!-- 모바일에서만 보입니다. -->
+                    <div class="mo_wis_h_gnb_wrap">
+                        <div class="mo_wis_h_gnb_list">
+                            <div class="mo_wis_h_gnb_top">
+                                <!-- 로고 -->
+                                <div class="wis_h_logo">
+                                    <a href="index.html"><img src="./static/images/wonik_logo.gif" alt="WONIK 원익"></a>
+                                </div>
+                                <!-- 모바일 gnb 버튼 -->
+                                <button class="mo_wis_gnb_btn" type="button"></button>
+                            </div>
+                            <div>
+                                <div class="mo_wis_h_gnb"><a href="#">Passion</a></div>
+                                <ul class="mo_wis_h_lnb">
+                                    <li><a href="passion_article_01.html">원익 예찬</a></li>
+                                    <li><a href="passion_article_02.html">전문가 칼럼</a></li>
+                                   
+                                    <li><a href="passion_article_04.html">원익 히어로</a></li>
+                                    <li><a href="passion_article_05.html">원익로그</a></li>
+                                </ul>
+                            </div>
+                            <div>
+                                <div class="mo_wis_h_gnb"><a href="#">Insight</a></div>
+                                <ul class="mo_wis_h_lnb">
+                                    <li><a href="insight_article_01.html">케이스터디</a></li>
+                                    <li><a href="insight_article_02.html">언더커버리더</a></li>
+                                    <li><a href="insight_article_03.html">메타트랜드 ON</a></li>
+                                    <li><a href="insight_article_04.html">시니어클래스</a></li>
+                                </ul>
+                            </div>
+                            <div>
+                                <div class="mo_wis_h_gnb"><a href="#">Signal</a></div>
+                                <ul class="mo_wis_h_lnb">
+                                      <li><a href="signal_article_01.html">케미스트리</a></li>
+                                    <li><a href="signal_article_02.html">호모나이트쿠스</a></li>
+                                    <li><a href="signal_article_03.html">원익반할지도</a></li>
+                                    <li><a href="signal_article_04.html">요즘, 원익은</a></li>
+                                    <li><a href="signal_article_05.html">원익 나눔 챌린지</a></li>
+                                    <li><a href="signal_article_06.html">롤링페이퍼</a></li>
+                                </ul>
+                            </div>
+                            <div>
+                                <div class="mo_wis_h_gnb"><a href="#">News</a></div>
+                                <ul class="mo_wis_h_lnb">
+                                    <li><a href="news_main.html">원익 뉴스</a></li>
+                                </ul>
+                            </div>
+                            <div>
+                                <div class="mo_wis_h_gnb"><a href="#">Event</a></div>
+                                <ul class="mo_wis_h_lnb">
+                                    <li><a href="event_article_01.html">당신도 명탐정!</a></li>
+                                    <li><a href="event_article_02.html">QUIZ & COMMENTARY</a></li>
+ 
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </header>
+            <!-- fixed header// -->
+        <div class="sub-contents npdn">
+            <h2 class="article-heading">언더커버리더</h2>
+            <div class="insight_under">
+                <div class="insight_under-top">
+                    <p class="pic"><img src="static/images/article_2022spring/insight_under_img_01.jpg" alt=""></p>
+                    <div class="text">
+                        <div class="text--typography">
+                            때론 온화하게<br>
+                            때론 강하게
+                        </div>
+                        <div class="txt-point">
+                            <p class="name">권석</p>
+                            원익아이피에스 SKH고객지원팀
+                        </div>
+                    </div>
+                    <div class="txt-normal">리더는 큰 그림을 그릴 줄 알아야 한다. 작은 문제에 일희일비
+                        하지 않고 목표를 향해 성향이 다른 팀원들을 잘 품어야 한다.
+                        그런 리더가 바로 SKH고객지원팀 권석 님이다. 팀원들이
+                        이야기하는 그가 언더커버리더인 이유를 들어보자.
+                    </div>
+                </div>
+                <div class="insight_under-btm">
+                    <div class="box box-1">
+                        <div class="txt">
+                            <p class="line-1">팀원들이 생각하는 권석,</p>
+                            <p class="line-2">그가 언더커버리더인</p>
+                            <p class="line-3">6가지 이유</p>
+                        </div>
+                    </div>
+                    <div class="box box-2">
+                        <div class="txt" data-aos="fade-up" data-aos-delay="100">
+                            <p class="title">1. 개척자, 원익아이피에스 콜롬버스 나타나다</p>
+                            미지의 세계의 대륙을 발견한 콜럼버스처럼 개척자다운 면모를 가지고 있다.
+                        </div>
+                        <div class="txt" data-aos="fade-up" data-aos-delay="120">
+                            <p class="title">2. 모든 팀원의 역량을 강화하다</p>
+                            업무를 모든 팀원에게 골고루 분배해 팀원의 성장을 도모한다.
+                        </div>
+                        <div class="txt" data-aos="fade-up" data-aos-delay="140">
+                            <p class="title">3. 소통의 달인, 든든한 버팀목이다
+                            </p>
+                            팀원들과의 소통을 매우 중요하게 생각하며, 한 명 한 명에게 관심을 쏟는 아버지 같은 존재다.
+                        </div>
+                        <div class="txt" data-aos="fade-up" data-aos-delay="160">
+                            <p class="title">4. 알파고, 데이터 기반으로 일하다</p>
+                            데이터를 기반으로 객관적이고 명확한 근거를 제시하고 검증하는 방식으로 업무를 진행한다.
+                        </div>
+                        <div class="txt" data-aos="fade-up" data-aos-delay="180">
+                            <p class="title">5. 명확한 지시를 통해 이끌다</p>
+                            두루뭉실한 지시보다 명확한 업무의 지시와 방향성을 제시한다.
+                        </div>
+                        <div class="txt" data-aos="fade-up" data-aos-delay="200">
+                            <p class="title">6. 사람 대 사람으로 대하다</p>
+                            팀원들과의 대화 시 항상 말을 놓지 않으며, 팀원들의 의견을 경청한 후 자신의 의견을 말한다.
+                        </div>
+                    </div>
+                </div>
+                <div class="insight_under-btm2">
+                    <div class="box-area">
+                        <div class="text">
+                            <div class="txt-point">
+                                SKH고객지원팀
+                            </div>
+                            <div class="text--typography">
+                                팀원 VS 권석의<br>
+                                동상이몽
+                            </div>
+                        </div>
+                        <div class="txt-normal">팀원들이 생각하는 권석 리더의 모습과 권석 리더가 이야기하는 조직 운영에 대해
+                            비교해 팀원들은 권석 리더의 생각을, 그리고 권석 리더는 팀원들의 생각을 서로
+                            엿볼 수 있는 기회의 장을 마련해보고자 한다.
+                        </div>
+                        <div class="box box-1">
+                            <div class="txt" data-aos="flip-left" data-aos-delay="100" data-aos-duration="1000">
+                                <div class="line-1">
+                                    <p class="title">팀원 Say</p>
+                                    현재의 SKH고객지원팀의 근간을 만들고
+                                    조직 체계를 완성하셨습니다. SK하이닉스 진입 초기,
+                                    아무것도 갖추어지지 않은 환경 속에서 신규 고객에 대한
+                                    고객지원 체계를 만들고 조직원들의 역량을 향상
+                                    시켜 어려운 대외환경 속에서도 고객 만족을 실현하는
+                                    SKH고객지원팀을 만드신
+                                    일등공신이었습니다.
+                                </div>
+                                <div class="line-2">
+                                    <div class="line-area">
+                                        <p class="title">01.</p>
+                                        개척자, <br>
+                                        원익아이피에스<br>
+                                        콜롬버스 나타나다
+                                    </div>
+                                </div>
+                                <div class="line-3">
+                                    <p class="title">권석 Say</p>
+                                    리더의 역할은 환경과 방법을 만들어주는 일이라고 생각합니다.
+                                    SK하이닉스와 처음 하는 일이기 때문에 여러 수치를 데이터화하는 일이
+                                    우선이었습니다. 처음에는 안 하던 일을 하게 되어 팀원이 다소
+                                    힘들어했지만, 이 작업이 왜 필요한지 잘 설명하여 지금은 성과를 내기 위한
+                                    분석 활동에 있어 없어서는 안 되는 기초 단위
+                                    활동으로 자리 잡았습니다.
+                                </div>
+                            </div>
+                            <div class="txt" data-aos="flip-left" data-aos-delay="200" data-aos-duration="1000"> 
+                                <div class="line-1">
+                                    <p class="title"></p>
+                                    제가 생각하는 리더다운 리더십은 ‘코칭
+                                    리더십’이라고 생각합니다. 사원의 눈높이에 맞춰 멘토링과 같은
+                                    업무적 가이드 라인을 제공해주신 덕분에 팀원들의
+                                    역량이 전체적으로 강화되고 있다고 생각합니다. 모든 팀원에게
+                                    기회를 주고 함께 맨파워를 키워갈 수 있도록 구성원과
+                                    회사의 동반성장을 목표를 위해 노력하고 계십니다.
+                                </div>
+                                <div class="line-2">
+                                    <div class="line-area">
+                                        <p class="title">02.</p>
+                                        모든 팀원의<br>
+                                        역량을 강화하다
+                                    </div>
+                                </div>
+                                <div class="line-3">
+                                    <p class="title"></p>
+                                    일의 분배 기본 원칙은 구성원 간 업무의
+                                    균형을 맞추기입니다. 특정 구성원에게만 일을 집중시키면,
+                                    그 구성원이 부재 시 업무의 공백이 클 수밖에 없습니다. CS업무 역량리스트를
+                                    통해 개인별 업무 역량 균형을 맞추는 방향으로 각 그룹장 도 아래 업무를 분배하고 있습니다.
+                                </div>
+                            </div>
+                            <div class="txt" data-aos="flip-left" data-aos-delay="300" data-aos-duration="1000">
+                                <div class="line-1">
+                                    <p class="title"></p>
+                                    공사 구분이 확실하셔서 팀원들과 열린
+                                    마음, 믿음의 소통으로 신뢰가 형성되어
+                                    있다고 생각합니다. 사적으론 편안하게,
+                                    업무적으로도 상하 수직 없이 수평적으로 소통하고 계세요. 어려운 문제를 대할
+                                    때는 함께 극복하기 위해 노력하며, 팀원들에게 ‘우리는 하나’라는 점을
+                                    강조하시는 편입니다 신대륙을 향해 거침없는 파도에도 팀원을 이끌고 항해하는 진정한
+                                    캡틴입니다.
+                                </div>
+                                <div class="line-2">
+                                    <div class="line-area">
+                                        <p class="title">03.</p>
+                                        소통의 달인,<br>
+                                        든든한 버팀목이다
+                                    </div>
+                                </div>
+                                <div class="line-3">
+                                    <p class="title"></p>
+                                    우리의 핵심 가치인 자율, 소통, 행복이
+                                    조직의 DNA로 스며들기 위해서는 노력하는 편입니다. 하지만 여러 세대가 있는
+                                    만큼 세대 간, 그리고 성격의 차이로 갈등이 발생할 때도 있는데, 이 부분을 가장
+                                    중점적으로 관리하고 있습니다. 또 팀 내에 갈등이 생기면 여러 차례의 개별
+                                    면담을 진행하면서 서로 간에 무엇이 좋은 방향인지를 충분히 이야기를 나누며
+                                    자연스럽게 소통할 수 있는 분위기를 조성하고 있습니다.
+                                </div>
+                            </div>
+                            <div class="txt" data-aos="flip-left" data-aos-delay="100"  data-aos-duration="1000"> 
+                                <div class="line-1">
+                                    <p class="title"></p>
+                                    반도체 CS 업무는 사실적인 명확한 근거를 기반으로 업무를 진행해야 하는데,
+                                    데이터 기반을 통한 신뢰성 있는 업무를 추진하고 계십니다. 특히 이슈가 생길 때면
+                                    근본적인 원인을 규명하고, 재발 방지를 위한 대책을 방안을 마련한 후 팩트와
+                                    데이터 등을 바탕으로 일의 프로세스를 정립하셨습니다.
+                                </div>
+                                <div class="line-2">
+                                    <div class="line-area">
+                                        <p class="title">04.</p>
+                                        알파고,<br>
+                                        데이터 기반으로<br>
+                                        일하다
+                                    </div>
+                                </div>
+                                <div class="line-3">
+                                    <p class="title"></p>
+                                    목표를 설정하기 위해서는 측정할 수 있는 지표가 필요한데 그 지표는 장비가
+                                    얼마나 고장으로 멈추어 있느냐를 나타내는 정지손실률로 정할 수 있습니다. 제가
+                                    업무를 맡은 초기에는 이러한 지수는 고객에게 물어보면 되었지만, 지숫값만
+                                    알 수 있을 뿐 현상에 따른 고장이 발생하게 되는 원인 등의 데이터가 전무해 분석
+                                    활동이 어려웠습니다. 원인에 대해 현상별, 원인별로 조치한 내용과 함께 정지한
+                                    건수 및 시간을 매일 매일 기록하는 체계를 만들었습니다.
+                                </div>
+                            </div>
+                            <div class="txt" data-aos="flip-left" data-aos-delay="200"  data-aos-duration="1000"> 
+                                <div class="line-1">
+                                    <p class="title"></p>
+                                    상사가 일을 지시할 때 두루뭉술할 경우
+                                    업무의 어려움에 부딪힐 수밖에 없는데,
+                                    팀 전체 흐름을 잘 파악하시고 우리가 고민하고 진행할 방향에 대해 상세하고
+                                    명확하게 지시 및 조언해 주는 스타일입니다.
+                                    이러한 구체적인 방안 덕분에 일의 어려움을 쉽게 해결할 수 있는 것 같습니다.
+                                </div>
+                                <div class="line-2">
+                                    <div class="line-area">
+                                        <p class="title">05.</p>
+                                        명확한 지시를<br>
+                                        통해 이끌다
+                                    </div>
+                                </div>
+                                <div class="line-3">
+                                    <p class="title"></p>
+                                    팀의 성장 목표를 정했을 때 팀원들이 함께 목표를 이루기 위해서는 방법을
+                                    제시해야 하는 것이 리더의 역할이라고 생각합니다. 이를 위해서 팀원들의 이야기를
+                                    잘 경청해야 할 필요가 있습니다. 지금은 코로나19로 못하고 있지만 예전에 팀
+                                    워크숍 때 분임조 토론 주제로 “절차서는 왜 지켜야 할까?”, “난 이런 어려운
+                                    장비 문제를 이렇게 해결했다” 등 현안 문제에 대해 이야기를 나눈 적이 있습니다.
+                                    이처럼 팀원들의 생각을 경청하고 소통하면서 어떻게 일을 지시해야 할지
+                                    고민하고 있습니다.
+                                </div>
+                            </div>
+                            <div class="txt" data-aos="flip-left" data-aos-delay="300"  data-aos-duration="1000">
+                                <div class="line-1">
+                                    <p class="title"></p>
+                                    상급자와 대화를 나눌 때 부하 직원 입장에서는 조심스러운 부분이 있습니다.
+                                    그런데 직급과 상관없이 자율적인 분위기를 만들어주시고 개개인의 눈높이에 맞춘
+                                    열린 마음의 소통을 하시는 덕분에 편하게 업무에 임하고 있습니다. 특히 팀원들의
+                                    이야기에 귀 기울이며 구성원들의 인격을 존중하기 위해 노력하고 계시는 부분이 감동입니다.
+                                </div>
+                                <div class="line-2">
+                                    <div class="line-area">
+                                        <p class="title">06.</p>
+                                        사람 대 사람으로<br>
+                                        대하다
+                                    </div>
+                                </div> 
+                                <div class="line-3">
+                                    <p class="title"></p>
+                                    제가 리더로서 지키고자 하는 철학이 일의 결과는 결국 사람이 만드는 것이기에
+                                    구성원 개개인을 존중하는 것입니다. 사람마다 같은 일을 겪더라도 느끼는
+                                    온도차가 다르기에 어떠한 문제가 발생했을 때 구성원의 성향에 따라 받아들이는
+                                    부분이 다를 수밖에 없습니다. 이러한 차이를 인정하고 코칭하는 것이 일의 효율성을 높이는 일이라고 생각합니다.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="quick">
+            <a href="#" class="btn-home"><span class="blind">home</span></a>
+
+        </div>
+        <footer class="wis_ft">
+                <div class="wis_ft_info">
+                    <div class="wis_inner_wrap">
+                        <!-- 지난 호 보기 -->
+                        <div class="ft_select">
+                            <button class="ft_select_btn" type="button">2022 SPRING Vol.67</button>
+                            <div class="ft_select_list">
+                                <p class="ft_select_title">지난호 보기</p>
+                                <ul>
+                                   <li><a href="/Wonikin_SPRING/">2022 SPRING Vol.67 </a></li>
+                                   <li><a href="/Wonikin_WINTER/">2022 WINTER Vol.66 </a></li>
+                                   <li><a href="/Wonikin_AUTUMN/">2021 AUTUMN Vol.65</a></li>
+                                   <li><a href="/Wonikin_SUMMER/">2021 SUMMER Vol.64 </a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        
+                        <h1 class="wis_ft_logo">WONIK</h1>
+                        <p>본사 경기도 성남시 분당구 삼평동 612번지 <br>발행일 2022년 5월(통권 제67호) / 발행인 임창빈 / 발행처 원익 </p>
+                        <p>기획 디자인 제작 피플페이지 02-6674-0111</p>
+                    </div>
+                </div>
+                <div class="wis_ft_copy">
+                    <div class="wis_inner_wrap">
+                        <p>COPYRIGHT © WONIK. ALL RIGHTS RESERVED.</p>
+                    </div>
+                </div>
+            </footer>
+ </div>
+        <script src="static/js/jquery-1.12.1.min.js"></script>
+        <script src="static/js/jquery-migrate-1.4.1.min.js"></script>
+        <!--swiper slide-->
+        <script src="static/js/swiper-bundle.min.js"></script>
+        <script src="static/js/aos.js"></script>
+        <script src="static/js/front.js"></script>
+
+        <script type="text/javascript" src="//wcs.naver.net/wcslog.js"></script>
+        <script type="text/javascript">
+            if (!wcs_add) var wcs_add = {};
+            wcs_add["wa"] = "12518c35fb268c0";
+            if (window.wcs) {
+                wcs_do();
+            }
+        </script>
+    </body>
+
+</html>

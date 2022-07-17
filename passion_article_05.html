@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta property="og:type" content="website">
+        <meta property="og:url" content="wonikwebzine.com">
+        <meta property="og:title" content="원익 웹진">
+        <meta property="og:description" content="2022 봄호 Vol.67">
+        <meta property="og:image" content="https://wonikwebzine.com/Wonikin_SPRING/static/images/main_pp.jpg"/>
+        <title>Wonikin_SPRING</title>
+        <!-- favicon은 선물입니다! 맘에 드시면 써주세요. -->
+        <link rel="shortcut icon" href="./static/images/Wonikin_Spring_2022/Wonikin_favicon.png" type="image/x-icon">
+        <link rel="stylesheet" href="./static/css/swiper-bundle.css">
+        <link rel="stylesheet" href="./static/css/iconfont.css">
+        <link rel="stylesheet" href="static/css/aos.css">
+        <link rel="stylesheet" href="./static/css/style.css">
+        <link rel="stylesheet" href="./static/css/common.css">
+        <link rel="stylesheet" href="./static/css/Wonikin_Spring_2022.css">
+        <script type="text/javascript" src="./static/js/jquery-1.12.1.min.js" defer></script>
+        <!-- <script type="text/javascript" src="./static/js/jquery-migrate-1.4.1.min.js"></script> -->
+        <script type="text/javascript" src="./static/js/swiper-bundle.min.js" defer></script>
+        <script type="text/javascript" src="./static/js/front.js" defer></script>
+        <script type="text/javascript" src="./static/js/Wonikin_Spring_2022.js" defer></script>
+    </head>
+    <body>
+        <!-- body 대체할 wrap -->
+        <div class="wis_wrap">
+            <!-- fixed header -->
+            <header class="wis_h">
+                <!-- 반응형 용도 inner -->
+                <div class="wis_inner_wrap">
+                    <!-- 로고 -->
+                    <div class="wis_h_logo">
+                        <a href="index.html"><img src="./static/images/wonik_logo.gif" alt="WONIK 원익"></a>
+                    </div>
+
+                    <!-- gnb hover 영역 -->
+                    <div class="wis_h_top">
+                        <!-- gnb wrap / 모바일에선 숨겨집니다. -->
+                        <ul class="wis_h_gnb_wrap">
+                            <li>
+                                <!-- gnb -->
+                                <div class="wis_h_gnb"><a href="#">PASSION</a></div>
+                                <!-- hover시 나오는 lnb -->
+                                <ul class="wis_h_lnb">
+                                    <li><a href="passion_article_01.html">원익 예찬</a></li>
+                                    <li><a href="passion_article_02.html">전문가 칼럼</a></li>
+                                 
+                                    <li><a href="passion_article_04.html">원익 히어로</a></li>
+                                    <li><a href="passion_article_05.html">원익로그</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <!-- gnb -->
+                                <div class="wis_h_gnb"><a href="#">INSIGHT</a></div>
+                                 <!-- hover시 나오는 lnb -->
+                                <ul class="wis_h_lnb">
+                                  <li><a href="insight_article_01.html">케이스터디</a></li>
+                                    <li><a href="insight_article_02.html">언더커버리더</a></li>
+                                    <li><a href="insight_article_03.html">메타트랜드 ON</a></li>
+                                    <li><a href="insight_article_04.html">시니어클래스</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <!-- gnb -->
+                                <div class="wis_h_gnb"><a href="#">SIGNAL</a></div>
+                                 <!-- hover시 나오는 lnb -->
+                                <ul class="wis_h_lnb">
+                                   <li><a href="signal_article_01.html">케미스트리</a></li>
+                                    <li><a href="signal_article_02.html">호모나이트쿠스</a></li>
+                                    <li><a href="signal_article_03.html">원익반할지도</a></li>
+                                    <li><a href="signal_article_04.html">요즘, 원익은</a></li>
+                                    <li><a href="signal_article_05.html">원익 나눔 챌린지</a></li>
+                                    <li><a href="signal_article_06.html">롤링페이퍼</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <!-- gnb -->
+                                <div class="wis_h_gnb"><a href="#">NEWS</a></div>
+                                 <!-- hover시 나오는 lnb -->
+                                <ul class="wis_h_lnb">
+                                    <li><a href="news_main.html">원익 뉴스</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <!-- gnb -->
+                                <div class="wis_h_gnb"><a href="#">EVENT</a></div>
+                                 <!-- hover시 나오는 lnb -->
+                                <ul class="wis_h_lnb">
+                                    <li><a href="event_article_01.html">당신도 명탐정!</a></li>
+                                     <li><a href="event_article_02.html">QUIZ & COMMENTARY</a></li>
+ 
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <!-- 사이드 문구 -->
+                    <p class="wis_h_side">
+                        2022 봄호 Vol.67
+                    </p>
+
+                    <!-- 모바일 gnb 버튼 -->
+                    <button class="mo_wis_gnb_btn" type="button"></button>
+
+                    <!-- 모바일에서만 보입니다. -->
+                    <div class="mo_wis_h_gnb_wrap">
+                        <div class="mo_wis_h_gnb_list">
+                            <div class="mo_wis_h_gnb_top">
+                                <!-- 로고 -->
+                                <div class="wis_h_logo">
+                                    <a href="index.html"><img src="./static/images/wonik_logo.gif" alt="WONIK 원익"></a>
+                                </div>
+                                <!-- 모바일 gnb 버튼 -->
+                                <button class="mo_wis_gnb_btn" type="button"></button>
+                            </div>
+                            <div>
+                                <div class="mo_wis_h_gnb"><a href="#">Passion</a></div>
+                                <ul class="mo_wis_h_lnb">
+                                    <li><a href="passion_article_01.html">원익 예찬</a></li>
+                                    <li><a href="passion_article_02.html">전문가 칼럼</a></li>
+                                
+                                    <li><a href="passion_article_04.html">원익 히어로</a></li>
+                                    <li><a href="passion_article_05.html">원익로그</a></li>
+                                </ul>
+                            </div>
+                            <div>
+                                <div class="mo_wis_h_gnb"><a href="#">Insight</a></div>
+                                <ul class="mo_wis_h_lnb">
+                                    <li><a href="insight_article_01.html">케이스터디</a></li>
+                                    <li><a href="insight_article_02.html">언더커버리더</a></li>
+                                    <li><a href="insight_article_03.html">메타트랜드 ON</a></li>
+                                    <li><a href="insight_article_04.html">시니어클래스</a></li>
+                                </ul>
+                            </div>
+                            <div>
+                                <div class="mo_wis_h_gnb"><a href="#">Signal</a></div>
+                                <ul class="mo_wis_h_lnb">
+                                      <li><a href="signal_article_01.html">케미스트리</a></li>
+                                    <li><a href="signal_article_02.html">호모나이트쿠스</a></li>
+                                    <li><a href="signal_article_03.html">원익반할지도</a></li>
+                                    <li><a href="signal_article_04.html">요즘, 원익은</a></li>
+                                    <li><a href="signal_article_05.html">원익 나눔 챌린지</a></li>
+                                    <li><a href="signal_article_06.html">롤링페이퍼</a></li>
+                                </ul>
+                            </div>
+                            <div>
+                                <div class="mo_wis_h_gnb"><a href="#">News</a></div>
+                                <ul class="mo_wis_h_lnb">
+                                    <li><a href="news_main.html">원익 뉴스</a></li>
+                                </ul>
+                            </div>
+                            <div>
+                                <div class="mo_wis_h_gnb"><a href="#">Event</a></div>
+                                <ul class="mo_wis_h_lnb">
+                                    <li><a href="event_article_01.html">당신도 명탐정!</a></li>
+                                    <li><a href="event_article_02.html">QUIZ & COMMENTARY</a></li>
+ 
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </header>
+            <!-- fixed header// -->
+
+        <div class="sub-contents npdn">
+            <h2 class="article-heading">원익로그</h2>
+            <div class="passion_log">
+                <div class="passion_log-top">
+                    <div class="top-area">
+                        <p class="text--typography">소통 달인들의 하루</p>
+                        <p class="txt-point">원익아이피에스 고객지원팀 SEC 3그룹편</p>
+                        <p class="pic">
+                            <img src="static/images/article_2022spring/passion_log_img_01.jpg" alt="">
+                            <span class="name">오태규 님 SEC 3G</span>
+                        </p>
+                        <p class="txt-normal">AED 설비를 셋업하고 유지관리하는 등 현장 일선에서 업무를 하는 고객지원팀 3그룹. 
+24시간 설비가 가동하기에 회사의 출퇴근이 따로 없을 때가 많은 그들이지만 늘 원익아이피에스의 
+얼굴이라는 자긍심으로 업무에 임하고 있다. 그런 그들이 ‘SEC 3그룹의 하루’를 브이로그에 담았다. 그들의 하루를 들여다보며 그들의 브이로그를 감상하며 함께 응원해보자. </p>
+                    </div>
+                    <div class="box">
+                        <div class="txt">
+                            <p class="title">원익아이피에스의 자랑스러운 얼굴들</p>
+                           고객지원팀은 각 4개의 그룹으로 구성되어 있으며, 전체 인원은 30명으로 고객사의 대부분은 삼성전자다. 장비 1대당 셋업 기간만 해도 평균 1~2개월 정도 걸리며, 유지관리는 보증기관에 문제가 생길 경우 
+						   무조건 대응해야 한다. 사정이 이렇다 보니 삼성전자의 화성과 평택의 현장이 그들의 주요 일터로 하루 업무 중 3분의 2를 이곳에서 보낸다. 
+이 때문에 그들의 하루 일과는 빠듯하다. 오전에 출근하면 데일리 회의를 진행해 현안을 팀원들에게 공유하는 시간을 갖는다. 오전 업무를 마치면 라인 입실을 하기 위해 현장으로 간다. 현장에서 고객과의 소통을 하며 업무를 진행하면 다시 사무실로 돌아와 다음날 필요한 데일리 리포트를 정리한다. 특히 설비가 24시간 가동되기 때문에 퇴근 후에도 전화대응과 현장대응을 할 때도 있다. 그만큼 엔지니어 업무와 함께 커뮤니케이션 능력도 중요합니다. 사람과의 소통에서 부담이 될 수밖에 없지만, 그들은 원익아이피에스의 얼굴이라는 ‘자부심’으로 긍정의 마인드로 업무하고 있다. 
+                        </div>
+                        <div class="txt">
+                            <p class="title">수평적 소통으로 어려움을 극복하다</p>
+                            ‘사람을 상대하는 일’이 세상 가장 어렵다고 말한다. 그만큼 현업에서 일하는 팀원들에게는 여러 고충이 있을 수밖에 없을 터. 특히 일에 능숙하지 않은 신입사원들은 엔지니어 업무보다 더 큰 부담으로 작용하기도 한다. 이 때문에 고객지원팀은 구성원간 자유롭게 소통할 수 있는 분위기를 조성해 서로의 고충의 해결책을 모색한다. 그중 하나가 데일리 회의다. 매일 아침 데일리리포트를 통해 고객의 요구 사항과 이슈 등을 서로 공유해 업무를 공유한다. 또한 직원들의 개인적인 어려움, 문제 등을 해소하기 위해  정 기적으로 면담 시간을 두고 있다. 하지만 꼭 정기적인 면담 시간이 아니더라도 평상시에도 고민을 말하는 게 어려운 분위기는 아니라고 한다. 수시로 선후배 간, 동료들 간의 대화를 통해 일의 고민과 부담감등을 해결한다. 특히 최근 몇 년간 코로나19로 대응업무가 쉽지 않은 상황이었지만, 고객지원팀은 더욱 끈끈함 유대감을 가지고 업무에 매진하고 있다. 그럼 지금부터 고객지원팀의 재간둥이 오태규 님이 소개하는 브이로그 속으로 들어가보자. 
+                        </div>
+                        <p class="pic">
+                            <img src="static/images/article_2022spring/passion_log_img_02.jpg" alt="">
+                            <img src="static/images/article_2022spring/passion_log_img_03.jpg" alt="">
+                        </p>
+                    </div>
+                </div>
+                <div class="passion_log-btm">
+                    <div class="box box-1">
+                        <div class="swiper passion_log_slider">
+                            <div class="swiper-pagination"></div>
+
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide box ">
+                                    <p class="title">#1</p>
+                                    <p class="pic"><img src="static/images/article_2022spring/passion_log_img_04.jpg"
+                                            alt="">
+                                    </p>
+                                  고객지원팀 SEC 3그룹의 하루는 어떨까? 반도체 장비의 설치부터 유지관리 업무를 맡고 있는 고객지원팀의 이야기를 지금 공개합니다. 오태규님이 소개하는 고객지원팀의 하루 속으로 들어가볼까요?
+                                </div>
+                                <div class="swiper-slide box ">
+                                    <p class="title">#2</p>
+                                    <p class="pic"><img src="static/images/article_2022spring/passion_log_img_05.jpg"
+                                            alt="">
+                                    </p>
+                                    <span>힘찬 하루의 출발!</span>
+                                  안녕하세요! 고객지원팀 오태규입니다. 오늘 저희의 하루를 소개하려고 합니다. 저희 출근 시간이 아침 8시 30분인데요, 모두 출근을 한 것 같아요. 그럼 저를 따라 사무실로 들어가 볼까요?
+                                </div>
+                                <div class="swiper-slide box ">
+                                    <p class="title">#3</p>
+                                    <p class="pic"><img src="static/images/article_2022spring/passion_log_img_06.jpg"
+                                            alt="">
+                                    </p>
+                                    <span>업무 시작!</span>
+                                 이곳이 제가 일하는 자리입니다. 오늘 업무 준비를 잠깐 해볼게요. 업무 시작 전에 잠시 사무실 구경을 
+시켜드릴까요? 예비사무실이긴 한데, 있을 건 다 있어요! 그럼 먼저 회의실로 가볼게요. <br><br>
+                                </div>
+                                <div class="swiper-slide box ">
+                                    <p class="title">#4</p>
+                                    <p class="pic"><img src="static/images/article_2022spring/passion_log_img_07.jpg"
+                                            alt="">
+                                    </p>
+                                    <span>데일리 회의실입니다!</span>
+                                   저희 회의실은 총 3개가 있는데, 이곳은 데일리 회의실입니다. 이곳에서 데일리 회의 및 교육 등이 이뤄지고 있어요. 저희는 현장 최일선에서 일하면서 파악한 고객의 니즈나 문제점 등을 정리해서 데일리 리포트로 공유하고 있습니다.
+                                </div>
+                                <div class="swiper-slide box ">
+                                    <p class="title">#5</p>
+                                    <p class="pic"><img src="static/images/article_2022spring/passion_log_img_08.jpg"
+                                            alt="">
+                                    </p>
+                                    <span>우리의 힘은 교육입니다!</span>
+                                회의실에서 교육이 이뤄진다고 말씀드렸는데, 바로 이것이 바로 교육용 컴퓨터입니다. 이 컴퓨터에는 설비의 소프트웨어가 구현되어 있는데, 프로그램을 구동하면서 직원들을 교육하기도 하며, 스스로 공부하는 시간을 갖기도 합니다 . 
+                                </div>
+                                <div class="swiper-slide box ">
+                                    <p class="title">#6</p>
+                                    <p class="pic"><img src="static/images/article_2022spring/passion_log_img_09.jpg"
+                                            alt="">
+                                    </p>
+                                    <span>아침 드실래요?</span>
+                                   아! 이곳은 C 라운지인데요. 우리 그룹이 출근을  조금 일찍하는 편이라서 이곳에 고객지원팀을 위해 조식이 준비되어 있답니다!  메뉴는 매일매일 다른데요, 오늘은 상큼한 과일이네요. 이곳에서 커피나 간단한 다과를 먹으며 잠깐의 휴식을 취하기도 합니다.  
+                                </div>
+                                <div class="swiper-slide box ">
+                                    <p class="title">#7</p>
+                                    <p class="pic"><img src="static/images/article_2022spring/passion_log_img_10.jpg"
+                                            alt="">
+                                    </p>
+                                    <span>모두들 인사할까요?</span>
+                                    우리 그룹 분들하고 인사해볼까요? 카메라 보시고 인사 부탁드려요. 우리 SEC 3그룹은 총 30명이 근무하고 있어요. 그럼, 잠깐 업무를 봐야 하니, 
+좀 있다가 카메라를 다시 켤게요.
+                                </div>
+                                <div class="swiper-slide box ">
+                                    <p class="title">#8</p>
+                                    <p class="pic"><img src="static/images/article_2022spring/passion_log_img_11.jpg"
+                                            alt="">
+                                    </p>
+                                    <span>무슨 일을 하나요?</span>
+                                   자, 다시 돌아왔습니다. 그러면 그룹장님을 모시고 고객지원팀이 무슨 일하는지 알아볼까 합니다. “그럼 먼저 소개를 부탁드릴게요.”
+“안녕하세요. 고객지원팀  SEC  3그룹을 맡은 신동익입니다.”
+                                </div>
+
+                                <div class="swiper-slide box  full">
+                                    <p class="title">#9</p>
+                                    <div class="full-flex">
+                                        <p class="pic"><img
+                                                src="static/images/article_2022spring/passion_log_img_12.jpg" alt="">
+                                        </p>
+                                        <p class="txt-area">
+                                            <span>AED 설치부터 유지관리까지!</span>
+                                          “그룹의 업무에 관해 소개를 부탁드려요.” <br>
+“저희 그룹은 고객사의 AED 설비를 담당하고 있는 설치부터 유지관리를 진행하고 있는 그룹입니다.”<br> 
+“그룹장님의 운영 철학에 대해 말씀해주세요.”<br>
+“저는 일단 그룹에 소속된 
+엔지니어들이 일을 하는 데 있어 기가 죽거나 하는 그런 일이 없이 자기가 해볼 수 있는 부분 안에서, 책임감을 느끼며 일에 최선을  다 해줬으면 합니다.”</p>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide box ">
+                                    <p class="title">#10</p>
+                                    <p class="pic"><img src="static/images/article_2022spring/passion_log_img_13.jpg"
+                                            alt="">
+                                    </p>
+                                    <span>자기소개 부탁드려요!</span>
+                                   이번에는 우리 그룹분을 모시고 이제 업무에 있어 고충을 한번 들어볼까 합니다. <br>
+                                    “먼저 자기 소개 부탁드려요!” <br>“장재봉입니다.”<br>
+“네, 저는 이원희입니다.”<br> “안녕하세요. 이익재입니다.”
+                                </div>
+                                <div class="swiper-slide box ">
+                                    <p class="title">#11</p>
+                                    <p class="pic"><img src="static/images/article_2022spring/passion_log_img_14.jpg"
+                                            alt="">
+                                    </p>
+                                    <span>여러분의 고충은 무엇인가요?</span>
+                                    “네. 반갑습니다. 업무가 현장에서 일어나다 보니,
+                                    고충이 많은 걸로 아는데요?”
+                                   “저희 일의 특성상 고객들을 직접 대응 하기 때문에 초반에 일을 잘 모를 때는 부담스러운 부분이 있어요. 저의 잘못된 응대로 회사에 피해를 줄 수도 있겠다는 걱정을 많이 하게 되거든요.”
+                                </div>
+                                <div class="swiper-slide box ">
+                                    <p class="title">#12</p>
+                                    <p class="pic"><img src="static/images/article_2022spring/passion_log_img_15.jpg"
+                                            alt="">
+                                    </p>
+                                    <span>기억나는 에피소드가 있나요?</span>
+                                    “현장에서 생각나는 에피소드가 있을까요”
+                                    “저 같은 경우 현장에 고객사 엔지니어니 분이 있었는데,
+                                    처음 셋업을 진행하시다 보니까, 기술적인 부분을 많이
+                                    물어보시더라고요. 최대한 제가 가지고 있는 것들
+                                    한해서 대응하는데, 그런 질문 속에서 저 또한 많이
+                                    배우게 되더라고요.”
+                                </div>
+                                <div class="swiper-slide box ">
+                                    <p class="title">#13</p>
+                                    <p class="pic"><img src="static/images/article_2022spring/passion_log_img_16.jpg"
+                                            alt="">
+                                    </p>
+                                    <span>현장에서의 노하우는요?</span>
+                                    “현장에서의 노하우가 있다면 말씀해주시겠어요.”
+                                    “아무래도 소통이 중요하지 않나 생각해요. 고객사뿐만
+                                    아니라 협력서 등과도 일하기 때문에 소통이 가장
+                                    중요하다고 생각합니다.”
+                                    “짧지만 고충부터 노하우에 대해서 알아보는 소중한
+                                    시간이었습니다.”
+                                </div>
+                                <div class="swiper-slide box ">
+                                    <p class="title">#14</p>
+                                    <p class="pic"><img src="static/images/article_2022spring/passion_log_img_17.jpg"
+                                            alt="">
+                                    </p>
+                                    <span>현장으로 출동할게요!</span>
+                                    오늘 저의 브이로그 어떠셨나요? 저희 그룹 일이
+                                    사무실에서 많이 이뤄지지 않고 거의 대부분 고객사에서
+                                    이뤄지는데 보안 때문에 영상을 담지는 못했어요. 그래도
+                                    이 브이로그를 보고 원익아피에스와 고객지원팀의 업무에
+                                    대해서 한번 더 알 수 있는 계기가 되었으면 좋겠습니다.
+                                    저는 라인으로 이동할게요. 그럼 안녕~
+                                </div>
+                                <!--<div class="swiper-slide box full">
+                                    <div class="video-container">
+                                        <iframe src="https://www.youtube.com/embed/hdaUBGc3cOY"
+                                            title="YouTube video player" frameborder="0"
+                                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                            allowfullscreen></iframe>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide box full">
+                                    <div class="video-container">
+                                        <iframe src="https://www.youtube.com/embed/2ZrMkNgBH1c"
+                                            title="YouTube video player" frameborder="0"
+                                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                            allowfullscreen></iframe>
+                                    </div>
+                                </div>-->
+                            </div>
+
+                            <div class="swiper-button-next"></div>
+                            <div class="swiper-button-prev"></div>
+                        </div>
+<div class="video-container mt-100 m-mt-50">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/hdaUBGc3cOY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+                </div>
+<div class="video-container mt-100 m-mt-50">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/2ZrMkNgBH1c" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+                </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+		       <div class="comments-box">
+            <div class="footnote">
+                <strong>여러분 고객지원팀 SEC 3그룹에 응원을 보내주세요.</strong></br></br>
+                <p> 응모 기간 : 2022년 6월 7일(화)까지 </p>
+            </div>
+            <div class="user-comment user-write">
+                <p class="profile"></p>
+                <div class="comment">
+                    <div class="user-comment-write">
+                        <textarea name="" id="uinfo" cols="30" rows="10" placeholder="응원을 보내주세요"></textarea>
+
+                        <div class="input-user-info">
+                            <div class="input-box">
+                                <div class="input-username">
+                                    <input type="text" id="usrname" placeholder="이름/소속*" required>
+                                    <input type="hidden" id="menuid" value="100" />
+                                    <input type="hidden" id="mid" value="2022 봄호 Vol.67" />
+                                </div>
+                                <div class="input-contact">
+                                    <input type="text" id="phone" placeholder="전화번호*" required>
+                                </div>
+                                <div class="input-email">
+                                    <input type="text" id="mail" placeholder="이메일*" required>
+                                </div>
+                            </div>
+
+                            <div class="btn-area">
+                                <button class="btn-apply" id="sbtn">댓글등록</button>
+                                <script type="text/javascript" src="static/js/jquery-1.12.1.min.js"></script>
+                                <script type="text/javascript" src="static/js/common.js"></script>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="sorting">
+                <p class="count" id="count">0 댓글</p>
+
+                <div class="sort">
+                    <select name="sort" id="sort">
+                        <option value="asc">등록순</option>
+                        <option value="desc">최신순</option>
+                    </select>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="quick">
+            <a href="#" class="btn-home"><span class="blind">home</span></a>
+
+        </div>
+
+ <footer class="wis_ft">
+                <div class="wis_ft_info">
+                    <div class="wis_inner_wrap">
+                        <!-- 지난 호 보기 -->
+                        <div class="ft_select">
+                            <button class="ft_select_btn" type="button">2022 SPRING Vol.67</button>
+                            <div class="ft_select_list">
+                                <p class="ft_select_title">지난호 보기</p>
+                                <ul>
+                                   <li><a href="/Wonikin_SPRING/">2022 SPRING Vol.67 </a></li>
+                                   <li><a href="/Wonikin_WINTER/">2022 WINTER Vol.66 </a></li>
+                                   <li><a href="/Wonikin_AUTUMN/">2021 AUTUMN Vol.65</a></li>
+                                   <li><a href="/Wonikin_SUMMER/">2021 SUMMER Vol.64 </a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        
+                        <h1 class="wis_ft_logo">WONIK</h1>
+                        <p>본사 경기도 성남시 분당구 삼평동 612번지 <br>발행일 2022년 5월(통권 제67호) / 발행인 임창빈 / 발행처 원익 </p>
+                        <p>기획 디자인 제작 피플페이지 02-6674-0111</p>
+                    </div>
+                </div>
+                <div class="wis_ft_copy">
+                    <div class="wis_inner_wrap">
+                        <p>COPYRIGHT © WONIK. ALL RIGHTS RESERVED.</p>
+                    </div>
+                </div>
+            </footer>
+</div>
+        <script src="static/js/jquery-1.12.1.min.js"></script>
+        <script src="static/js/jquery-migrate-1.4.1.min.js"></script>
+        <!--swiper slide-->
+        <script src="static/js/swiper-bundle.min.js"></script>
+        <script src="static/js/aos.js"></script>
+        <script src="static/js/front.js"></script>
+        <script>
+            var swiper = new Swiper(".passion_log_slider", {
+                slidesPerView: "auto",
+                spaceBetween: 30,
+                loop: true,
+                autoHeight: true,
+                observer: true,
+                observeParents: true,
+                pagination: {
+                    el: ".swiper-pagination",
+                    clickable: true,
+                },
+                 navigation: {
+                    nextEl: ".swiper-button-next",
+                    prevEl: ".swiper-button-prev",
+                    },
+
+                breakpoints: {
+                    // when window width is >= 320px
+                    640: {
+                        slidesPerView: 1,
+                        //spaceBetween: 0
+                    }
+                }
+            });
+        </script>
+        <script>
+            //console.log(document.querySelector('.issue-icon path').getTotalLength()); //137
+        </script>
+        <script type="text/javascript" src="//wcs.naver.net/wcslog.js"></script>
+        <script type="text/javascript">
+            if (!wcs_add) var wcs_add = {};
+            wcs_add["wa"] = "12518c35fb268c0";
+            if (window.wcs) {
+                wcs_do();
+            }
+        </script>
+
+
+    </body>
+
+</html>

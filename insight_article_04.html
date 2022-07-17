@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta property="og:type" content="website">
+        <meta property="og:url" content="wonikwebzine.com">
+        <meta property="og:title" content="원익 웹진">
+        <meta property="og:description" content="2022 봄호 Vol.67">
+        <meta property="og:image" content="https://wonikwebzine.com/Wonikin_SPRING/static/images/main_pp.jpg"/>
+        <title>Wonikin_SPRING</title>
+        <!-- favicon은 선물입니다! 맘에 드시면 써주세요. -->
+        <link rel="shortcut icon" href="./static/images/Wonikin_Spring_2022/Wonikin_favicon.png" type="image/x-icon">
+        <link rel="stylesheet" href="./static/css/swiper-bundle.css">
+        <link rel="stylesheet" href="./static/css/iconfont.css">
+        <link rel="stylesheet" href="static/css/aos.css">
+        <link rel="stylesheet" href="./static/css/style.css">
+        <link rel="stylesheet" href="./static/css/common.css">
+        <link rel="stylesheet" href="./static/css/Wonikin_Spring_2022.css">
+        <script type="text/javascript" src="./static/js/jquery-1.12.1.min.js" defer></script>
+        <!-- <script type="text/javascript" src="./static/js/jquery-migrate-1.4.1.min.js"></script> -->
+        <script type="text/javascript" src="./static/js/swiper-bundle.min.js" defer></script>
+        <script type="text/javascript" src="./static/js/front.js" defer></script>
+        <script type="text/javascript" src="./static/js/Wonikin_Spring_2022.js" defer></script>
+    </head>
+    <body>
+        <!-- body 대체할 wrap -->
+        <div class="wis_wrap">
+            <!-- fixed header -->
+            <header class="wis_h">
+                <!-- 반응형 용도 inner -->
+                <div class="wis_inner_wrap">
+                    <!-- 로고 -->
+                    <div class="wis_h_logo">
+                        <a href="index.html"><img src="./static/images/wonik_logo.gif" alt="WONIK 원익"></a>
+                    </div>
+
+                    <!-- gnb hover 영역 -->
+                    <div class="wis_h_top">
+                        <!-- gnb wrap / 모바일에선 숨겨집니다. -->
+                        <ul class="wis_h_gnb_wrap">
+                            <li>
+                                <!-- gnb -->
+                                <div class="wis_h_gnb"><a href="#">PASSION</a></div>
+                                <!-- hover시 나오는 lnb -->
+                                <ul class="wis_h_lnb">
+                                    <li><a href="passion_article_01.html">원익 예찬</a></li>
+                                    <li><a href="passion_article_02.html">전문가 칼럼</a></li>
+                                  
+                                    <li><a href="passion_article_04.html">원익 히어로</a></li>
+                                    <li><a href="passion_article_05.html">원익로그</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <!-- gnb -->
+                                <div class="wis_h_gnb"><a href="#">INSIGHT</a></div>
+                                 <!-- hover시 나오는 lnb -->
+                                <ul class="wis_h_lnb">
+                                  <li><a href="insight_article_01.html">케이스터디</a></li>
+                                    <li><a href="insight_article_02.html">언더커버리더</a></li>
+                                    <li><a href="insight_article_03.html">메타트랜드 ON</a></li>
+                                    <li><a href="insight_article_04.html">시니어클래스</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <!-- gnb -->
+                                <div class="wis_h_gnb"><a href="#">SIGNAL</a></div>
+                                 <!-- hover시 나오는 lnb -->
+                                <ul class="wis_h_lnb">
+                                   <li><a href="signal_article_01.html">케미스트리</a></li>
+                                    <li><a href="signal_article_02.html">호모나이트쿠스</a></li>
+                                    <li><a href="signal_article_03.html">원익반할지도</a></li>
+                                    <li><a href="signal_article_04.html">요즘, 원익은</a></li>
+                                    <li><a href="signal_article_05.html">원익 나눔 챌린지</a></li>
+                                    <li><a href="signal_article_06.html">롤링페이퍼</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <!-- gnb -->
+                                <div class="wis_h_gnb"><a href="#">NEWS</a></div>
+                                 <!-- hover시 나오는 lnb -->
+                                <ul class="wis_h_lnb">
+                                    <li><a href="news_main.html">원익 뉴스</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <!-- gnb -->
+                                <div class="wis_h_gnb"><a href="#">EVENT</a></div>
+                                 <!-- hover시 나오는 lnb -->
+                                <ul class="wis_h_lnb">
+                                    <li><a href="event_article_01.html">당신도 명탐정!</a></li>
+                                   <li><a href="event_article_02.html">QUIZ & COMMENTARY</a></li>
+ 
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <!-- 사이드 문구 -->
+                    <p class="wis_h_side">
+                        2022 봄호 Vol.67
+                    </p>
+
+                    <!-- 모바일 gnb 버튼 -->
+                    <button class="mo_wis_gnb_btn" type="button"></button>
+
+                    <!-- 모바일에서만 보입니다. -->
+                    <div class="mo_wis_h_gnb_wrap">
+                        <div class="mo_wis_h_gnb_list">
+                            <div class="mo_wis_h_gnb_top">
+                                <!-- 로고 -->
+                                <div class="wis_h_logo">
+                                    <a href="index.html"><img src="./static/images/wonik_logo.gif" alt="WONIK 원익"></a>
+                                </div>
+                                <!-- 모바일 gnb 버튼 -->
+                                <button class="mo_wis_gnb_btn" type="button"></button>
+                            </div>
+                            <div>
+                                <div class="mo_wis_h_gnb"><a href="#">Passion</a></div>
+                                <ul class="mo_wis_h_lnb">
+                                    <li><a href="passion_article_01.html">원익 예찬</a></li>
+                                    <li><a href="passion_article_02.html">전문가 칼럼</a></li>
+                                 
+                                    <li><a href="passion_article_04.html">원익 히어로</a></li>
+                                    <li><a href="passion_article_05.html">원익로그</a></li>
+                                </ul>
+                            </div>
+                            <div>
+                                <div class="mo_wis_h_gnb"><a href="#">Insight</a></div>
+                                <ul class="mo_wis_h_lnb">
+                                    <li><a href="insight_article_01.html">케이스터디</a></li>
+                                    <li><a href="insight_article_02.html">언더커버리더</a></li>
+                                    <li><a href="insight_article_03.html">메타트랜드 ON</a></li>
+                                    <li><a href="insight_article_04.html">시니어클래스</a></li>
+                                </ul>
+                            </div>
+                            <div>
+                                <div class="mo_wis_h_gnb"><a href="#">Signal</a></div>
+                                <ul class="mo_wis_h_lnb">
+                                      <li><a href="signal_article_01.html">케미스트리</a></li>
+                                    <li><a href="signal_article_02.html">호모나이트쿠스</a></li>
+                                    <li><a href="signal_article_03.html">원익반할지도</a></li>
+                                    <li><a href="signal_article_04.html">요즘, 원익은</a></li>
+                                    <li><a href="signal_article_05.html">원익 나눔 챌린지</a></li>
+                                    <li><a href="signal_article_06.html">롤링페이퍼</a></li>
+                                </ul>
+                            </div>
+                            <div>
+                                <div class="mo_wis_h_gnb"><a href="#">News</a></div>
+                                <ul class="mo_wis_h_lnb">
+                                    <li><a href="news_main.html">원익 뉴스</a></li>
+                                </ul>
+                            </div>
+                            <div>
+                                <div class="mo_wis_h_gnb"><a href="#">Event</a></div>
+                                <ul class="mo_wis_h_lnb">
+                                    <li><a href="event_article_01.html">당신도 명탐정!</a></li>
+                                   <li><a href="event_article_02.html">QUIZ & COMMENTARY</a></li>
+ 
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </header>
+            <!-- fixed header// -->
+
+        <div class="sub-contents npdn">
+            <h2 class="article-heading">시니어클래스</h2>
+            <div class="insight_senior">
+                <div class="insight_senior-top">
+                    <p class="img"><img src="static/images/article_2022spring/insight_senior_img_01.jpg" alt=""></p>
+                    <div class="text">
+                        <div class="text--typography">
+                            MBTI에 숨겨진<br>
+                            리더십을 발견하다
+                        </div>
+                        <p class="txt-point">원익큐엔씨 리더들</p>
+                        <p class="txt-normal">사람을 이끄는 힘은 자신에 대한<br>
+                            깊은 성찰과 상대를 이해하고<br>
+                            배려하려는 노력에서 비롯된다.<br>
+                            그 역량을 기르기 위해<br>
+                            원익큐엔씨에서 각 팀 및 그룹의<br>
+                            리더가 된 사우 6명이 한자리에<br>
+                            모였다. 이들 앞에는 최근 큰<br>
+                            반향을 불러일으키고 있는<br>
+                            MBTI의 검사지가 놓여 있었다.</p>
+                    </div>
+                </div>
+                <div class="insight_senior-btm">
+                    <div class="box">
+                        <p class="txt-point"><span class="txt1">M</span>YERS-<span class="txt2">B</span>RIGGS <span
+                                class="txt3">T</span>YPE <span class="txt4">I</span>NDICATOR</p>
+                        <p class="title">MBTI로 뗀 팀 화합의 첫걸음</p>
+                        <p class="txt">모두가 소통과 협업의 중요성을 강조하는 시대지만, 정작 함께 일하는
+                            사람들을 이해하기 위해 진지한 노력을 기울이는 이는 그리 많지 않다. 반면 요즘
+                            유행하는 MBTI(The Myers-Briggs Type Indicator‧자기보고식 성격유형지표
+                            검사) 검사 결과로 자신의 성향을 알리고 이해받기를 바라는 사람은 점점 늘어나고 있다. 하지만
+                            이마저도 정식 검사가 아닌 인터넷상의 무료 검사에 그치는 경우가 많다.<br>
+                            MBTI는 단순한 성격 유형 검사 이상의 의미를 지닌다. 제대로 공부하면 나와
+                            주변 사람들을 깊이 이해할 수 있는 단서를 제공한다. 지난 3월 30일, 그 의미깊은 첫걸음이
+                            원익큐엔씨에서 이뤄졌다. 각 팀을 이끄는 신임 팀장과 그룹장 6명이 전문가와 함께 MBTI 진단을 통한
+                            리더십 역량 강화에 나선 것이다.<br>
+                            원익큐엔씨 H캠퍼스 소통실에 모여 강사와 인사를 나눈 사우들은 두 가지 선택지 중 하나를 고르는
+                            ‘텔레파시 게임’으로 어색한 분위기를 풀었다. 우리는 서로 틀린 것이 아니라 다른 것일
+                            뿐이라는 메시지를 담은 아이스 브레이킹 타임을 보낸 후, 각자의 MBTI 검사를 진행했다.<br>
+                            “MBTI는 짜장면과 짬뽕처럼 옳고 그름이 따로 없는 비진단 검사입니다. 선천적으로 선호하는 경향을 알아보는
+                            과정이니 편안하고 솔직하게 각 문항에답하시면 됩니다.”<br>
+                            강사의 안내가 끝나자 사우들의 손이 바삐 움직였다.
+                        </p>
+                        <p class="img"><img src="static/images/article_2022spring/insight_senior_img_02.jpg" alt=""></p>
+                        <div class="box-txt-1">
+                            <p class="title">모두를 위한 관계 개선을 고민하다</p>
+                            <p class="txt">20여 분간의 검사가 끝나자, 이를 바탕으로 MBTI 16개 유형에 대한 세세한
+                                설명이 이어졌다. 먼저 외향형(E)과 내향형(I), 감각형(S)과 직관형(N), 사고형(T)과
+                                감정형(F), 판단형(J)과 인식형(P) 등 MBTI 유형을 가르는 네 가지 선호 지표를 각각
+                                자세히 살펴봤다. 나아가 나의 선호 지표와 반대되는 성향에 대한 솔직한 생각을
+                                나누고 주변 사람 중 해당 성향을 가진 이들을 유추하며 자신과 주변, 그리고 둘
+                                사이의 상관관계에 대해 평소보다 한층 깊게 고민하는 시간도 마련됐다.<br>
+                                “동료 혹은 팀원들과 조화롭게 일하려면 나의 성향을 정확하게 파악하는 동시에 상대의 성격 유형을
+                                알아채는 감각을 길러야 합니다. 그래야 내가 상대를 대할 때 무엇을 조심해야 하는지,
+                                상대에게 어떻게 다가가야 업무 효율과 성과를 높일 수 있는지를 알 수 있어요. 이런 측면에서 MBTI는
+                                팀워크를 향상시키는 지름길이 될 수 있어요.”<br>
+                                각 유형의 사람들을 어떻게 대해야 관계가 원활해지는지를 알려주는 대목에 이르자, 즐겁게 MBTI를
+                                공부하던 사우들의 눈빛이 사뭇 진지해졌다.</p>
+                        </div>
+                    </div>
+                    <div class="box-txt-2">
+                        <p class="title">새로이 마련한 조화로운 미래</p>
+                        <p class="txt">이번 특강에 대한 사우들의 반응은 그야말로 열광적이었다. 요즘 MZ세대 사이에서 워낙
+                            유행하다 보니 알게 모르게 MBTI의 곁을 지나쳤지만, 막상 이에 대해 진지하게 생각해본 적은
+                            없었다는 게 이들의 이야기다. 젊은층의 놀이 정도로 생각했던 이 검사가 스스로를 되돌아보고
+                            앞으로의 리더십을 고민하게 하는 단초가 될 줄은 몰랐다는 반응이었다. 강사가 이들을 흐뭇하게
+                            바라보며 말을 이어갔다.<br>
+                            “상대방을 온전히 이해(Understand)하려면 그 사람의 밑에(Under) 서야 (Stand) 합니다. 여러 사람들이 한데
+                            모인 조직을 화합과 성공으로 이끌어야 하는 리더들은 더욱 구성원들의 밑에 서서 자발적인 이해와 협력을 구해야
+                            하죠. 오늘 배운 MBTI를 팀원들과의 관계에 적극적으로 활용하셨으면 좋겠어요. 그러면 어느새 팀원들도
+                            여러분을 이해하려 노력할 것입니다.”<br>
+                            세 시간의 강의 동안 두 번의 휴식 시간이 있었지만, 사우들은 하나같이 이를 자진 반납하고 MBTI 유형과
+                            유의점에 대해 질문했다. 그렇게 이들은 리더로서의 역량을 쌓으며 팀의 미래를 새로이 그려나갔다.
+                        </p>
+                    </div>
+                    <p class="img"><img src="static/images/article_2022spring/insight_senior_img_03.jpg" alt=""></p>
+                    <div class="txt-point1">
+                        이날 원익큐엔씨 리더들은 MBTI를 그저 MZ세대의 놀이로만 여겼는데,<br>
+                        강의를 들으며 자신의 성향을 알아본 뒤 이제 막 세상에 나선<br>
+                        어린아이처럼 호기심으로 눈빛이 반짝거렸다.
+                    </div>
+                </div>
+            </div>
+            <div class="insight_senior-btm1">
+                <div class="box box-1">
+                    <p class="pic"><img src="static/images/article_2022spring/insight_senior_img_06.jpg" alt=""></p>
+                    <div class="text">
+                        <div class="text__inner">
+                            <p class="title"><span class="mbti">ISTP</span> 백과사전형</p>
+                            <p class="name"><span>박종은 님</span> 원익큐엔씨 소재생산팀</p>
+                            <p class="txt">강의를 듣기 전에 정식으로
+                                MBTI 검사를 받은 적이
+                                있습니다. 그때까지만 해도
+                                MBTI에 대해 의구심이
+                                있었어요. 그런데 오늘도 똑같이
+                                ISTP가 나오고 강사님의 자세한
+                                설명을 듣고 나니, 왜 사람들이
+                                ‘MBTI는 과학’이라고 말하는지
+                                알겠네요. 팀장으로서의 책임이
+                                무겁지만, 그 무게에 눌리지
+                                않고 팀원들을 잘 아우르는
+                                리더가 되기 위해 최선을
+                                다하겠습니다.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="box box-2">
+                    <p class="pic"><img src="static/images/article_2022spring/insight_senior_img_07.jpg" alt=""></p>
+                    <div class="text">
+                        <div class="text__inner">
+                            <p class="title"><span class="mbti">INTP</span> 아이디어 뱅크형</p>
+                            <p class="name"><span>권혁천 님</span> 원익큐엔씨 HB팀</p>
+                            <p class="txt">MBTI가 유행한다는 것을 알고
+                                있었지만 깊이 파고든 적은
+                                없습니다. 그렇기에 MBTI를
+                                통해 나와 팀원들을 파악할 수
+                                있을 거라는 생각은 하지
+                                않았는데요. 오늘 결과에서 나온
+                                MBTI 유형과 저의 성향이 정말
+                                잘 맞는 걸 보면서 중요성을
+                                깨달았고, 다른 성향들을
+                                자세하게 살펴보며 인간관계에
+                                대한 이해의 폭도 넓힐 수 있어
+                                정말 유익했습니다.</p>
+                            <p class="name mt-40"><span>인경민 님</span> 원익큐엔씨 생산기술팀</p>
+                            <p class="txt">제가 몸담고 있는 팀은 최근에
+                                신설된 팀이어서 부담과
+                                스트레스가 상당했습니다.
+                                팀원들을 어떻게 대하고
+                                이끌어야 하는지에 대해서도
+                                고민이 깊었었죠. 이번 강의가
+                                팀원 개개인을 이해할 수 있는
+                                재료를 마련한 것 같아
+                                기쁩니다. 앞으로 흔들리지 않고
+                                팀원들을 탄탄하게 지탱해주는
+                                진정한 리더로 거듭날 수 있도록
+                                노력하겠습니다.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="box box-3">
+                    <p class="pic"><img src="static/images/article_2022spring/insight_senior_img_08.jpg" alt=""></p>
+                    <div class="text">
+                        <div class="text__inner">
+                        <p class="title"><span class="mbti">ISTJ</span> 세상의 소금형</p>
+                        <p class="name"><span>강승오 님</span> 원익큐엔씨 ESC팀</p>
+                        <p class="txt">평소 ‘팀원들이 왜
+                            이렇게 생각하지?’하고
+                            궁금했던 적이 한두 번이
+                            아닙니다. 이번 특강을
+                            듣고 나니 각 팀원들의
+                            성향이 MBTI와
+                            연결되면서 왜 그렇게
+                            행동했는지 이해할 수
+                            있었습니다. 한편으로는
+                            여태껏 나만의 고집으로
+                            팀원들을 이끌어 온 게
+                            아닌가 싶은 생각도
+                            드는데요. 사람들의
+                            유형을 두루 공부했으니,
+                            당장 오늘부터 달라진
+                            모습을 보여주겠습니다!</p>
+                        <p class="name mt-40"><span>박성민 님</span> 원익큐엔씨 내부회계그룹</p>
+                        <p class="txt">오늘 배운 MBTI 내용들을
+                            팀원들과 공유하고 보다
+                            많은 대화의 시간을
+                            가지는 것부터
+                            시작하려고 합니다. 요즘
+                            사람들이 워낙 MBTI에
+                            관심이 많으니,
+                            이 강의를 들었다는
+                            것만으로도 소통이 한결
+                            잘될 것 같습니다. 팀원들
+                            각자의 상황과
+                            눈높이에서 팀의
+                            전체적인 업무를
+                            공유하고 적극적으로
+                            지원하는 믿음직한
+                            그룹장이 되겠습니다.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="box box-4">
+                    <p class="pic"><img src="static/images/article_2022spring/insight_senior_img_09.jpg" alt=""></p>
+                    <div class="text">
+                       <div class="text__inner">
+                            <p class="title"><span class="mbti">ESTJ</span> 세상의 소금형</p>
+                        <p class="name"><span>최우성 님</span> 원익큐엔씨 쿼츠생산2팀 운영그룹</p>
+                        <p class="txt">지금까지 잘하고 있다고 자신했는데,
+                            오늘 제 유형의 단점과 부족한 점을
+                            알고 나니 팀원들 입장에서는 그렇지
+                            않을 수도 있겠다는 생각이
+                            들었습니다. 특히 융통성이
+                            부족하다거나 경청에 다소 취약하다는
+                            부분은 새겨들어야 할 것 같아요.
+                            앞으로 팀원들을 향해 귀를 활짝 열어
+                            두려고 합니다. 그러니 무엇이든
+                            솔직하게 말씀해주세요.</p>
+                       </div>
+                    </div>
+                </div>
+
+                <div class="video-container mt-100 m-mt-50">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/ueL--WmXfHA"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                </div>
+            </div>
+        
+        </div>
+        <div class="quick">
+            <a href="#" class="btn-home"><span class="blind">home</span></a>
+
+        </div>
+        <footer class="wis_ft">
+                <div class="wis_ft_info">
+                    <div class="wis_inner_wrap">
+                        <!-- 지난 호 보기 -->
+                        <div class="ft_select">
+                            <button class="ft_select_btn" type="button">2022 SPRING Vol.67</button>
+                            <div class="ft_select_list">
+                                <p class="ft_select_title">지난호 보기</p>
+                                <ul>
+                                   <li><a href="/Wonikin_SPRING/">2022 SPRING Vol.67 </a></li>
+                                   <li><a href="/Wonikin_WINTER/">2022 WINTER Vol.66 </a></li>
+                                   <li><a href="/Wonikin_AUTUMN/">2021 AUTUMN Vol.65</a></li>
+                                   <li><a href="/Wonikin_SUMMER/">2021 SUMMER Vol.64 </a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        
+                        <h1 class="wis_ft_logo">WONIK</h1>
+                        <p>본사 경기도 성남시 분당구 삼평동 612번지 <br>발행일 2022년 5월(통권 제67호) / 발행인 임창빈 / 발행처 원익 </p>
+                        <p>기획 디자인 제작 피플페이지 02-6674-0111</p>
+                    </div>
+                </div>
+                <div class="wis_ft_copy">
+                    <div class="wis_inner_wrap">
+                        <p>COPYRIGHT © WONIK. ALL RIGHTS RESERVED.</p>
+                    </div>
+                </div>
+            </footer>
+ </div>
+        </body>
+
+</html>

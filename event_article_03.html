@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta property="og:type" content="website">
+        <meta property="og:url" content="wonikwebzine.com">
+        <meta property="og:title" content="원익 웹진">
+        <meta property="og:description" content="2022 봄호 Vol.67">
+        <meta property="og:image" content="https://wonikwebzine.com/Wonikin_SPRING/static/images/main_pp.jpg"/>
+        <title>Wonikin_SPRING</title>
+        <!-- favicon은 선물입니다! 맘에 드시면 써주세요. -->
+        <link rel="shortcut icon" href="./static/images/Wonikin_Spring_2022/Wonikin_favicon.png" type="image/x-icon">
+        <link rel="stylesheet" href="./static/css/swiper-bundle.css">
+        <link rel="stylesheet" href="./static/css/iconfont.css">
+        <link rel="stylesheet" href="static/css/aos.css">
+        <link rel="stylesheet" href="./static/css/style.css">
+        <link rel="stylesheet" href="./static/css/common.css">
+        <link rel="stylesheet" href="./static/css/Wonikin_Spring_2022.css">
+        <script type="text/javascript" src="./static/js/jquery-1.12.1.min.js" defer></script>
+        <!-- <script type="text/javascript" src="./static/js/jquery-migrate-1.4.1.min.js"></script> -->
+        <script type="text/javascript" src="./static/js/swiper-bundle.min.js" defer></script>
+        <script type="text/javascript" src="./static/js/front.js" defer></script>
+        <script type="text/javascript" src="./static/js/Wonikin_Spring_2022.js" defer></script>
+    </head>
+    <body>
+        <!-- body 대체할 wrap -->
+        <div class="wis_wrap">
+            <!-- fixed header -->
+            <header class="wis_h">
+                <!-- 반응형 용도 inner -->
+                <div class="wis_inner_wrap">
+                    <!-- 로고 -->
+                    <div class="wis_h_logo">
+                        <a href="index.html"><img src="./static/images/wonik_logo.gif" alt="WONIK 원익"></a>
+                    </div>
+
+                    <!-- gnb hover 영역 -->
+                    <div class="wis_h_top">
+                        <!-- gnb wrap / 모바일에선 숨겨집니다. -->
+                        <ul class="wis_h_gnb_wrap">
+                            <li>
+                                <!-- gnb -->
+                                <div class="wis_h_gnb"><a href="#">PASSION</a></div>
+                                <!-- hover시 나오는 lnb -->
+                                <ul class="wis_h_lnb">
+                                    <li><a href="passion_article_01.html">원익 예찬</a></li>
+                                    <li><a href="passion_article_02.html">전문가 칼럼</a></li>
+                                   
+                                    <li><a href="passion_article_04.html">원익 히어로</a></li>
+                                    <li><a href="passion_article_05.html">원익로그</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <!-- gnb -->
+                                <div class="wis_h_gnb"><a href="#">INSIGHT</a></div>
+                                 <!-- hover시 나오는 lnb -->
+                                <ul class="wis_h_lnb">
+                                  <li><a href="insight_article_01.html">케이스터디</a></li>
+                                    <li><a href="insight_article_02.html">언더커버리더</a></li>
+                                    <li><a href="insight_article_03.html">메타트랜드 ON</a></li>
+                                    <li><a href="insight_article_04.html">시니어클래스</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <!-- gnb -->
+                                <div class="wis_h_gnb"><a href="#">SIGNAL</a></div>
+                                 <!-- hover시 나오는 lnb -->
+                                <ul class="wis_h_lnb">
+                                   <li><a href="signal_article_01.html">케미스트리</a></li>
+                                    <li><a href="signal_article_02.html">호모나이트쿠스</a></li>
+                                    <li><a href="signal_article_03.html">원익반할지도</a></li>
+                                    <li><a href="signal_article_04.html">요즘, 원익은</a></li>
+                                    <li><a href="signal_article_05.html">원익 나눔 챌린지</a></li>
+                                    <li><a href="signal_article_06.html">롤링페이퍼</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <!-- gnb -->
+                                <div class="wis_h_gnb"><a href="#">NEWS</a></div>
+                                 <!-- hover시 나오는 lnb -->
+                                <ul class="wis_h_lnb">
+                                    <li><a href="news_main.html">원익 뉴스</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <!-- gnb -->
+                                <div class="wis_h_gnb"><a href="#">EVENT</a></div>
+                                 <!-- hover시 나오는 lnb -->
+                                <ul class="wis_h_lnb">
+                                    <li><a href="event_article_01.html">당신도 명탐정!</a></li>
+                                    <li><a href="event_article_02.html">땡스포유</a></li>
+                                   <li><a href="event_article_03.html">QUIZ & COMMENTARY</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <!-- 사이드 문구 -->
+                    <p class="wis_h_side">
+                        2022 봄호 Vol.67
+                    </p>
+
+                    <!-- 모바일 gnb 버튼 -->
+                    <button class="mo_wis_gnb_btn" type="button"></button>
+
+                    <!-- 모바일에서만 보입니다. -->
+                    <div class="mo_wis_h_gnb_wrap">
+                        <div class="mo_wis_h_gnb_list">
+                            <div class="mo_wis_h_gnb_top">
+                                <!-- 로고 -->
+                                <div class="wis_h_logo">
+                                    <a href="index.html"><img src="./static/images/wonik_logo.gif" alt="WONIK 원익"></a>
+                                </div>
+                                <!-- 모바일 gnb 버튼 -->
+                                <button class="mo_wis_gnb_btn" type="button"></button>
+                            </div>
+                            <div>
+                                <div class="mo_wis_h_gnb"><a href="#">Passion</a></div>
+                                <ul class="mo_wis_h_lnb">
+                                    <li><a href="passion_article_01.html">원익 예찬</a></li>
+                                    <li><a href="passion_article_02.html">전문가 칼럼</a></li>
+                                    
+                                    <li><a href="passion_article_04.html">원익 히어로</a></li>
+                                    <li><a href="passion_article_05.html">원익로그</a></li>
+                                </ul>
+                            </div>
+                            <div>
+                                <div class="mo_wis_h_gnb"><a href="#">Insight</a></div>
+                                <ul class="mo_wis_h_lnb">
+                                    <li><a href="insight_article_01.html">케이스터디</a></li>
+                                    <li><a href="insight_article_02.html">언더커버리더</a></li>
+                                    <li><a href="insight_article_03.html">메타트랜드 ON</a></li>
+                                    <li><a href="insight_article_04.html">시니어클래스</a></li>
+                                </ul>
+                            </div>
+                            <div>
+                                <div class="mo_wis_h_gnb"><a href="#">Signal</a></div>
+                                <ul class="mo_wis_h_lnb">
+                                      <li><a href="signal_article_01.html">케미스트리</a></li>
+                                    <li><a href="signal_article_02.html">호모나이트쿠스</a></li>
+                                    <li><a href="signal_article_03.html">원익반할지도</a></li>
+                                    <li><a href="signal_article_04.html">요즘, 원익은</a></li>
+                                    <li><a href="signal_article_05.html">원익 나눔 챌린지</a></li>
+                                    <li><a href="signal_article_06.html">롤링페이퍼</a></li>
+                                </ul>
+                            </div>
+                            <div>
+                                <div class="mo_wis_h_gnb"><a href="#">News</a></div>
+                                <ul class="mo_wis_h_lnb">
+                                    <li><a href="news_main.html">원익 뉴스</a></li>
+                                </ul>
+                            </div>
+                            <div>
+                                <div class="mo_wis_h_gnb"><a href="#">Event</a></div>
+                                <ul class="mo_wis_h_lnb">
+                                    <li><a href="event_article_01.html">당신도 명탐정!</a></li>
+                                    <li><a href="event_article_02.html">땡스포유</a></li>
+                                     <li><a href="event_article_03.html">QUIZ & COMMENTARY</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </header>
+            <!-- fixed header// -->
+
+
+        <div class="sub-contents">
+            <h2 class="article-heading">QUIZ & COMMENTARY</h2>
+            <div class="article-thanks">
+                <div class="article-thanks-top">
+                    <p class="en-title">QUIZ & COMMENTARY</p>
+                    <p class="txt">
+                        &lt;원익&gt;봄호를 잘 읽어보셨나요?   <br>
+                        <strong>이번 호의 마침표로 다함께 퀴즈를 풀어보세요! </strong> 
+                    </p>
+                    <p class="img"><img src="static/images/article/thanks_top.png" alt="thanks_top"></p>
+                </div>
+
+
+                <div class="contents-width padding">
+                    <div class="box-1">
+                        <p class="title">참여방법</p>
+                        <p class="txt">‘원익 웹진’(wonikwebzine.com)에 독자소감과 퀴즈 정답을 함께 06월 07일까지 남겨주세요. <br>
+                            참여하신 분께는 스타벅스 음료권을 전달해 드립니다. *오답자 분도 정성스러운 후기라면 선정됩니다.
+                            <span class="info">※ 보내실 때 이름/ 소속/ 휴대폰 번호를 적어주세요. (선물 배송을 위해 정확한 정보 기재 부탁드립니다.)</span>
+                        </p>
+
+                    </div>
+
+                    <div class="box-quiz">
+                        <div class="quiz-item">
+                            <p class="q-num"></p>
+                            <p class="q-category">뇌섹퀴즈</p>
+                            
+
+                            <p class="hint" style="font-size:25px;">
+                                <span>Monday = 	 617</span><br>
+                                <span>Tuesday = 	 729</span><br>
+                                <span>Wednesday = 	 9312</span><br>
+                                <span>Thursday = 	 8412</span><br>
+                                <span>Friday = 	6511</span><br>
+                                <span>Saturday = 	 8514</span>
+                            </p>
+<p class="txt">일요일에 해당하는 숫자는? <br> Sunday &nbsp;&nbsp;=&nbsp;&nbsp;  ?
+                            </p>
+                        </div>
+
+                       <!-- <div class="quiz-item">
+                            <p class="q-num">Q2</p>
+                            <p class="q-category">객관식 퀴즈</p>
+                            <p class="txt">밀레니엄(M)세대와 (Z)세대를 합쳐 MZ세대라고 한다. Z세대에 해당하는 출생년도는?</p>
+
+                            <p class="hint">➀ 1990년생 ➁ 1997년생 ➂ 1995년생</p>
+                        </div>-->
+                    </div>
+
+                    <div class="box-result mt-100 m-mt-50">
+                        <dl>
+                            <dt>지난호 정답</dt>
+                            <dd class="gift">Q1. 타운홀 미팅 <br>
+Q2. 2번</dd>
+                        </dl>
+                        <dl>
+                            <dt>지난호 참여자</dt>
+                            <dd class="gift">16명  &nbsp; &nbsp;  &nbsp; &nbsp;  66호 사보 참여자(스타벅스 2만 원권)<br>37명  &nbsp; &nbsp;  &nbsp; &nbsp;     퀴즈 정답자(스타벅스 음료권)<br>
+21명   &nbsp; &nbsp;  &nbsp; &nbsp;   베스트 후기 & 오답자 포함(스타벅스 음료권)<br>
+1명    &nbsp; &nbsp;  &nbsp; &nbsp;     <당신의 생각은> 베스트 코멘트(씨엠에스랩 선크림)<br> 7명  &nbsp; &nbsp;  &nbsp; &nbsp;       <당신의 생각은> 참여자(스타벅스 2만 원권) </dd>
+                        </dl>
+                    </div>
+
+                </div>
+
+                <div class="box-review mt-100 m-mt-50">
+                    <div class="container-outer">
+                        <div class="container-inner">
+                            <p class="title"><당신의 생각은> 코너에 참여하신 글 중 인상적인 코멘터리를 소개합니다.  </p>
+                            <!--<p class="txt">※ 독자소감에 선정되신 분은 스타벅스 음료권 2매를 추가로 보내드립니다.</p>-->
+
+
+                            <div class="review-comment mt-40">
+                                <div class="user-review">
+                                    <p class="box">열정이란 밥이라고 생각한다. ‘밥힘!’이라는 말이 있듯이 사람에게는 밥은 필수적인 요소이다. 열정을 가지고 어떤 일을 수행한다면 그 일이 아무리 힘들고 고달플지라도 원동력이 되어 더 즐겁게 
+효율적으로 수행할 수 있다. 따라서 이러한 열정이 더 좋은 결과를 부를 것이고, 이것이 선순환이 되어 성장하는 동력원이 될 것이라고 생각한다.</p>
+                                    <p class="user-info">김영범 <span>원익아이피에스</span></p>
+                                </div>
+
+                                <div class="user-review">
+                                    <p class="box">나에게 열정이란 연료입니다. 멈추지 않고 계속 달리기 위해서 
+필요하기 때문입니다.</p>
+                                    <p class="user-info">김지원 <span>원익아이피에스 </span></p>
+                                </div>
+
+                                <div class="user-review">
+                                    <p class="box">나에게 열정이란 ‘Fun하고 Cool하고 Sexy한 것’이다. 왜냐하면 그것이 ‘열정’이기 때문이다.</p>
+                                    <p class="user-info">차승민 <span>원익아이피에스</span></p>
+                                </div>
+
+                                <div class="user-review">
+                                    <p class="box">나의 열정은 표지판이다. 큰 꿈과 비전은 스스로에게 발전 가능성과 방향을 제시할 수 있습니다. 열정을 바로 갖을 수 있을 때 비로소 인생의 
+목표와 방향을 잡을 수 있습니다.
+                                    </p>
+                                    <p class="user-info">이종진 <span>원익홀딩스 </span></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+                 <div class="comments-box">
+            <div class="footnote">
+                <strong>퀴즈 정답과 독자소감을 보내주세요. </strong></br></br>
+                <p> 응모 기간 : 2022년 6월 7일(화)까지 </p>
+            </div>
+                    <div class="user-comment user-write">
+                        <p class="profile">
+                        </p>
+                        <div class="comment">
+                            <div class="user-comment-write">
+                                <textarea name="" id="uinfo" cols="30" rows="10"
+                                    placeholder="독자 소감을 적어주세요 "></textarea>
+                           
+
+
+                                <div class="input-user-info">
+                                    <div class="input-box">
+                                         <div class="input-email">
+                                            <input type="text" id="mail" placeholder="퀴즈 정답을 적어주세요 " required>
+                                        </div>
+                                        <div class="input-username">
+                                            <input type="text" id="usrname" placeholder="이름/소속*" required>
+                                            <input type="hidden" id="menuid" value="600"/>
+                                            <input type="hidden" id="mid" value="2022 봄호 Vol.67"/>
+                                        </div>
+                                        <div class="input-contact">
+                                            <input type="text" id="phone" placeholder="전화번호*" required>
+                                        </div>
+                                       
+                                    </div>
+
+                                    <div class="btn-area">
+                                        <button class="btn-apply" id="sbtn">댓글등록</button>
+                                        <script type="text/javascript" src="static/js/jquery-1.12.1.min.js"></script>
+                        				<script type="text/javascript" src="static/js/common.js"></script>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="sorting">
+                        <p class="count" id="count">0 댓글</p>
+
+                        <div class="sort">
+                            <select name="sort" id="sort">
+                                <option value="asc">등록순</option>
+                                <option value="desc">최신순</option>
+                            </select>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+<div class="quick">
+      <a href="#" class="btn-home"><span class="blind">home</span></a>
+      
+    </div>
+       <footer class="wis_ft">
+                <div class="wis_ft_info">
+                    <div class="wis_inner_wrap">
+                        <!-- 지난 호 보기 -->
+                        <div class="ft_select">
+                            <button class="ft_select_btn" type="button">2022 SPRING Vol.67</button>
+                            <div class="ft_select_list">
+                                <p class="ft_select_title">지난호 보기</p>
+                                <ul>
+                                   <li><a href="/Wonikin_SPRING/">2022 SPRING Vol.67 </a></li>
+                                   <li><a href="/Wonikin_WINTER/">2022 WINTER Vol.66 </a></li>
+                                   <li><a href="/Wonikin_AUTUMN/">2021 AUTUMN Vol.65</a></li>
+                                   <li><a href="/Wonikin_SUMMER/">2021 SUMMER Vol.64 </a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        
+                        <h1 class="wis_ft_logo">WONIK</h1>
+                        <p>본사 경기도 성남시 분당구 삼평동 612번지 <br>발행일 2022년 5월(통권 제67호) / 발행인 임창빈 / 발행처 원익 </p>
+                        <p>기획 디자인 제작 피플페이지 02-6674-0111</p>
+                    </div>
+                </div>
+                <div class="wis_ft_copy">
+                    <div class="wis_inner_wrap">
+                        <p>COPYRIGHT © WONIK. ALL RIGHTS RESERVED.</p>
+                    </div>
+                </div>
+            </footer>
+ </div>
+        <script src="static/js/jquery-1.12.1.min.js"></script>
+        <script src="static/js/jquery-migrate-1.4.1.min.js"></script>
+        <!--swiper slide-->
+        <script src="static/js/swiper-bundle.min.js"></script>
+        <script src="static/js/front.js"></script>
+
+        <script>
+            //console.log(document.querySelector('.issue-icon path').getTotalLength()); //137
+        </script>
+    </body>
+
+</html>

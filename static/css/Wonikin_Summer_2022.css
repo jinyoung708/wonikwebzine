@@ -1,0 +1,121 @@
+@charset "UTF-8";
+
+.container {max-width: 1200px; margin: 0 auto;}
+.clearfix::after {display: block; content:''; clear: both;}
+.mb_10 {margin-bottom: 10px;}
+.mb_20 {margin-bottom: 20px;}
+.mb_30 {margin-bottom: 30px;}
+.mb_40 {margin-bottom: 40px;}
+.mb_50 {margin-bottom: 50px;}
+.mb_60 {margin-bottom: 60px;}
+.mb_70 {margin-bottom: 70px;}
+.mb_80 {margin-bottom: 80px;}
+.mb_90 {margin-bottom: 90px;}
+.mb_100 {margin-bottom: 100px;}
+
+
+
+.passion_column {padding: 5rem 0; background-color: #f7d4b8;}
+.passion_column img {display: inline-block; width: auto; max-width: 100%;}
+.passion_column .img_box {margin-bottom: 100px; text-align: center;}
+.passion_column .img_box .title {text-align: center;}
+.passion_column .txt_box::after {display: block; content:''; clear: both;}
+.passion_column .img_box .ico1 {margin-bottom: 20px;}
+.passion_column .img_box .ico1 img {margin-left: 70px;}
+.passion_column .txt_box > div {position: relative;}
+.passion_column .txt_box .pd-r {padding-right: 50px;}
+.passion_column .txt_box .left {float: left; width: 45%;}
+.passion_column .txt_box .right {float: right; width: 45%;}
+.passion_column .txt_box .title {position: absolute; right: 0; top: 0; writing-mode: tb-rl;}
+.passion_column .txt_box .txt {position: relative;}
+.passion_column .txt_box .big {float: left; padding: 10px 50px 0 0;}
+.passion_column .txt_box .big img {width: 70px;}
+.passion_column .txt_box .t1 {float: right; margin-top: 110px; margin-left: 50px; margin-bottom: 50px; font-size: 2rem; font-weight: 700; text-align: right;}
+.passion_column .txt_box .t2 {margin-top: 50px; font-weight: 300; font-size: 1.5rem; letter-spacing: -0.8px; color: #000; text-align: justify; font-family: 'Noto Sans KR', sans-serif; letter-spacing: -0.06em; line-height: 1.65;}
+.passion_column .txt_box .t2 b {display: block; font-weight: 500;}
+
+
+
+.insight_meta {margin-bottom: 0;}
+.insight_meta img {display: inline-block; max-width: 100%; width: auto;}
+.insight_meta .txt_box .title {font-size: 2.7rem; text-decoration: underline; text-underline-position: under;}
+.insight_meta .txt_box .left {float: left; width: 48%;}
+.insight_meta .txt_box .right {float: right; width: 48%;}
+.insight_meta .pink_box {padding: 10rem 0; background: #e07097; color: #fff;}
+.insight_meta .pink_box .t1 {position: relative; margin-bottom: 100px; font-size: 2.7rem; font-weight: 700;}
+.insight_meta .pink_box .t1::before {display: inline-block; content:''; position: absolute;  left: 0; top: 50%; width: 100%; height: 8px; margin-top: -4px; background-color: #fff;}
+.insight_meta .pink_box .t1 span {display: inline-block; position: relative; padding: 7px 45px; border: 8px solid #fff; border-radius: 40px; background-color: #e07097;}
+.insight_meta .pink_box .t2 {float: left; font-size: 2.7rem; font-weight: 700; text-decoration: underline; text-underline-position: under;}
+.insight_meta .pink_box .t3 {float: right; margin-top: 30px; font-size: 2.4rem; font-weight: 700; text-align: right;}
+.insight_meta .pink_box .t3 span {display: inline-block; margin-right: 20px; vertical-align: middle;}
+.insight_meta .pink_box .t3 img {display: inline-block; width: 100px; vertical-align: middle;}
+.insight_meta .pink_box .txt_list::after {display: block; content:''; clear: both;}
+.insight_meta .pink_box .txt_list > li {float: left; width: 45%; margin-right: 10%;}
+.insight_meta .pink_box .txt_list > li:nth-child(n+3) {margin-top: 7%;}
+.insight_meta .pink_box .txt_list > li:nth-child(2n) {margin-right: 0;}
+.insight_meta .pink_box .txt_list > li p {color: #fff;}
+.insight_meta .pink_box .txt_list > li .qna_q {position: relative; padding-left: 80px;}
+.insight_meta .pink_box .txt_list > li .qna_q::before {display: inline-block; content:''; position: absolute; left: 0; top: 0; width: 46px; height: 61px; background: url('../images/article_2022summer/insight_article_03/img01.jpg') no-repeat center/contain;}
+.insight_meta .bg_box {display: table; width: 100%; height: 650px; background: url('../images/article_2022summer/insight_article_03/img03.jpg') no-repeat left top/cover;}
+.insight_meta .bg_box .title {font-size: 4rem;}
+.insight_meta .bg_box .inner {display: table-cell; padding-top: 100px; vertical-align: top;}
+.insight_meta .img_box {text-align: center;}
+
+
+
+
+@media screen and (max-width: 1200px) {
+    .container {padding: 0 3rem;}
+}
+
+@media screen and (max-width: 768px) {
+    .passion_column .img_box {margin-bottom: 50px;}
+    .passion_column .txt_box .left {float: none; width: 100%; margin-bottom: 50px;}
+    .passion_column .txt_box .right {float: none; width: 100%;}
+    .passion_column .txt_box .big {padding-right: 30px;}
+    .passion_column .txt_box .big img {width: 50px;}
+    .passion_column .txt_box .t1 {margin-top: 30px; margin-left: 30px; margin-bottom: 30px;}
+    .passion_column .img_box .ico1 img {width: 70px;}
+    .passion_column .img_box .ico2 img {width: 300px;}
+
+
+    .insight_meta .bg_box .inner {padding-top: 40px;}
+    .insight_meta .bg_box .title {font-size: 3rem;}
+    .insight_meta .pink_box .txt_list > li {float: none; width: 100%;}
+    .insight_meta .pink_box .txt_list > li:nth-child(n+2) {margin-top: 15%;}
+
+}
+
+@media screen and (max-width: 640px) {
+    .insight_meta .pink_box .txt_list > li .qna_q {padding-left: 50px;}
+    .insight_meta .pink_box .txt_list > li .qna_q::before {width: 30px; height: 48px;}
+
+    .insight_meta .txt_box .left,
+    .insight_meta .txt_box .right {float: none; width: 100%; display: inline;}
+    .insight_meta .txt_box .left .txt,
+    .insight_meta .txt_box .right .txt {display: inline;}
+    .insight_meta .bg_box {height: 570px;}
+    .insight_meta .bg_box .title {font-size: 2.5rem;}
+    .insight_meta .txt_box .title {font-size: 2rem;}
+    .insight_meta .pink_box .t1 { font-size: 2rem;}
+    .insight_meta .pink_box .t1 span {border-width: 5px;}
+    .insight_meta .pink_box .t1::before {height: 5px; margin-top: -2.5px;}
+    .insight_meta .pink_box .t2 {font-size: 2rem;}
+    .insight_meta .pink_box .t3 {font-size: 1.8rem;}
+    .insight_meta .pink_box .t3 span {margin-right: 10px;}
+    .insight_meta .pink_box .t3 img {width: 70px;}
+}
+
+@media screen and (max-width: 480px) {
+    .passion_column .img_box .ico1 img {width: 50px;}
+    .passion_column .img_box .ico2 img {width: 200px;}
+
+    
+}
+
+
+
+
+
+
+

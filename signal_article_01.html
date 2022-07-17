@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta property="og:type" content="website">
+        <meta property="og:url" content="wonikwebzine.com">
+        <meta property="og:title" content="원익 웹진">
+        <meta property="og:description" content="2022 봄호 Vol.67">
+        <meta property="og:image" content="https://wonikwebzine.com/Wonikin_SPRING/static/images/main_pp.jpg"/>
+        <title>Wonikin_SPRING</title>
+        <!-- favicon은 선물입니다! 맘에 드시면 써주세요. -->
+        <link rel="shortcut icon" href="./static/images/Wonikin_Spring_2022/Wonikin_favicon.png" type="image/x-icon">
+        <link rel="stylesheet" href="./static/css/swiper-bundle.css">
+        <link rel="stylesheet" href="./static/css/iconfont.css">
+        <link rel="stylesheet" href="static/css/aos.css">
+        <link rel="stylesheet" href="./static/css/style.css">
+        <link rel="stylesheet" href="./static/css/common.css">
+        <link rel="stylesheet" href="./static/css/Wonikin_Spring_2022.css">
+        <script type="text/javascript" src="./static/js/jquery-1.12.1.min.js" defer></script>
+        <!-- <script type="text/javascript" src="./static/js/jquery-migrate-1.4.1.min.js"></script> -->
+        <script type="text/javascript" src="./static/js/swiper-bundle.min.js" defer></script>
+        <script type="text/javascript" src="./static/js/front.js" defer></script>
+        <script type="text/javascript" src="./static/js/Wonikin_Spring_2022.js" defer></script>
+    </head>
+    <body>
+        <!-- body 대체할 wrap -->
+        <div class="wis_wrap">
+            <!-- fixed header -->
+            <header class="wis_h">
+                <!-- 반응형 용도 inner -->
+                <div class="wis_inner_wrap">
+                    <!-- 로고 -->
+                    <div class="wis_h_logo">
+                        <a href="index.html"><img src="./static/images/wonik_logo.gif" alt="WONIK 원익"></a>
+                    </div>
+
+                    <!-- gnb hover 영역 -->
+                    <div class="wis_h_top">
+                        <!-- gnb wrap / 모바일에선 숨겨집니다. -->
+                        <ul class="wis_h_gnb_wrap">
+                            <li>
+                                <!-- gnb -->
+                                <div class="wis_h_gnb"><a href="#">PASSION</a></div>
+                                <!-- hover시 나오는 lnb -->
+                                <ul class="wis_h_lnb">
+                                    <li><a href="passion_article_01.html">원익 예찬</a></li>
+                                    <li><a href="passion_article_02.html">전문가 칼럼</a></li>
+                                  
+                                    <li><a href="passion_article_04.html">원익 히어로</a></li>
+                                    <li><a href="passion_article_05.html">원익로그</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <!-- gnb -->
+                                <div class="wis_h_gnb"><a href="#">INSIGHT</a></div>
+                                 <!-- hover시 나오는 lnb -->
+                                <ul class="wis_h_lnb">
+                                  <li><a href="insight_article_01.html">케이스터디</a></li>
+                                    <li><a href="insight_article_02.html">언더커버리더</a></li>
+                                    <li><a href="insight_article_03.html">메타트랜드 ON</a></li>
+                                    <li><a href="insight_article_04.html">시니어클래스</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <!-- gnb -->
+                                <div class="wis_h_gnb"><a href="#">SIGNAL</a></div>
+                                 <!-- hover시 나오는 lnb -->
+                                <ul class="wis_h_lnb">
+                                   <li><a href="signal_article_01.html">케미스트리</a></li>
+                                    <li><a href="signal_article_02.html">호모나이트쿠스</a></li>
+                                    <li><a href="signal_article_03.html">원익반할지도</a></li>
+                                    <li><a href="signal_article_04.html">요즘, 원익은</a></li>
+                                    <li><a href="signal_article_05.html">원익 나눔 챌린지</a></li>
+                                    <li><a href="signal_article_06.html">롤링페이퍼</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <!-- gnb -->
+                                <div class="wis_h_gnb"><a href="#">NEWS</a></div>
+                                 <!-- hover시 나오는 lnb -->
+                                <ul class="wis_h_lnb">
+                                    <li><a href="news_main.html">원익 뉴스</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <!-- gnb -->
+                                <div class="wis_h_gnb"><a href="#">EVENT</a></div>
+                                 <!-- hover시 나오는 lnb -->
+                                <ul class="wis_h_lnb">
+                                    <li><a href="event_article_01.html">당신도 명탐정!</a></li>
+                                    <li><a href="event_article_02.html">QUIZ & COMMENTARY</a></li>
+ 
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <!-- 사이드 문구 -->
+                    <p class="wis_h_side">
+                        2022 봄호 Vol.67
+                    </p>
+
+                    <!-- 모바일 gnb 버튼 -->
+                    <button class="mo_wis_gnb_btn" type="button"></button>
+
+                    <!-- 모바일에서만 보입니다. -->
+                    <div class="mo_wis_h_gnb_wrap">
+                        <div class="mo_wis_h_gnb_list">
+                            <div class="mo_wis_h_gnb_top">
+                                <!-- 로고 -->
+                                <div class="wis_h_logo">
+                                    <a href="index.html"><img src="./static/images/wonik_logo.gif" alt="WONIK 원익"></a>
+                                </div>
+                                <!-- 모바일 gnb 버튼 -->
+                                <button class="mo_wis_gnb_btn" type="button"></button>
+                            </div>
+                            <div>
+                                <div class="mo_wis_h_gnb"><a href="#">Passion</a></div>
+                                <ul class="mo_wis_h_lnb">
+                                    <li><a href="passion_article_01.html">원익 예찬</a></li>
+                                    <li><a href="passion_article_02.html">전문가 칼럼</a></li>
+                                    
+                                    <li><a href="passion_article_04.html">원익 히어로</a></li>
+                                    <li><a href="passion_article_05.html">원익로그</a></li>
+                                </ul>
+                            </div>
+                            <div>
+                                <div class="mo_wis_h_gnb"><a href="#">Insight</a></div>
+                                <ul class="mo_wis_h_lnb">
+                                    <li><a href="insight_article_01.html">케이스터디</a></li>
+                                    <li><a href="insight_article_02.html">언더커버리더</a></li>
+                                    <li><a href="insight_article_03.html">메타트랜드 ON</a></li>
+                                    <li><a href="insight_article_04.html">시니어클래스</a></li>
+                                </ul>
+                            </div>
+                            <div>
+                                <div class="mo_wis_h_gnb"><a href="#">Signal</a></div>
+                                <ul class="mo_wis_h_lnb">
+                                      <li><a href="signal_article_01.html">케미스트리</a></li>
+                                    <li><a href="signal_article_02.html">호모나이트쿠스</a></li>
+                                    <li><a href="signal_article_03.html">원익반할지도</a></li>
+                                    <li><a href="signal_article_04.html">요즘, 원익은</a></li>
+                                    <li><a href="signal_article_05.html">원익 나눔 챌린지</a></li>
+                                    <li><a href="signal_article_06.html">롤링페이퍼</a></li>
+                                </ul>
+                            </div>
+                            <div>
+                                <div class="mo_wis_h_gnb"><a href="#">News</a></div>
+                                <ul class="mo_wis_h_lnb">
+                                    <li><a href="news_main.html">원익 뉴스</a></li>
+                                </ul>
+                            </div>
+                            <div>
+                                <div class="mo_wis_h_gnb"><a href="#">Event</a></div>
+                                <ul class="mo_wis_h_lnb">
+                                    <li><a href="event_article_01.html">당신도 명탐정!</a></li>
+                                    <li><a href="event_article_02.html">QUIZ & COMMENTARY</a></li>
+ 
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </header>
+            <!-- fixed header// -->
+        <div class="sub-contents npdn">
+            <h2 class="article-heading">케미스트리</h2>
+            <div class="signal_chemi">
+                <div class="signal_chemi-top">
+                    <div class="box">
+                        <div class="text">
+                         
+                            <div class="text--typography">
+                                즐거운<br>
+                                술꾼<br>
+                                도시남녀의<br><br>
+                                맥주 만들기
+                            </div>
+                            <div class="text-normal">
+                                마음과 마음이 만나 화학반응을<br>
+                                일으키는 케미스트리!  <br>
+                                맛있는 맥주 한 잔은 
+                                이 케미스트리에 불꽃을 더한다.<br>
+                                둘째라면 서러운 맥주 애호가들이 <br>
+                                직접 수제 맥주 만들기에 나섰다. <br>
+                                즐거운 술꾼도시남녀의 화학반응이 시작됐다. <br>
+                               원익큐브 최결 님과<br> 원익로보틱스 개발팀 조용현 님의 <br>맥주 만들기 속으로 들어가보자.
+                            </div>
+
+                               <p class="text-point1">Brew Beer</p>
+                        </div>
+                        <div class="pic">
+                            <p>
+                                <img src="static/images/article_2022spring/signal_chemi_img_01.jpg" alt="" class="img">
+                                <span class="name">최결</span>
+                                <span class="role">원익큐브<br>화학영업팀</span> 
+                            </p>
+                            <p><img src="static/images/article_2022spring/signal_chemi_ico_x.png" alt="x" class="ico_x"></p>
+                            <p>
+                                <img src="static/images/article_2022spring/signal_chemi_img_02.jpg" alt="" class="img">
+                                <span class="name">조용현</span>
+                                <span class="role">원익로보틱스<br>개발팀</span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="signal_chemi-btm">
+                    <div class="box box-1">   
+                        <div class="txt">
+                            <p class="title">난 또 술이야~ 두 애주가가 만났다!</p>
+                          편의점에서도 얼마든지 살 수 있는 맥주. 하지만 맛있는 맥주를 만들기 위해선 오랜 시간 동안 다양한 재료가 완벽하게 조화를 이뤄야 한다. 사람 간의 관계도 마찬가지. 화학작용처럼 나와 잘 맞는 사람을 만나면 맥주처럼 짜릿하다.<br>
+                           원익큐브 화학영업팀 최결 님과  원익로보틱스 개발팀 조용현 님이 수제맥주 체험에 참여한 것도 이런 짜릿함을 기대한 것일지도 모른다. 함께 참여하는 사우의 이름, 성별, 소속 등 아무런 정보가 없는 상태에서 처음 만났을 때, 
+                           얼마나 좋은 케미스트리가 나올까? 새로운 사람을 만나기 전의 설렘은 우리를 늘 기분 좋게 만든다.<br>
+                           “저와 나이대가 비슷하고 술을 좋아하시는 분이었으면 합니다. 제가 술을 좋아하거든요.(웃음)” 수제맥주 양조장에 먼저 도착한 조용현 님이 눈을 반짝였다. 곧이어 도착한 최결 님도 같은 생각이었다. “제 또래가 나왔으면 했어요. 공감대가 있으니까요.”  <br>
+                           
+                        </div>   
+                        <div class="pic">
+                            <img src="static/images/article_2022spring/signal_chemi_img_03.jpg" alt="" class="img">                     
+                        </div>       
+                        <p class="txt mt-20">어색하게 첫인사를 마친 두 사람. 두 살이라는 적은 나이 차이도 그렇지만 서로의 첫인상부터 마음에 쏙 들었던 모양이다. <br>
+                           “조용현 님은 참 점잖다는 느낌을 받았어요. 순하고 배려심도 많아 보여서 제가 던지는 농담도 잘 받아줄 것 같아요.” 최결 님의 말에 조용현 님 역시 고개를 끄덕였다. “최결 님의 눈부신 미모에 체험장이 형광등 100개를 켠 것처럼 밝게 보였어요. 
+손가락을 다치신 것 같아 맥주 만들 때 괜찮을까 걱정도 됐죠.”<br>
+                           두 사람의 공통점이 바로 ‘애주가’라는 것도 한몫했다. 각자 좋아하는 술을 추천하고 술맛집도 공유하면서, 이미 두 사람 사이에는 우정의 맥주가 완성된 듯 보였다. 수제맥주를 시음하며 짠! 하고 잔을 부딪치는 두 사람은 이미 친근한 술꾼도시남녀였다.</p>                 
+                    </div>
+                    <div class="box box-2">   
+                        <div class="txt">
+                            <p class="title">여름향기가 나는 우리의 맥주</p>
+                           맥주는 아는 만큼 맛있기 마련이다. 맥주는 에일(Ale), 라거(Lager) 두 종류가 있는데, 상면발효 맥주인 에일은 발효시 효모가 거품과 함께 위로 떠오른다. <br>
+                           색은 불투명하지만 풍미가 깊다. 라거는 발효 맥주로 효모가 아래로 가라앉는다. 에일보다 낮은 온도에서 보관하며 색이 맑고 맛이 깨끗한 점이 특징이다.
+                        </div>   
+                        <div class="pic">
+                            <img src="static/images/article_2022spring/signal_chemi_img_04.jpg" alt="" class="img">                     
+                        </div>                        
+                    </div>
+                    <div class="box box-2">   
+                          <div class="pic">
+                            <img src="static/images/article_2022spring/signal_chemi_img_n_1.jpg" alt="" class="img">                     
+                        </div>         
+
+                        <p class="txt reverse">
+                            이날 두 사람이 만들 맥주는 ‘시트라 페일 에일(Citra Pale Ale)’이다. 시트라 홉을 넣어 만드는 맥주로 오렌지, 레몬 같은 시원한 시트러스 향이 나는 것이 특징. 맥주를 만들려면 가장 먼저 ‘당화’ 작업을 해야 한다. 
+당화는 맥주의 가장 중요한 원료인 맥아(싹이 난 보리. 몰트로도 불린다)를 물에 넣고 끓이면서 맥아가 가진 전분을 당으로 바꿔주는 작업이다. 1시간 동안 푹 끓인 물을 최결 님과 조용현 님이 번갈아 가며 받아 다시 냄비에 집어넣기를 반복했다. 
+총 22.5리터를 만들어야 해 꽤 무게가 나갔지만 두 사람이 함께 냄비를 드니 이쯤이 무슨 문제랴! 끓이면서 증발한 물을 보충하는 스파징 작업까지 마치면 이제 홉양을 계량해야 한다. 
+맥주에 들어갈 시트라 홉향을 맡은 두 사람의 반응은 달랐다. “오렌지 향이 코끝에서 맴돌아요. 여름 향기 같아요.” 최결 님은 여름이 생각났다면 조용현 님은 달랐다. “이 시간에 열심히 일하고 있을 회사 동기들이 생각나요. 잘하고 있지? (웃음)”<br><br>
+                            홉은 총 세 번에 걸쳐 투입한다. 두 사람은 홉을 넣는 각 순서와 끓이는 시간에 따라 맥주 맛이 달라진다는 점이 가장 신기했다. 첫 번째 홉은 1시간가량 끓게 되면서 맥주의 쓴맛을 결정한다. 홉을 많이 넣으면 쓴맛이 강해진다. 
+15분 가량 끓이는 두 번째 홉은 맥주의 맛을 결정하고, 마지막으로 1분간 끓이는 세번째 홉은 맥주에 향을 부여한다. 홉의 양을 계량하면서 홉과 저울을 꼼꼼하게 번갈아보던 두 사람. 새끼손톱만큼 작은 홉을 한 알씩 올려놓으며 정확히 무게를 재는 진지한 눈빛은 이미 프로 양조장인의 것이었다.<br><br><br class="pc-only"><br class="pc-only">
+<span>
+                                <img src="static/images/article_2022spring/signal_chemi_img_n_10.jpg" alt="chemi">
+                            </span>
+                        </p>   
+                           
+                    </div>
+                    <div class="box box-3"></div>
+                    <div class="box box-4">   
+                        <div class="txt">
+                            <p class="title">두 사람이 만든 WON샷!</p>
+                            <img src="static/images/article_2022spring/signal_chemi_img_n_3.jpg" alt="chemi">
+                            <p class="mt-30">홉을 넣고 끓이는 동안 최결 님과 조현 님은 도란도란 이야기를 나누며 서로를 알아갔다. 술버릇을 묻자 두 사람이 거의 동시에 ‘취하면 조용히 집에 간다’라고 답해 폭소가 터졌다. 술을 좋아하면서 술버릇까지 비슷하니 두 사람은 술친구가 될 듯하다. 
+두 사람이 술을 마시는 이유는 무엇일까? “저는 술 마시는 순간에 취해 또 다른 세상을 즐기고 싶어 술을 마셔요.” 조용현 님에게 술이 또 다른 우주로 향하는 통로라면 최결 님에겐 “좋은 사람과 시간을 공유하는 행위”다.  <br>
+                           좋은 사람과 함께 있으면 시간은 더 빨리 가는 법. 홉을 넣은 맥주가 다 끓었다는 알람이 울렸다. 다음 과정은 불순물을 가라앉히는 청징제를 넣고 효모가 활동하기 좋도록 30도 이하로 맥주를 식혀주는 ‘칠링’ 작업을 해야 한다. 돌돌 말린 구리선인 칠러를 맥주에 
+넣었다 뺐다 하며 맥주를 식히는 두 사람. 최결 님이 “저 힘들어요”라며 도움을 청하니 조용현 님이 기꺼이 칠러를 넘겨받아 나머지 칠링을 반복했다. 번갈아가며 부지런히 칠링을 한 덕에 뜨거운 김이 팔팔 올라오던 맥주가 차갑게 냉각됐다. 그다음 발효통에 술을 옮기고 효모를 넣어 봉인한다. 
+1~2주가량 숙성시키고 병에 옮기면 나만의 수제맥주가 탄생! 비중계로 알코올 도수까지 측정하고 나면 1차 과정이 모두 끝난다.</p>
+                            
+                        </div>   
+                        <div class="txt mt-50">
+
+                          “맥주가 이렇게 과학적이고 복잡한 과정을 거쳐 만들어지는지 몰랐어요.” 조용현 님의 말이 끝나자 최결 님이 술에 이름을 붙였다며 손을 들었다. “‘원샷’어때요? 원익그룹의 ‘원’을 따서 원익의 모든 사우가 저희의 맥주로 하나가 됐다는 뜻을 담았어요.”<br><br>
+                            세상 하나뿐인 맥주인 만큼 조용현 님은 여자친구와, 최결 님은 사랑하는 직장동료들과 함께 마실 계획이다. 마지막으로 두 사람은 짧은 시간이지만 서로에게 재미있는 별명을 붙여줬다. “조용현 님은 ‘핑퐁’이에요. 티키타카가 잘돼서 대화가 참 재미있어요. 
+순하고 착해서 어떤 말이든 너그럽게 잘 받아주는 좋은 분이에요.”, “최결 님은 한 마디로 ‘홉’입니다! 홉을 넣으면 여러 맛이 나잖아요? 최결 님도 홉처럼 다양한 매력을 지닌 분이었어요.”<br>
+                            이날 만든 맥주도 두 사람처럼 즐거운 화학작용을 거치며 깊은 맛을 만들어갈 것이다. 행복한 술꾼도시남녀가 만든 수제맥주! 행복한 기다림의 시간을 거쳐 완성될 그 맛이 궁금해진다. 
+                            <p class="mt-30">
+                                <img src="static/images/article_2022spring/signal_chemi_img_n_2.jpg" alt="chemi">
+                            </p>
+                        </div>
+                       
+                    </div>
+                     <div class="pic-last">
+                            <img src="static/images/article_2022spring/signal_chemi_img_06.jpg" alt="" class="img">                     
+                        </div>
+                </div>
+            </div>
+        </div>
+<div class="quick">
+      <a href="#" class="btn-home"><span class="blind">home</span></a>
+      
+    </div>
+    <footer class="wis_ft">
+                <div class="wis_ft_info">
+                    <div class="wis_inner_wrap">
+                        <!-- 지난 호 보기 -->
+                        <div class="ft_select">
+                            <button class="ft_select_btn" type="button">2022 SPRING Vol.67</button>
+                            <div class="ft_select_list">
+                                <p class="ft_select_title">지난호 보기</p>
+                                <ul>
+                                   <li><a href="/Wonikin_SPRING/">2022 SPRING Vol.67 </a></li>
+                                   <li><a href="/Wonikin_WINTER/">2022 WINTER Vol.66 </a></li>
+                                   <li><a href="/Wonikin_AUTUMN/">2021 AUTUMN Vol.65</a></li>
+                                   <li><a href="/Wonikin_SUMMER/">2021 SUMMER Vol.64 </a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        
+                        <h1 class="wis_ft_logo">WONIK</h1>
+                        <p>본사 경기도 성남시 분당구 삼평동 612번지 <br>발행일 2022년 5월(통권 제67호) / 발행인 임창빈 / 발행처 원익 </p>
+                        <p>기획 디자인 제작 피플페이지 02-6674-0111</p>
+                    </div>
+                </div>
+                <div class="wis_ft_copy">
+                    <div class="wis_inner_wrap">
+                        <p>COPYRIGHT © WONIK. ALL RIGHTS RESERVED.</p>
+                    </div>
+                </div>
+            </footer>
+ </div>
+        <script src="static/js/jquery-1.12.1.min.js"></script>
+        <script src="static/js/jquery-migrate-1.4.1.min.js"></script>
+        <!--swiper slide-->
+        <script src="static/js/swiper-bundle.min.js"></script>
+        <script src="static/js/aos.js"></script>
+        <script src="static/js/front.js"></script>
+
+        <script>
+            //console.log(document.querySelector('.issue-icon path').getTotalLength()); //137
+        </script>
+<script type="text/javascript" src="//wcs.naver.net/wcslog.js"></script>
+<script type="text/javascript">
+if(!wcs_add) var wcs_add = {};
+wcs_add["wa"] = "12518c35fb268c0";
+if(window.wcs) {
+  wcs_do();
+}
+</script>
+    </body>
+
+</html>

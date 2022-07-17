@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta property="og:type" content="website">
+        <meta property="og:url" content="wonikwebzine.com">
+        <meta property="og:title" content="원익 웹진">
+        <meta property="og:description" content="2022 봄호 Vol.67">
+        <meta property="og:image" content="https://wonikwebzine.com/Wonikin_SPRING/static/images/main_pp.jpg"/>
+        <title>Wonikin_SPRING</title>
+        <!-- favicon은 선물입니다! 맘에 드시면 써주세요. -->
+        <link rel="shortcut icon" href="./static/images/Wonikin_Spring_2022/Wonikin_favicon.png" type="image/x-icon">
+        <link rel="stylesheet" href="./static/css/swiper-bundle.css">
+        <link rel="stylesheet" href="./static/css/iconfont.css">
+        <link rel="stylesheet" href="static/css/aos.css">
+        <link rel="stylesheet" href="./static/css/style.css">
+        <link rel="stylesheet" href="./static/css/common.css">
+        <link rel="stylesheet" href="./static/css/Wonikin_Spring_2022.css">
+        <script type="text/javascript" src="./static/js/jquery-1.12.1.min.js" defer></script>
+        <!-- <script type="text/javascript" src="./static/js/jquery-migrate-1.4.1.min.js"></script> -->
+        <script type="text/javascript" src="./static/js/swiper-bundle.min.js" defer></script>
+        <script type="text/javascript" src="./static/js/front.js" defer></script>
+        <script type="text/javascript" src="./static/js/Wonikin_Spring_2022.js" defer></script>
+    </head>
+    <body>
+        <!-- body 대체할 wrap -->
+        <div class="wis_wrap">
+            <!-- fixed header -->
+            <header class="wis_h">
+                <!-- 반응형 용도 inner -->
+                <div class="wis_inner_wrap">
+                    <!-- 로고 -->
+                    <div class="wis_h_logo">
+                        <a href="index.html"><img src="./static/images/wonik_logo.gif" alt="WONIK 원익"></a>
+                    </div>
+
+                    <!-- gnb hover 영역 -->
+                    <div class="wis_h_top">
+                        <!-- gnb wrap / 모바일에선 숨겨집니다. -->
+                        <ul class="wis_h_gnb_wrap">
+                            <li>
+                                <!-- gnb -->
+                                <div class="wis_h_gnb"><a href="#">PASSION</a></div>
+                                <!-- hover시 나오는 lnb -->
+                                <ul class="wis_h_lnb">
+                                    <li><a href="passion_article_01.html">원익 예찬</a></li>
+                                    <li><a href="passion_article_02.html">전문가 칼럼</a></li>
+                                    
+                                    <li><a href="passion_article_04.html">원익 히어로</a></li>
+                                    <li><a href="passion_article_05.html">원익로그</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <!-- gnb -->
+                                <div class="wis_h_gnb"><a href="#">INSIGHT</a></div>
+                                 <!-- hover시 나오는 lnb -->
+                                <ul class="wis_h_lnb">
+                                  <li><a href="insight_article_01.html">케이스터디</a></li>
+                                    <li><a href="insight_article_02.html">언더커버리더</a></li>
+                                    <li><a href="insight_article_03.html">메타트랜드 ON</a></li>
+                                    <li><a href="insight_article_04.html">시니어클래스</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <!-- gnb -->
+                                <div class="wis_h_gnb"><a href="#">SIGNAL</a></div>
+                                 <!-- hover시 나오는 lnb -->
+                                <ul class="wis_h_lnb">
+                                   <li><a href="signal_article_01.html">케미스트리</a></li>
+                                    <li><a href="signal_article_02.html">호모나이트쿠스</a></li>
+                                    <li><a href="signal_article_03.html">원익반할지도</a></li>
+                                    <li><a href="signal_article_04.html">요즘, 원익은</a></li>
+                                    <li><a href="signal_article_05.html">원익 나눔 챌린지</a></li>
+                                    <li><a href="signal_article_06.html">롤링페이퍼</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <!-- gnb -->
+                                <div class="wis_h_gnb"><a href="#">NEWS</a></div>
+                                 <!-- hover시 나오는 lnb -->
+                                <ul class="wis_h_lnb">
+                                    <li><a href="news_main.html">원익 뉴스</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <!-- gnb -->
+                                <div class="wis_h_gnb"><a href="#">EVENT</a></div>
+                                 <!-- hover시 나오는 lnb -->
+                                <ul class="wis_h_lnb">
+                                    <li><a href="event_article_01.html">당신도 명탐정!</a></li>
+                                    <li><a href="event_article_02.html">QUIZ & COMMENTARY</a></li>
+ 
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <!-- 사이드 문구 -->
+                    <p class="wis_h_side">
+                        2022 봄호 Vol.67
+                    </p>
+
+                    <!-- 모바일 gnb 버튼 -->
+                    <button class="mo_wis_gnb_btn" type="button"></button>
+
+                    <!-- 모바일에서만 보입니다. -->
+                    <div class="mo_wis_h_gnb_wrap">
+                        <div class="mo_wis_h_gnb_list">
+                            <div class="mo_wis_h_gnb_top">
+                                <!-- 로고 -->
+                                <div class="wis_h_logo">
+                                    <a href="index.html"><img src="./static/images/wonik_logo.gif" alt="WONIK 원익"></a>
+                                </div>
+                                <!-- 모바일 gnb 버튼 -->
+                                <button class="mo_wis_gnb_btn" type="button"></button>
+                            </div>
+                            <div>
+                                <div class="mo_wis_h_gnb"><a href="#">Passion</a></div>
+                                <ul class="mo_wis_h_lnb">
+                                    <li><a href="passion_article_01.html">원익 예찬</a></li>
+                                    <li><a href="passion_article_02.html">전문가 칼럼</a></li>
+                                   
+                                    <li><a href="passion_article_04.html">원익 히어로</a></li>
+                                    <li><a href="passion_article_05.html">원익로그</a></li>
+                                </ul>
+                            </div>
+                            <div>
+                                <div class="mo_wis_h_gnb"><a href="#">Insight</a></div>
+                                <ul class="mo_wis_h_lnb">
+                                    <li><a href="insight_article_01.html">케이스터디</a></li>
+                                    <li><a href="insight_article_02.html">언더커버리더</a></li>
+                                    <li><a href="insight_article_03.html">메타트랜드 ON</a></li>
+                                    <li><a href="insight_article_04.html">시니어클래스</a></li>
+                                </ul>
+                            </div>
+                            <div>
+                                <div class="mo_wis_h_gnb"><a href="#">Signal</a></div>
+                                <ul class="mo_wis_h_lnb">
+                                      <li><a href="signal_article_01.html">케미스트리</a></li>
+                                    <li><a href="signal_article_02.html">호모나이트쿠스</a></li>
+                                    <li><a href="signal_article_03.html">원익반할지도</a></li>
+                                    <li><a href="signal_article_04.html">요즘, 원익은</a></li>
+                                    <li><a href="signal_article_05.html">원익 나눔 챌린지</a></li>
+                                    <li><a href="signal_article_06.html">롤링페이퍼</a></li>
+                                </ul>
+                            </div>
+                            <div>
+                                <div class="mo_wis_h_gnb"><a href="#">News</a></div>
+                                <ul class="mo_wis_h_lnb">
+                                    <li><a href="news_main.html">원익 뉴스</a></li>
+                                </ul>
+                            </div>
+                            <div>
+                                <div class="mo_wis_h_gnb"><a href="#">Event</a></div>
+                                <ul class="mo_wis_h_lnb">
+                                    <li><a href="event_article_01.html">당신도 명탐정!</a></li>
+                                    <li><a href="event_article_02.html">QUIZ & COMMENTARY</a></li>
+ 
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </header>
+            <!-- fixed header// -->
+        <div class="sub-contents npdn">
+            <h2 class="article-heading">원익 나눔 챌린지</h2>
+            <div class="signal_share">
+                <div class="signal_share-top">
+                    <div class="text">
+                        <div class="text__left">
+                            <div class="text--typography">
+                            집 잃은<br>천사들과 함께한<br>행복한 주말
+                        </div>
+                        <p class="text-point1">
+                            2022 원익그룹 나눔 챌린지
+                            <small>유기견 사랑나눔 봉사활동</small></p>
+                        </div>
+                        <div class="text-normal text__right">
+                            새로운 가족을 기다리는 유기견 보호소에 방진복을  <br>
+                            입은 원익인들이 모습을 드러냈다. 잠시 집을 잃은 <br>
+                           천사들에게 사랑과 행복을 선물하기 위함이다.
+                        </div>
+                    </div>
+
+                    <div class="pic">
+                        <img src="static/images/article_2022spring/signal_share_img_01.jpg" alt="" class="img">
+                    </div>
+
+
+                </div>
+                <div class="signal_share-btm">
+                    <div class="box box-1">
+                        <p class="txt-point2">사람에게 상처를 받은 녀석들이지만<br>
+                            언제나 사람을 반기며 곁을 내어주는<br>
+                            그들입니다. 좋은 곳으로 가길<br>
+                            원익그룹에서 응원해봅니다.</p>
+                    </div>
+                    <div class="box box-2 flex-end">
+                        <div class="txt">
+                            <p class="title">따스한 봄날의 의미 있는 발걸음</p>
+                            강아지를 좋아하는 사람들은 우리 주변 어디에든 존재하지만,국내에서 발생하는 유기견 수가
+                            매년 10만 마리에 달한다는 사실을 아는 사람은 그리 많지 않다. 바로 이 지점에서 문제의식을
+                            느낀 애견인들은 수시로 유기견 보호소에서 봉사활동을 한다. 생명이 함부로 버려지거나
+                            죽는 일이 일어나서는 안 된다고 굳게 믿기 때문이다. 이런 의미에서 우리 그룹의 봉사활동
+                            프로젝트 ‘2022 원익그룹 나눔 챌린지’의 첫 행선지는 국내 최대 유기견 보호소 중 하나인
+                            ‘KDS 레인보우 쉼터’로 정해졌다. <br>
+                            보호소 주차장에 모인 사우들이 방진복을 입자, 오전 내내 흐렸던 하늘이 한순간 걷히더니
+                            따스한 햇살이 내리쬐기 시작했다. 봉사활동 하기 좋은 봄날이었다. 정문 앞까지 원익인들을
+                            마중 나온 소장이 봉사자 주의사항을 차분하게 설명하자, 1년반째 거의 매주 경기도 등지의
+                            유기견 보호소에 다니며 봉사활동을 한다는 사우가 한결 이해하기 쉽도록 설명을 덧붙였다.
+                            
+                        </div>
+                        <div class="txt">
+                            “보호소에서는 강아지들의 상황에 따라 견사를 여러 개 마련해 놓는데요. 여기에서 강아지가
+                            임의로 빠져나가면 그 안의 규칙과 질서가 순식간에 무너져 내린답니다. 그래서 문을
+                            여닫을 때는 강아지가 도망치지 않도록 예의주시해야 합니다.” 덕분에 마음의 준비를
+                            단단히 한 사우들. 드디어 강아지들을 향해 힘차게 발걸음을 옮겼다.<br class="pc-only"><br class="pc-only"><br class="pc-only"><br class="pc-only"><br class="pc-only"><br class="pc-only"><br class="pc-only"><br class="pc-only">
+</div>
+
+                    </div>
+                    <div class="box box-3 flex-end">
+                        <div class="txt">
+                            
+                            <img src="static/images/article_2022spring/signal_share_img_n_01.jpg" alt="">
+                              <p class="title mt-20">돌봄 주고 힐링 받은 값진 시간</p>
+                            사우들이 소형견 실내 견사에 도착하자, 강아지들이 순식간에 문 앞으로 모여들었다. 안내를 맡은 담당자가
+                            사우들에게 말했다. “아이들을 예뻐해 주고 싶은 마음이 굴뚝같겠지만, 일단은 견사 안을 서서히 거닐어
+                            주세요. 그러면 아이들이 흥분하지 않고 자연스럽게 여러분의 존재를 받아들인답니다.” 그의 말대로
+                            사우들이 견사 안을 천천히 걷자, 부산스러웠던 움직임과 짖는 소리가 조금씩 잦아들었다. 본격적으로
+                            몸을 움직여야 할 때가 다가왔다는 신호였다.
+
+                        </div>
+
+                        <div class="txt">
+                          너 나 할 것 없이 주걱과 쓰레받기를 집어 든 사우들이 강아지들의 분뇨를 빠르게 치웠다. 어느새
+                            밀대를 들고 등장한 또 다른 사우들이 그 뒤를 바지런히 쫓으며 바닥에 반짝거림을 선사했다. 자신들을
+                            위해 이곳에 왔다는 것을 눈치챈 강아지들이 사우들을 졸졸 따라다녔다. “이제부터 강아지들이 반가운
+                            기색을 보이면 가만히 예뻐해 주고 쓰다듬어 주셔도 됩니다.” 그 말이 떨어지기 무섭게 강아지들과 어울리는
+                            사우들의 모습은 그 자체로 힐링이었다.<br>
+                            견사를 치우고 강아지들과 놀아 주다 보니 어느새 사료를 줄 시간이 다가왔다. 양손에 강아지들의 밥그릇을
+                            든 사우들이 견사 주변을 빙 둘러쌌다. 한 번에 여러 군데에서 사료를 줘야 강아지 들이 싸우지 않는단다.
+                            “하나, 둘, 셋, 지금입니다!” 소장의 신호에 맞춰 일제히 밥그릇을 내려놓자, 각자의 자리에서 맛있게
+                            점심을 먹는 강아지들. 사우들의 얼굴에 흐뭇한 미소가 떠올랐다.
+                        </div>
+                        
+                    </div>
+                    <div class="box box-img mt-50">
+                        <img src="static/images/article_2022spring/signal_share_img_n_02.jpg" alt="image">
+                        <p class="txt-challenge">  
+                            CHALLENGE 🐶
+                        </p>
+                    </div>
+                    <div class="box box-4">
+                        <div class="txt">
+                            <p class="title">또 다른 ‘봉사 어울림’을 기약하다</p>
+                            소형견들을 열심히 돌봤으니, 이제는 큰 강아지들의 안부를 물으러 갈 시간이다. 사우들이 외부에 마련된
+                            대형견 견사로 자리를 옮겼다. 사우들을 발견하자 커다란 꼬리를 프로펠러처럼 돌리는 강아지들.
+                            그 치명적인 귀여움에도 불구하고 사우들은 견사를 천천히 거닐고 곳곳의 분뇨를 치우며 해야 할 일을
+                            묵묵히 수행했으며, 마침내 허락이 떨어지자 오랫동안 떨어져 있던 가족을 만난 것처럼 강아지들을
+                            쓰다듬고 또 쓰다듬었다. <br><br>
+                            두 시간여의 봉사활동이 2분처럼 순식간에 지나갔다. 하지만 강아지들과 정이 든 사우들은 쉽사리 손길을
+                            거두지 못했다. 아쉬운 그 마음을 어떻게 달래야 할지 갈피를 못 잡고 있을 때, 유기견 봉사활동이 처음이라던 사우가
+                            당찬 목소리로 외쳤다. “조만간 또 모여서 오면 되죠!” 그 말에 사우들 모두가 함박웃음을 지으며 고개를 끄덕였다. 3월 어느 봄날에
+                            펼쳐진 2022 원익그룹 나눔 챌린지는 이렇듯 훈훈한 분위기 속에서 다음 봉사활동을 기약하며 아름답게 첫 번째 막을 내렸다.
+                        </div>
+                        <div class="txt">
+                            <img src="static/images/article_2022spring/signal_share_img_n_03.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="box box-5">
+                        <p class="title">참가 사우 미니 인터뷰</p>
+                        <ul class="interview">
+                            <li>
+                                <img src="static/images/article_2022spring/signal_share_img_05.jpg" alt="" class="img">
+                                <p class="role">원익아이피에스 DP연구소 DP개발설계팀</p>
+                                <p class="name">노동훈 님</p>
+                                <p class="txt">
+                                    5년째 유기견 보호소 봉사활동을 다니고 있지만,<br>
+                                    사우들과 함께한 것은 이번이 처음인데요.<br>
+                                    그래서인지 설레는 마음으로 이곳에 나왔고,<br>
+                                    여느 때보다 즐겁고 행복한 시간을 보낼 수<br>
+                                    있었습니다. 모든 일이 그렇듯,<br>
+                                    봉사도 처음이 어려운 법입니다. 용기를 내서<br>
+                                    딱 한 번만 봉사에 참여해 보세요.<br>
+                                    기대 이상의 보람과 행복을 느끼실 거라고 확신합니다!
+                                </p>
+                            </li>
+                            <li>
+                                <img src="static/images/article_2022spring/signal_share_img_06.jpg" alt="" class="img">
+                                <p class="role">원익아이피에스 설비개발본부 SW팀</p>
+                                <p class="name">장은서 님</p>
+                                <p class="txt">
+                                    강아지를 좋아해서 유기견 봉사활동에도<br>
+                                    관심이 있었지만 막상 하기가 쉽지 않았는데,<br>
+                                    이렇게 그룹에서 자리를 마련해 주신 덕분에<br>
+                                    직장 동료들과 첫 봉사에 나설 수 있었습니다.<br>
+                                    봉사 내내 강아지들에게 사랑받고 있다는 느낌을<br>
+                                    듬뿍 받아서, 오히려 제가 힐링이 된 기분이랄까요?<br>
+                                    앞으로도 사우들과 함께 다양한 봉사활동에<br>
+                                    도전해보고자 합니다.
+                                </p>
+                            </li>
+                        </ul>
+                        <div class="pic">
+                            <img src="static/images/article_2022spring/signal_share_img_n_04.jpg" alt="" class="img">
+                        </div>
+
+                    </div>
+
+ <div class="video-container mt-100 m-mt-50 mb-50">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/FmZ5PUjazFQ"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe>
+                    </div>
+<div class="pic mt-20">
+                            <img src="static/images/article_2022spring/signal_share_img_n_06.jpg" alt="" class="img">
+                        </div>
+                </div>
+            </div>
+        </div>
+ <div class="comments-box">
+            <div class="footnote">
+                <strong>이번엔 플로깅 원익인 모여라 </strong></br></br>
+                <p>모집 마감 :  2022년 6월 7일(화)까지</p>
+            </div>
+            <div class="user-comment user-write">
+                <p class="profile"></p>
+                <div class="comment">
+                    <div class="user-comment-write">
+                        <textarea name="" id="uinfo" cols="30" rows="10" placeholder="참여 신청해주세요"></textarea>
+
+                        <div class="input-user-info">
+                            <div class="input-box">
+                                <div class="input-username">
+                                    <input type="text" id="usrname" placeholder="이름/소속*" required>
+                                    <input type="hidden" id="menuid" value="300" />
+                                    <input type="hidden" id="mid" value="2022 봄호 Vol.67" />
+                                </div>
+                                <div class="input-contact">
+                                    <input type="text" id="phone" placeholder="전화번호*" required>
+                                </div>
+                                <div class="input-email">
+                                    <input type="text" id="mail" placeholder="이메일*" required>
+                                </div>
+                            </div>
+
+                            <div class="btn-area">
+                                <button class="btn-apply" id="sbtn">댓글등록</button>
+                                <script type="text/javascript" src="static/js/jquery-1.12.1.min.js"></script>
+                                <script type="text/javascript" src="static/js/common.js"></script>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="sorting">
+                <p class="count" id="count">0 댓글</p>
+
+                <div class="sort">
+                    <select name="sort" id="sort">
+                        <option value="asc">등록순</option>
+                        <option value="desc">최신순</option>
+                    </select>
+                </div>
+            </div>
+
+      
+        </div>
+        <div class="quick">
+            <a href="#" class="btn-home"><span class="blind">home</span></a>
+
+        </div>
+        <footer class="wis_ft">
+                <div class="wis_ft_info">
+                    <div class="wis_inner_wrap">
+                        <!-- 지난 호 보기 -->
+                        <div class="ft_select">
+                            <button class="ft_select_btn" type="button">2022 SPRING Vol.67</button>
+                            <div class="ft_select_list">
+                                <p class="ft_select_title">지난호 보기</p>
+                                <ul>
+                                   <li><a href="/Wonikin_SPRING/">2022 SPRING Vol.67 </a></li>
+                                   <li><a href="/Wonikin_WINTER/">2022 WINTER Vol.66 </a></li>
+                                   <li><a href="/Wonikin_AUTUMN/">2021 AUTUMN Vol.65</a></li>
+                                   <li><a href="/Wonikin_SUMMER/">2021 SUMMER Vol.64 </a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        
+                        <h1 class="wis_ft_logo">WONIK</h1>
+                        <p>본사 경기도 성남시 분당구 삼평동 612번지 <br>발행일 2022년 5월(통권 제67호) / 발행인 임창빈 / 발행처 원익 </p>
+                        <p>기획 디자인 제작 피플페이지 02-6674-0111</p>
+                    </div>
+                </div>
+                <div class="wis_ft_copy">
+                    <div class="wis_inner_wrap">
+                        <p>COPYRIGHT © WONIK. ALL RIGHTS RESERVED.</p>
+                    </div>
+                </div>
+            </footer>
+        <script src="static/js/jquery-1.12.1.min.js"></script>
+        <script src="static/js/jquery-migrate-1.4.1.min.js"></script>
+        <!--swiper slide-->
+        <script src="static/js/swiper-bundle.min.js"></script>
+        <script src="static/js/aos.js"></script>
+        <script src="static/js/front.js"></script>
+
+        <script>
+            //console.log(document.querySelector('.issue-icon path').getTotalLength()); //137
+        </script>
+        <script type="text/javascript" src="//wcs.naver.net/wcslog.js"></script>
+        <script type="text/javascript">
+            if (!wcs_add) var wcs_add = {};
+            wcs_add["wa"] = "12518c35fb268c0";
+            if (window.wcs) {
+                wcs_do();
+            }
+        </script>
+    </body>
+
+</html>

@@ -1,0 +1,611 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta property="og:type" content="website">
+        <meta property="og:url" content="wonikwebzine.com">
+        <meta property="og:title" content="원익 웹진">
+        <meta property="og:description" content="2022 봄호 Vol.67">
+        <meta property="og:image" content="https://wonikwebzine.com/Wonikin_SPRING/static/images/main_pp.jpg"/>
+        <title>Wonikin_SPRING</title>
+        <!-- favicon은 선물입니다! 맘에 드시면 써주세요. -->
+        <link rel="shortcut icon" href="./static/images/Wonikin_Spring_2022/Wonikin_favicon.png" type="image/x-icon">
+        <link rel="stylesheet" href="./static/css/swiper-bundle.css">
+        <link rel="stylesheet" href="./static/css/iconfont.css">
+        <!-- <link rel="stylesheet" href="./static/css/style.css"> // 너무 메인에 연결된 css가 많아서 주석처리합니다.-->
+        <link rel="stylesheet" href="./static/css/common.css">
+        <link rel="stylesheet" href="./static/css/Wonikin_Spring_2022.css">
+        <script type="text/javascript" src="./static/js/jquery-1.12.1.min.js" defer></script>
+        <!-- <script type="text/javascript" src="./static/js/jquery-migrate-1.4.1.min.js"></script> -->
+        <script type="text/javascript" src="./static/js/swiper-bundle.min.js" defer></script>
+        <script type="text/javascript" src="./static/js/front.js" defer></script>
+        <script type="text/javascript" src="./static/js/Wonikin_Spring_2022.js" defer></script>
+    </head>
+    <body>
+        <!-- body 대체할 wrap -->
+        <div class="wis_wrap">
+            <!-- fixed header -->
+            <header class="wis_h">
+                <!-- 반응형 용도 inner -->
+                <div class="wis_inner_wrap">
+                    <!-- 로고 -->
+                    <div class="wis_h_logo">
+                        <a href="index.html"><img src="./static/images/wonik_logo.gif" alt="WONIK 원익"></a>
+                    </div>
+
+                    <!-- gnb hover 영역 -->
+                    <div class="wis_h_top">
+                        <!-- gnb wrap / 모바일에선 숨겨집니다. -->
+                        <ul class="wis_h_gnb_wrap">
+                            <li>
+                                <!-- gnb -->
+                                <div class="wis_h_gnb"><a href="#">PASSION</a></div>
+                                <!-- hover시 나오는 lnb -->
+                                <ul class="wis_h_lnb">
+                                    <li><a href="passion_article_01.html">원익 예찬</a></li>
+                                    <li><a href="passion_article_02.html">전문가 칼럼</a></li>
+                                  
+                                    <li><a href="passion_article_04.html">원익 히어로</a></li>
+                                    <li><a href="passion_article_05.html">원익로그</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <!-- gnb -->
+                                <div class="wis_h_gnb"><a href="#">INSIGHT</a></div>
+                                 <!-- hover시 나오는 lnb -->
+                                <ul class="wis_h_lnb">
+                                  <li><a href="insight_article_01.html">케이스터디</a></li>
+                                    <li><a href="insight_article_02.html">언더커버리더</a></li>
+                                    <li><a href="insight_article_03.html">메타트랜드 ON</a></li>
+                                    <li><a href="insight_article_04.html">시니어클래스</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <!-- gnb -->
+                                <div class="wis_h_gnb"><a href="#">SIGNAL</a></div>
+                                 <!-- hover시 나오는 lnb -->
+                                <ul class="wis_h_lnb">
+                                   <li><a href="signal_article_01.html">케미스트리</a></li>
+                                    <li><a href="signal_article_02.html">호모나이트쿠스</a></li>
+                                    <li><a href="signal_article_03.html">원익반할지도</a></li>
+                                    <li><a href="signal_article_04.html">요즘, 원익은</a></li>
+                                    <li><a href="signal_article_05.html">원익 나눔 챌린지</a></li>
+                                    <li><a href="signal_article_06.html">롤링페이퍼</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <!-- gnb -->
+                                <div class="wis_h_gnb"><a href="#">NEWS</a></div>
+                                 <!-- hover시 나오는 lnb -->
+                                <ul class="wis_h_lnb">
+                                    <li><a href="news_main.html">원익 뉴스</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <!-- gnb -->
+                                <div class="wis_h_gnb"><a href="#">EVENT</a></div>
+                                 <!-- hover시 나오는 lnb -->
+                                <ul class="wis_h_lnb">
+                                    <li><a href="event_article_01.html">당신도 명탐정!</a></li>
+                                    <li><a href="event_article_02.html">QUIZ & COMMENTARY</a></li>
+ 
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <!-- 사이드 문구 -->
+                    <p class="wis_h_side">
+                        2022 봄호 Vol.67
+                    </p>
+
+                    <!-- 모바일 gnb 버튼 -->
+                    <button class="mo_wis_gnb_btn" type="button"></button>
+
+                    <!-- 모바일에서만 보입니다. -->
+                    <div class="mo_wis_h_gnb_wrap">
+                        <div class="mo_wis_h_gnb_list">
+                            <div class="mo_wis_h_gnb_top">
+                                <!-- 로고 -->
+                                <div class="wis_h_logo">
+                                    <a href="index.html"><img src="./static/images/wonik_logo.gif" alt="WONIK 원익"></a>
+                                </div>
+                                <!-- 모바일 gnb 버튼 -->
+                                <button class="mo_wis_gnb_btn" type="button"></button>
+                            </div>
+                            <div>
+                                <div class="mo_wis_h_gnb"><a href="#">Passion</a></div>
+                                <ul class="mo_wis_h_lnb">
+                                    <li><a href="passion_article_01.html">원익 예찬</a></li>
+                                    <li><a href="passion_article_02.html">전문가 칼럼</a></li>
+                                   
+                                    <li><a href="passion_article_04.html">원익 히어로</a></li>
+                                    <li><a href="passion_article_05.html">원익로그</a></li>
+                                </ul>
+                            </div>
+                            <div>
+                                <div class="mo_wis_h_gnb"><a href="#">Insight</a></div>
+                                <ul class="mo_wis_h_lnb">
+                                    <li><a href="insight_article_01.html">케이스터디</a></li>
+                                    <li><a href="insight_article_02.html">언더커버리더</a></li>
+                                    <li><a href="insight_article_03.html">메타트랜드 ON</a></li>
+                                    <li><a href="insight_article_04.html">시니어클래스</a></li>
+                                </ul>
+                            </div>
+                            <div>
+                                <div class="mo_wis_h_gnb"><a href="#">Signal</a></div>
+                                <ul class="mo_wis_h_lnb">
+                                      <li><a href="signal_article_01.html">케미스트리</a></li>
+                                    <li><a href="signal_article_02.html">호모나이트쿠스</a></li>
+                                    <li><a href="signal_article_03.html">원익반할지도</a></li>
+                                    <li><a href="signal_article_04.html">요즘, 원익은</a></li>
+                                    <li><a href="signal_article_05.html">원익 나눔 챌린지</a></li>
+                                    <li><a href="signal_article_06.html">롤링페이퍼</a></li>
+                                </ul>
+                            </div>
+                            <div>
+                                <div class="mo_wis_h_gnb"><a href="#">News</a></div>
+                                <ul class="mo_wis_h_lnb">
+                                    <li><a href="news_main.html">원익 뉴스</a></li>
+                                </ul>
+                            </div>
+                            <div>
+                                <div class="mo_wis_h_gnb"><a href="#">Event</a></div>
+                                <ul class="mo_wis_h_lnb">
+                                    <li><a href="event_article_01.html">당신도 명탐정!</a></li>
+                                  <li><a href="event_article_02.html">QUIZ & COMMENTARY</a></li>
+ 
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </header>
+            <!-- fixed header// -->
+
+            <!-- container -->
+            <section class="wis_container">
+                <!-- 메인 visual -->
+                <div class="wis_visual_wrap">
+                    <!-- 반응형 용도 inner -->
+                    <div class="wis_inner_wrap">
+                        <div class="wis_visual_img">
+                            <div class="wis_visual_img1">
+                                <img src="./static/images/Wonikin_Spring_2022/wis_visual_img1.png" alt="메인비쥬얼 이미지1">
+                            </div>
+                            <div class="wis_visual_img2">
+                                <img src="./static/images/Wonikin_Spring_2022/wis_visual_img2.png" alt="메인비쥬얼 이미지2">
+                            </div> 
+                        </div>
+                        <div class="wis_visual_text">
+                            <div class="wis_visual_text1">
+                                <img src="./static/images/Wonikin_Spring_2022/wis_visual_img3.png" alt="좋은 기업의 길을 묻다">
+                            </div>
+                            <div class="wis_visual_text2">
+                                <p>
+                                    각박한 세상 속에서도 구성원을 아끼며<br>
+                                    함께 성장하려는 기업들이 많아지고 있는 요즘, 회사와<br>
+                                    직원 모두에게 좋은 기업의 의미에 대해 묻고자 합니다.<br> 
+                                    이번 호에서는 1981년 창립 이후 자유와 소통, 행복의<br> 
+                                    핵심 가치를 통해 회사와 구성원 모두 성장할 수 있는<br> 
+                                    일하기 좋은 기업 환경을 조성하기 위해 노력해온 원익의<br> 
+                                    지향점을 되짚어봅니다. 
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- 메인 visual// -->
+
+                <!-- passion -->
+                <div class="wis_passion_wrap">
+                    <!-- 반응형 용도 inner -->
+                    <div class="wis_inner_wrap">
+                        <h2 class="wis_h2">PASSION</h2>
+                        <div class="wis_psn_slide_wrap">
+                            <div class="wis_psn_slide">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <a href="passion_article_01.html">
+                                            <div class="wis_psn_img">
+                                                <img src="./static/images/Wonikin_Spring_2022/wis_psn1.png" alt="">
+                                            </div>
+                                            <div class="wis_psn_text">
+                                                <h3 class="wis_h3">원익예찬</h3>
+                                                <p class="wis_h3">좋은 사람이 좋은 기업을 만든다</p>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <a href="passion_article_02.html">
+                                            <div class="wis_psn_img">
+                                                <img src="./static/images/Wonikin_Spring_2022/wis_psn2.png" alt="">
+                                            </div>
+                                            <div class="wis_psn_text">
+                                                <h3 class="wis_h3">전문가 칼럼</h3>
+                                                <p class="wis_h3">좋은 기업,무엇을 준비해야 하는가?</p>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <!--<div class="swiper-slide">
+                                        <a href="passion_article_03.html">
+                                            <div class="wis_psn_img">
+                                                <img src="./static/images/Wonikin_Spring_2022/wis_psn3.png" alt="">
+                                            </div>
+                                            <div class="wis_psn_text">
+                                                <h3 class="wis_h3">원익인에게 물어보다</h3>
+                                                <p class="wis_h3">원익인이 생각하는 좋은 기업은?</p>
+                                            </div>
+                                        </a>
+                                    </div>-->
+                                    <div class="swiper-slide">
+                                        <a href="passion_article_04.html">
+                                            <div class="wis_psn_img">
+                                                <img src="./static/images/Wonikin_Spring_2022/wis_psn4.png" alt="">
+                                            </div>
+                                            <div class="wis_psn_text">
+                                                <h3 class="wis_h3">원익 히어로</h3>
+                                                <p class="wis_h3">뜨거운 5년으로 혁신을 창조하다</p>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <a href="passion_article_05.html">
+                                            <div class="wis_psn_img">
+                                                <img src="./static/images/Wonikin_Spring_2022/wis_psn5.png" alt="">
+                                            </div>
+                                            <div class="wis_psn_text">
+                                                <h3 class="wis_h3">원익로그</h3>
+                                                <p class="wis_h3">소통 달인들의 하루</p>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-button-prev"></div>
+                            <div class="swiper-button-next"></div>
+                        </div>
+                    </div>
+                </div>
+                <!-- passion// -->
+
+                <!-- insight & event -->
+                <div class="wis_insight_event_wrap">
+                    <!-- 반응형 용도 inner -->
+                    <div class="wis_inner_wrap">
+
+                        <!-- insight -->
+                        <div class="wis_insight">
+                            <h2 class="wis_h2">INSIGHT</h2>
+                            <div class="wis_ins_slide_wrap">
+                                <div class="wis_ins_slide">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide">
+                                            <a href="insight_article_01.html">
+                                                <div class="wis_ins_img">
+                                                    <img src="./static/images/Wonikin_Spring_2022/wis_ins1.png" alt="">
+                                                </div>
+                                                <div class="wis_ins_text">
+                                                    <h3 class="wis_h3">케이스터디</h3>
+                                                    <p class="wis_h3">구글, 리추얼을 통해 조직의 혁신을이끌다</p>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <a href="insight_article_02.html">
+                                                <div class="wis_ins_img">
+                                                    <img src="./static/images/Wonikin_Spring_2022/wis_ins2.png" alt="">
+                                                </div>
+                                                <div class="wis_ins_text">
+                                                    <h3 class="wis_h3">언더커버리더</h3>
+                                                    <p class="wis_h3">때론 온화하게, 때론 강하게</p>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <a href="insight_article_03.html">
+                                                <div class="wis_ins_img">
+                                                    <img src="./static/images/Wonikin_Spring_2022/wis_ins3.png" alt="">
+                                                </div>
+                                                <div class="wis_ins_text">
+                                                    <h3 class="wis_h3">메타트랜드 ON</h3>
+                                                    <p class="wis_h3">수소경제의 빅피처<br>어떻게 대처해야 하나?</p>
+                                                </div>
+                                            </a>
+                                        </div>
+                                       <div class="swiper-slide">
+                                            <a href="insight_article_04.html">
+                                                <div class="wis_ins_img">
+                                                    <img src="./static/images/Wonikin_Spring_2022/wis_ins4.png" alt="">
+                                                </div>
+                                                <div class="wis_ins_text">
+                                                    <h3 class="wis_h3">시니어클래스</h3>
+                                                    <p class="wis_h3">MBTI에 숨겨진
+리더십을 발견하다</p>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-button-prev"></div>
+                                <div class="swiper-button-next"></div>
+                            </div>
+                        </div>
+                        <!-- insight// -->
+                        
+                        <!-- event -->
+                        <div class="wis_event">
+                            <h2 class="wis_h2">EVENT</h2>
+                            <!-- EVENT silde -->
+                            <div class="wis_evt_slide">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <a href="signal_article_05.html">
+                                            <img src="./static/images/Wonikin_Spring_2022/wis_evt1.png" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <a href="event_article_01.html">
+                                            <img src="./static/images/Wonikin_Spring_2022/wis_evt2.png" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <a href="event_article_03.html">
+                                            <img src="./static/images/Wonikin_Spring_2022/wis_evt3.png" alt="">
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="swiper-pagination"></div>
+                            </div>
+                            <!-- Trending Tags -->
+                            <div class="wis_tag_wrap">
+                                <h2 class="wis_h2">Trending Tags</h2>
+                                <ul class="wis_tag_list">
+                                    <li><a href="insight_article_03.html">#수소</a></li>
+                                    <li><a href="insight_article_03.html">#수소차</a></li>
+                                    <li><a href="signal_article_05.html">#유기견봉사</a></li>
+                                    <li><a href="signal_article_01.html">#수제맥주체험</a></li>
+                                    <li><a href="passion_article_04.html">#그랑프리상</a></li>
+                                    <li><a href="passion_article_05.html">#원익로그</a></li>
+                                     <li><a href="insight_article_01.html">#구글</a></li>
+                                    <li><a href="insight_article_01.html">#자유소통</a></li>
+                                    <li><a href="insight_article_01.html">#조직문화</a></li>
+                                    <li><a href="signal_article_03.html">#여행</a></li>
+                                    <li><a href="signal_article_02.html">#넷플릭스</a></li>
+                                    <li><a href="passion_article_04.html">#원익인상 </a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- event// -->
+
+                    </div>
+                </div>
+                <!-- insight & event// -->
+
+                <!-- signal & news -->
+                <div class="wis_signal_news_wrap">
+                    <!-- 반응형 용도 inner -->
+                    <div class="wis_inner_wrap">
+
+                        <!-- signal -->
+                        <div class="wis_signal">
+                            <h2 class="wis_h2">SIGNAL</h2>
+                            <ul class="wis_signal_list">
+                                <li><a href="signal_article_01.html" class="wis_signal_img"><img src="./static/images/Wonikin_Spring_2022/wis_signal1.png" alt="">
+
+                           <div class="item-text">
+                               <p class="title title-doc">케미스트리</p>
+                                <p class="hov-button-view">+ view more</p>
+                            </div>
+                            </a></li>
+                                <li><a href="signal_article_02.html" class="wis_signal_img"><img src="./static/images/Wonikin_Spring_2022/wis_signal2.png" alt="">
+                                 <div class="item-text">
+                               <p class="title title-doc">호모나이트쿠스</p>
+                                <p class="hov-button-view">+ view more</p>
+                            </div></a></li>
+                                <li><a href="signal_article_03.html" class="wis_signal_img"><img src="./static/images/Wonikin_Spring_2022/wis_signal3.png" alt="">
+                              <div class="item-text">
+                               <p class="title title-doc">원익반할지도</p>
+                                <p class="hov-button-view">+ view more</p>
+                            </div></a></li>
+                                <li><a href="signal_article_04.html" class="wis_signal_img"><img src="./static/images/Wonikin_Spring_2022/wis_signal4.png" alt="">
+<div class="item-text">
+                               <p class="title title-doc">요즘, 원익은</p>
+                                <p class="hov-button-view">+ view more</p>
+                            </div>
+</a></li>
+                                <li><a href="signal_article_05.html" class="wis_signal_img"><img src="./static/images/Wonikin_Spring_2022/wis_signal5.png" alt="">
+<div class="item-text">
+                               <p class="title title-doc">원익 나눔 챌린지</p>
+                                <p class="hov-button-view">+ view more</p>
+                            </div></a></li>
+                                <li><a href="signal_article_06.html" class="wis_signal_img"><img src="./static/images/Wonikin_Spring_2022/wis_signal6.png" alt="">
+<div class="item-text">
+                               <p class="title title-doc">롤링페이퍼</p>
+                                <p class="hov-button-view">+ view more</p>
+                            </div></a></li>
+                            </ul>
+                        </div>
+                        <!-- signal// -->
+
+                        <!-- news -->
+                        <div class="wis_news_wrap">
+                            <h2 class="wis_h2">원익 뉴스</h2>
+                            <ul class="wis_news_list">
+                                <li>
+                                    <a href="news_article_01.html" class="wis_news">
+                                        <div class="wis_news_img">
+                                            <img src="./static/images/Wonikin_Spring_2022/wis_news1.png" alt="">
+                                        </div>
+                                        <div class="wis_news_text">
+                                            <h3 class="wis_h3">원익아이피에스</h3>
+                                            <p class="wis_h3">조직장 Mind  Change 교육 실시</p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="news_article_02.html" class="wis_news">
+                                        <div class="wis_news_img">
+                                            <img src="./static/images/Wonikin_Spring_2022/wis_news2.png" alt="">
+                                        </div>
+                                        <div class="wis_news_text">
+                                            <h3 class="wis_h3">원익큐브</h3>
+                                            <p class="wis_h3">안전보건 경영방침 수립 “중대재해 Zero”</p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="news_article_03.html" class="wis_news">
+                                        <div class="wis_news_img">
+                                            <img src="./static/images/Wonikin_Spring_2022/wis_news3.png" alt="">
+                                        </div>
+                                        <div class="wis_news_text">
+                                            <h3 class="wis_h3">원익홀딩스</h3>
+                                            <p class="wis_h3">평택SITE 통합사무실 오픈</p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="news_article_04.html" class="wis_news">
+                                        <div class="wis_news_img">
+                                            <img src="./static/images/Wonikin_Spring_2022/wis_news4.png" alt="">
+                                        </div>
+                                        <div class="wis_news_text">
+                                            <h3 class="wis_h3">원익피앤이</h3>
+                                            <p class="wis_h3">배터리 TURN-KEY 시스템 위한 토털 솔루션 제시</p>
+                                        </div>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- news// -->
+
+                    </div>
+                </div>
+                <!-- signal & news// -->
+
+               <!-- video wrap -->
+                <div class="wis_video_wrap">
+                    <!-- 반응형 용도 inner -->
+                    <div class="wis_inner_wrap">
+
+                        <!-- video -->
+                        <div class="wis_video">
+                            <h2 class="wis_h2">원익 영상</h2>
+                            <div class="wis_video_box">
+                                <iframe width="100%" height="100%" src="https://www.youtube.com/embed/hdaUBGc3cOY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            </div>
+                        </div>
+                        <!-- video// -->
+
+                        <!-- video list -->
+                        <div class="wis_video_list_wrap">
+                            <div class="wis_video_tab">
+                                <button type="button" data-video="log" class="on">원익로그</button>
+                                <button type="button" data-video="making">메이킹영상</button>
+                            </div>
+                            <!-- 최대 4개까지 들어 갈 수 있도록 해뒀습니다. -->
+                            <div class="wis_video_cont">
+                                <!-- 원익로그 리스트 -->
+                                <ul class="wis_video_log">
+                                    <li>
+                                        <a href="javascript:void(0);" class="wis_video_li" data-video-box="hdaUBGc3cOY">
+                                            <div class="wis_video_img">
+                                                <img src="./static/images/Wonikin_Spring_2022/wis_video_ex1.png" alt="">
+                                            </div>
+                                            <div class="wis_video_text">
+                                                <p class="wis_h3">원익로그 Vol.67</p>
+                                            </div>
+                                        </a>
+                                    </li>
+                                </ul>
+                                <!-- 메이킹영상 리스트 -->
+                                <ul class="wis_video_making" style="display: none;">
+                                    <li>
+                                        <a href="javascript:void(0);" class="wis_video_li" data-video-box="FmZ5PUjazFQ">
+                                            <div class="wis_video_img">
+                                                <img src="./static/images/Wonikin_Spring_2022/wis_video_ex2.png" alt="">
+                                            </div>
+                                            <div class="wis_video_text">
+                                                <p class="wis_h3">나눔 챌린지 메이킹</p>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0);" class="wis_video_li" data-video-box="2ZrMkNgBH1c">
+                                            <div class="wis_video_img">
+                                                <img src="./static/images/Wonikin_Spring_2022/wis_video_ex3.png" alt="">
+                                            </div>
+                                            <div class="wis_video_text">
+                                                <p class="wis_h3">원익로그 메이킹</p>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0);" class="wis_video_li" data-video-box="ueL--WmXfHA">
+                                            <div class="wis_video_img">
+                                                <img src="./static/images/Wonikin_Spring_2022/wis_video_ex4.png" alt="">
+                                            </div>
+                                            <div class="wis_video_text">
+                                                <p class="wis_h3">시니어 클래스 메이킹</p>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0);" class="wis_video_li" data-video-box="Et4GRaYl96k">
+                                            <div class="wis_video_img">
+                                                <img src="./static/images/Wonikin_Spring_2022/wis_video_ex5.png" alt="">
+                                            </div>
+                                            <div class="wis_video_text">
+                                                <p class="wis_h3">원익예찬 메이킹</p>
+                                            </div>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- video list// -->
+
+                    </div>
+                </div>
+                <!-- video wrap// -->
+
+            </section>
+            <!-- container// -->
+            
+            <!-- footer -->
+            <footer class="wis_ft">
+                <div class="wis_ft_info">
+                    <div class="wis_inner_wrap">
+                        <!-- 지난 호 보기 -->
+                        <div class="ft_select">
+                            <button class="ft_select_btn" type="button">2022 SPRING Vol.67</button>
+                            <div class="ft_select_list">
+                                <p class="ft_select_title">지난호 보기</p>
+                                <ul>
+                                   <li><a href="/Wonikin_SPRING/">2022 SPRING Vol.67 </a></li>
+                                   <li><a href="/Wonikin_WINTER/">2022 WINTER Vol.66 </a></li>
+                                   <li><a href="/Wonikin_AUTUMN/">2021 AUTUMN Vol.65</a></li>
+                                   <li><a href="/Wonikin_SUMMER/">2021 SUMMER Vol.64 </a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        
+                        <h1 class="wis_ft_logo">WONIK</h1>
+                        <p>본사 경기도 성남시 분당구 삼평동 612번지 <br>발행일 2022년 5월(통권 제67호) / 발행인 임창빈 / 발행처 원익 </p>
+                        <p>기획 디자인 제작 피플페이지 02-6674-0111</p>
+                    </div>
+                </div>
+                <div class="wis_ft_copy">
+                    <div class="wis_inner_wrap">
+                        <p>COPYRIGHT © WONIK. ALL RIGHTS RESERVED.</p>
+                    </div>
+                </div>
+            </footer>
+            <!-- footer// -->
+        </div>
+        <!-- body 대체할 wrap// -->
+    </body>
+</html>
