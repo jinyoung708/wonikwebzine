@@ -63,6 +63,30 @@
 
 
 
+.signal_homo .img_box {position: relative; background-color: #134a89;}
+.signal_homo .img_box img {width: auto; max-width: 100%;}
+.signal_homo .img_box .default {position: relative; z-index: 2;}
+.signal_homo .img_box span {position: absolute; left: 0; top: 0; width: 100%;}
+.signal_homo .img_box .img01 {z-index: 1;}
+.signal_homo .img_box .img02 {z-index: 3;}
+.signal_homo .img_box .img03 {z-index: 4;}
+.signal_homo .img_box .img04 {z-index: 5;}
+.signal_homo .img_box .img05 {z-index: 6;}
+.signal_homo .img_box .img06 {z-index: 7;}
+.signal_homo .img_box .img07 {z-index: 7;}
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 @media screen and (max-width: 1200px) {
     .container {padding: 0 3rem;}
