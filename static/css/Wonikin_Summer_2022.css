@@ -64,47 +64,57 @@
 
 
 
-.signal_homo .img_box {position: relative; background-color: #134a89;}
-.signal_homo .img_box img {width: auto; max-width: 100%;}
-.signal_homo .img_box .default {position: relative; z-index: 2;}
-.signal_homo .img_box span {position: absolute; left: 0; top: 0; width: 100%;}
-.signal_homo .img_box .img01 {z-index: 1;}
-.signal_homo .img_box .img02 {z-index: 3;}
-.signal_homo .img_box .img03 {z-index: 4;}
-.signal_homo .img_box .img11 {z-index: 4;}
-.signal_homo .img_box .img04 {z-index: 5;}
-.signal_homo .img_box .img05 {z-index: 6;}
-.signal_homo .img_box .img06 {z-index: 7;}
-.signal_homo .img_box .img07 {z-index: 7;}
-.signal_homo .img_box .img08 {z-index: 7;}
-.signal_homo .img_box .img09 {z-index: 7;}
-.signal_homo .img_box .img10 {z-index: 7;}
-.signal_homo .img_box .img12 {z-index: 7;}
-.signal_homo .img_box .img13 {z-index: 7; filter: contrast(50%); opacity: 0.7;}
+.signal_homo .img_box1 {position: relative; margin-bottom: 30px; overflow: hidden; background-color: #134a89;}
+.signal_homo .img_box1 img {width: auto; max-width: 100%;}
+.signal_homo .img_box1 .default {position: relative; z-index: 2;}
+.signal_homo .img_box1 span {position: absolute; left: 0; top: 0; width: 100%;}
+.signal_homo .img_box1 .img01 {z-index: 1; animation: motion4 2.5s infinite;}
+.signal_homo .img_box1 .img02 {z-index: 3;}
+.signal_homo .img_box1 .img03 {z-index: 4;}
+.signal_homo .img_box1 .img04 {z-index: 5; animation: motion3 3s infinite;}
+.signal_homo .img_box1 .img05 {z-index: 6; }
+.signal_homo .img_box1 .img06 {z-index: 7; animation: motion5 3s infinite;}
+.signal_homo .img_box1 .img07 {z-index: 7; }
+.signal_homo .img_box1 .img08 {z-index: 7;}
+.signal_homo .img_box1 .img09 {z-index: 7;}
+.signal_homo .img_box1 .img10 {z-index: 7; animation: motion1 2.5s infinite;}
+.signal_homo .img_box1 .img11 {z-index: 7; animation: motion2 3s infinite;}
+.signal_homo .img_box1 .img12 {z-index: 7; filter: contrast(50%); opacity: 0.7;} 
+.signal_homo .txt_box {display: table; width: 100%; padding: 0 2%;}
+.signal_homo .txt_box .left {display: table-cell; width: 48%; padding-right: 2%; vertical-align: bottom;}
+.signal_homo .txt_box .right {display: table-cell; width: 48%; padding-left: 2%; vertical-align: bottom;}
+.signal_homo .txt_box.top .left {vertical-align: top;}
+.signal_homo .txt_box.top .right {vertical-align: top; padding-top: 3.2rem;}
+.signal_homo .txt_box .title {padding-bottom: 0;}
+.signal_homo .txt_box .t1 {padding-bottom: 4rem; font-size: 4rem; line-height: 1.2;}
+.signal_homo .txt_box .t2 {font-size: 1.5rem; margin-top: 0.5rem;}
 
 
 
-
-
-@keyframes cmo_motion {
-    from {
-        top:0;
-    } 
-    10% {
-        top:-5px;
-    } 
-    40% {
-        top:-20px;
-    } 
-    50% {
-        top:-25px;
-    } 
-    60% {
-        top:-20px;
-    } 
-    90% {
-        top:-5px;
-    }
+@keyframes motion1 {
+    from {transform: translate(0,0);}
+    50% {transform: translate(0,1rem);}
+    100% {transform: translate(0,0);}
+}
+@keyframes motion2 {
+    from {transform: translate(0,0);}
+    50% {transform: translate(-1rem,-1rem);}
+    100% {transform: translate(0,0);}
+}
+@keyframes motion3 {
+    from {transform: translate(0,0);}
+    50% {transform: translate(-1rem,0);}
+    100% {transform: translate(0,0);}
+}
+@keyframes motion4 {
+    from {transform: translate(0,0);}
+    50% {transform: translate(1rem,0);}
+    100% {transform: translate(0,0);}
+}
+@keyframes motion5 {
+    from {transform: rotate(0);}
+    50% {transform: rotate(1deg);}
+    100% {transform: rotate(0);}
 }
 
 
