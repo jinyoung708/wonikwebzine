@@ -86,8 +86,26 @@
 
 
 
-
-
+@keyframes cmo_motion {
+    from {
+        top:0;
+    } 
+    10% {
+        top:-5px;
+    } 
+    40% {
+        top:-20px;
+    } 
+    50% {
+        top:-25px;
+    } 
+    60% {
+        top:-20px;
+    } 
+    90% {
+        top:-5px;
+    }
+}
 
 
 
