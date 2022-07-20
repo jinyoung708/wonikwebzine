@@ -86,8 +86,17 @@
 .signal_homo .txt_box.top .left {vertical-align: top;}
 .signal_homo .txt_box.top .right {vertical-align: top; padding-top: 3.2rem;}
 .signal_homo .txt_box .title {padding-bottom: 0;}
-.signal_homo .txt_box .t1 {padding-bottom: 4rem; font-size: 4rem; line-height: 1.2;}
-.signal_homo .txt_box .t2 {font-size: 1.5rem; margin-top: 0.5rem;}
+.signal_homo .title.t1 {padding-bottom: 4rem; font-size: 4rem; line-height: 1.2;}
+.signal_homo .txt.t2 {font-size: 1.5rem; margin-top: 0.5rem;}
+.signal_homo .yellow_box {background-color: #f4da84; overflow: hidden;}
+.signal_homo .img_box2 {position: relative; max-width: 1000px; margin: 0 auto;}
+.signal_homo .img_box2 .ani_box {position: relative; width: 80%; float: right; background: #f4da84 url('../images/article_2022summer/signal_article_02/img02_5.png') no-repeat center/cover; background-blend-mode: multiply;}
+.signal_homo .img_box2 .ani_box span {position: absolute; left: 0; top: 0; width: 100%; height: 100%;}
+.signal_homo .img_box2 .ani_box .img02 {animation: motion2 2.5s infinite;}
+.signal_homo .img_box2 .ani_box .img03 {animation: motion1 2.5s infinite;}
+.signal_homo .img_box2 .ani_box .img04 {left: -25%; width: 120%; top: -10%;}
+.signal_homo .img_box2 .title {position: absolute; z-index: 1; left: 5%; top: 20%; color: #f15839;}
+.signal_homo .yellow_box .txt_box {padding: 0;}
 
 
 
