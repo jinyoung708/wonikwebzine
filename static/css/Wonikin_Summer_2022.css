@@ -15,7 +15,6 @@
 .mb_100 {margin-bottom: 100px;}
 
 
-
 .passion_column {padding: 5rem 0; background-color: #f7d4b8;}
 .passion_column img {display: inline-block; width: auto; max-width: 100%;}
 .passion_column .img_box {margin-bottom: 100px; text-align: center;}
@@ -34,7 +33,6 @@
 .passion_column .txt_box .t1 {float: right; margin-top: 110px; margin-left: 50px; margin-bottom: 50px; font-size: 2rem; font-weight: 700; text-align: right;}
 .passion_column .txt_box .t2 {margin-top: 50px; font-weight: 300; font-size: 1.5rem; letter-spacing: -0.8px; color: #000; text-align: justify; font-family: 'Noto Sans KR', sans-serif; letter-spacing: -0.06em; line-height: 1.65;}
 .passion_column .txt_box .t2 b {display: block; font-weight: 500;}
-
 
 
 .insight_meta {margin-bottom: 0;}
@@ -61,7 +59,6 @@
 .insight_meta .bg_box .title {font-size: 4rem;}
 .insight_meta .bg_box .inner {display: table-cell; padding-top: 100px; vertical-align: top;}
 .insight_meta .img_box {text-align: center;}
-
 
 
 .signal_homo .img_box1 {position: relative; margin-bottom: 30px; overflow: hidden; background-color: #134a89;}
@@ -103,7 +100,7 @@
 .signal_homo .img_box3 span {position: absolute; left: 0; top: 0; width: 100%; height: 100%;}
 .signal_homo .img_box3 .img02 {animation: motion3 2s infinite;}
 .signal_homo .img_box3 .img04 {animation: motion2 2.5s infinite;}
-.signal_homo .white_box .txt_box {position: relative; max-width: 1000px; margin-top: -40%; padding: 0 5%;}
+.signal_homo .white_box .txt_box {position: relative; max-width: 1000px; margin: -40% auto 0; padding: 0 5%;}
 .signal_homo .white_box .txt_box .left {vertical-align: top;}
 .signal_homo .white_box .title.t1 {color: #246eb6; margin-bottom: 20rem;}
 .signal_homo .white_box .title.t2 {color: #246eb6; margin-bottom: 0;}
@@ -136,7 +133,7 @@
 }
 
 
-.signal_paper {}
+
 .signal_paper-top .text .text--typography {font-family: "NanumMyeongjo";}
 .signal_paper-top .text .txt-point {font-family: 'Noto Sans KR'; font-size: 2rem;}
 .signal_paper-btm .box-1 .letter__obj {width: 400px; float: right;}
@@ -210,6 +207,58 @@
 .signal_map .blue_box .txt b {color: #1e6eb7;}
 
 
+.signal_share {max-width: 1200px; margin: 0 auto;}
+.signal_share .txt_box {display: flex; justify-content: space-between;}
+.signal_share .txt_box > div {flex: 0 0 48%;}
+.signal_share .txt_box .title {padding-bottom: 0; color: #167c4e;}
+.signal_share .con1 .txt_box > div.right {padding-top: 3.2rem;}
+.signal_share .con1 .title_box {margin: 5% 0;}
+.signal_share .con1 .title_box .title {color: #167c4e; text-align: center; font-size: 3rem; padding-bottom: 3rem;}
+.signal_share .con1 .title_box .title small {display: block; font-size: 2rem;}
+.signal_share .con1 .title_box .txt {color: #167c4e; text-align: center;}
+.signal_share .con1 .title_box .txt b {color: #167c4e;}
+.signal_share .con1 .txt_box {margin-bottom: 5%;}
+.signal_share .con1 .img_box {display: grid; margin-bottom: 5%; grid-template-columns: 2fr 1fr 1fr}
+.signal_share .con1 .img_box > div {padding-bottom: 80%; background-repeat: no-repeat; background-position: center; background-size: cover;}
+.signal_share .con1 .img_box > div:nth-child(1) {grid-row: span 2;}
+.signal_share .con2 .img_box {display: grid; margin-bottom: 5%; grid-template-columns: repeat(2, 1fr)}
+.signal_share .con2 .img_box > div {padding-bottom: 60%; background-repeat: no-repeat; background-position: center; background-size: cover;}
+.signal_share .con2 .img_box > div:nth-child(1) {grid-column: span 2;}
+.signal_share .con2 .txt_box {margin-bottom: 5%;}
+.signal_share .con2 .txt_box .title.t1 {color: #167c4e; font-family: 'GmarketSans'; font-size: 2.5rem; font-weight: 500;}
+.signal_share .con2 .txt_box .left {flex: 0 0 auto;}
+.signal_share .con2 .txt_box .right {flex: 0 0 75%; padding-left: 5%;}
+.signal_share .con2 .txt_box .inner {flex: 0 0 100%;}
+.signal_share .con3 {padding: 5rem; background: url('../images/article_2022summer/signal_article_05/img05.png') no-repeat center/cover;}
+.signal_share .con3 .title {position: relative; margin-bottom: 2rem; color: #7bb27b;}
+.signal_share .con3 .title::before {display: inline-block; content:''; position: absolute; left: 0; top: -10px; width: 22px; height: 3px; background-color: #7bb27b;}
+.signal_share .con3 .interview_list > li {display: flex; margin-bottom: 5%; align-items: center; background-color: #7bb27b; border-radius: 0 40px 40px 0;}
+.signal_share .con3 .interview_list > li:last-child {margin-bottom: 0;}
+.signal_share .con3 .interview_list > li:nth-child(even) {flex-direction: row-reverse; background-color: #a4b877; border-radius: 40px 0 0 40px;}
+.signal_share .con3 .interview_list > li .img_box {width: 25%; position: relative; border: 10px solid #fff; border-bottom-width: 70px;}
+.signal_share .con3 .interview_list > li .img_box span {position: absolute; left: 0; top: calc(100% + 35px); width: 100%; transform: translateY(-50%); font-family: 'GmarketSans'; color: #167c4e; font-size: 1.5rem;}
+.signal_share .con3 .interview_list > li .txt_box {width: 75%; padding: 5%;}
+.signal_share .con3 .interview_list > li .txt_box .txt {color: #fff;}
+.signal_share .con3 .interview_list > li:nth-child(1) .img_box {transform: rotate(7deg); animation: motion6 5s infinite;}
+.signal_share .con3 .interview_list > li:nth-child(2) .img_box {transform: rotate(10deg); animation: motion7 5s infinite;}
+.signal_share .con3 .interview_list > li:nth-child(3) .img_box {transform: rotate(-10deg); animation: motion8 5s infinite;}
+
+@keyframes motion6 {
+    from {transform: rotate(7deg);}
+    50% {transform: rotate(2deg) translate(-1rem, -1rem);}
+    100% {transform: rotate(7deg);}
+}
+@keyframes motion7 {
+    from {transform: rotate(10deg);}
+    50% {transform: rotate(7deg) translate(1rem, 1rem);}
+    100% {transform: rotate(10deg);}
+}
+@keyframes motion8 {
+    from {transform: rotate(-10deg);}
+    50% {transform: rotate(-6deg) translate(-1rem, 1rem);}
+    100% {transform: rotate(-10deg);}
+}
+
 
 
 
@@ -218,6 +267,8 @@
 
 @media screen and (max-width: 1200px) {
     .container {padding: 0 3rem;}
+
+    .signal_share {padding: 0 5rem;}
 }
 
 @media screen and (max-width: 991px) {
@@ -243,6 +294,7 @@
     .insight_meta .pink_box .txt_list > li {float: none; width: 100%;}
     .insight_meta .pink_box .txt_list > li:nth-child(n+2) {margin-top: 15%;}
 
+    
     .signal_homo .txt_box {display: block;}
     .signal_homo .txt_box .left {display: block; padding-right: 0; width: 100%; margin-bottom: 50px;}
     .signal_homo .txt_box .right {display: block; padding-left: 0; width: 100%;}
@@ -250,6 +302,7 @@
     .signal_homo .txt_box.top .left {margin-bottom: 0;}
     .signal_homo .white_box .title.t1 {margin-bottom: 0;}
     .signal_homo .title.t1 {font-size: 2.5rem;}
+
 
     .signal_paper-btm .box-1 .letter__obj {width: 55%;}
     .signal_paper-btm .box-1 .letter-flex {margin-left: 0; padding-top: 30px; display: block;}
@@ -271,11 +324,13 @@
     .signal_paper-btm .letter__txt.fz_small {font-size: 1.8rem;}
     .signal_paper-btm .letter__txt br.m_none {display: none;}
 
+
     .signal_detective-top {margin-bottom: 3rem;}
     .signal_detective-btm .box {width: 100%; margin-right: 0%;}
     .signal_detective-btm .box .txt {min-height: inherit; margin-bottom: 4rem;}
     .signal_detective-btm .box .txt .img {width: 120px;}
     .signal_detective-btm .box .txt .img3 {width: 100px;}
+
 
     .signal_map .blue_box {flex-wrap: wrap; text-align: center;}
     .signal_map .blue_box .left {width: 100%; margin-bottom: 10%;}
@@ -285,11 +340,19 @@
     .signal_map .txt_box > div {width: 100%; margin-right: 0;}
     .signal_map .txt_box > div:last-child {padding-top: 5%;}
     .signal_map .signal_map-top .title {font-size: 3rem;}
+
+
+    .signal_share .txt_box {display: block;}
+    .signal_share .con1 .txt_box > div.right {padding-top: 0;}
+    .signal_share .con2 .txt_box .title.t1 {font-size: 2.2rem;}
+    .signal_share .con2 .txt_box .right {padding-left: 0; margin-top: 5%;}
+    .signal_share .con3 .interview_list > li {border-radius: 0 20px 20px 0;}
 }
 
 @media screen and (max-width: 640px) {
     .insight_meta .pink_box .txt_list > li .qna_q {padding-left: 50px;}
     .insight_meta .pink_box .txt_list > li .qna_q::before {width: 30px; height: 48px;}
+
 
     .insight_meta .txt_box .left,
     .insight_meta .txt_box .right {float: none; width: 100%; display: inline;}
