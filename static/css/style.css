@@ -4411,12 +4411,12 @@ font-size: 2rem;
 .passion_admire-top .text .text--typography {
   position: absolute;
   color: #000;
-  left: 8rem;
-  top: 3rem;
-  line-height: 100%;
+  left: 20rem;
+  top: 5rem;
+  line-height: 120%;
   padding: 2rem 0;
   font-weight: 900;
-  font-size: 7rem;
+  font-size: 5.5rem;
   opacity: 0.85;
 }
 
@@ -4685,7 +4685,7 @@ font-size: 2rem;
 }
 
 .passion_admire-btm2 .box {
-  background: #d7d6d6;
+  background: #bad6e6;
   margin-bottom: 3rem;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -4717,21 +4717,21 @@ font-size: 2rem;
 
 .passion_admire-btm2 .box-1 .pic {
   width: 30%;
-  background: url("../images/article_2022spring/passion_admire_img_06.jpg") no-repeat left bottom/cover;
+  background: url("../images/article_2022summer/passion_article_01/passion_admire_img_06.png") no-repeat left bottom/cover;
   background-size: auto 100%;
   height: 400px;
 }
 
 .passion_admire-btm2 .box-2 .pic {
   width: 40%;
-  background: url("../images/article_2022spring/passion_admire_img_07.jpg") no-repeat left bottom/cover;
+  background: url("../images/article_2022summer/passion_article_01/passion_admire_img_07.png") no-repeat left bottom/cover;
   background-size: auto 100%;
   height: 450px;
 }
 
 .passion_admire-btm2 .box-3 .pic {
   width: 30%;
-  background: url("../images/article_2022spring/passion_admire_img_08.jpg") no-repeat left bottom/cover;
+  background: url("../images/article_2022summer/passion_article_01/passion_admire_img_08.png") no-repeat left bottom/cover;
   background-size: auto 100%;
   height: 450px;
 }
@@ -5777,7 +5777,7 @@ font-size: 2rem;
 }
 
 .passion_hero-btm .box {
-  padding: 0 0 5rem 0;
+ 
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -5861,7 +5861,7 @@ font-size: 2rem;
 .passion_hero-btm .box-4 .pic {
   width: 50%;
   height: 600px;
-  background: url("../images/article_2022spring/passion_hero_img_03.jpg") no-repeat center/cover;
+  background: url("../images/article_2022summer/passion_article_03/passion_hero_img_02.jpg") no-repeat center/cover;
   -webkit-box-ordinal-group: 2;
       -ms-flex-order: 1;
           order: 1;
@@ -5880,7 +5880,7 @@ font-size: 2rem;
   display: block;
   width: 40px;
   height: 29px;
-  background: url("../images/article_2022spring/passion_hero_img_04.jpg") no-repeat center/contain;
+  background: url("../images/article_2022summer/passion_article_03/passion_hero_img_04.jpg") no-repeat center/contain;
   margin: 3rem 0 1.5rem 0;
 }
 
@@ -5889,10 +5889,164 @@ font-size: 2rem;
   display: block;
   width: 40px;
   height: 29px;
-  background: url("../images/article_2022spring/passion_hero_img_05.jpg") no-repeat center/contain;
+  background: url("../images/article_2022summer/passion_article_03/passion_hero_img_05.jpg") no-repeat center/contain;
   margin: 1.5rem 0 3rem 0;
 }
+.passion_hero-btm .box-8 {
+  border-bottom: 1px solid #ccc;
+  width: 100%;
+  position: relative;
+  padding-bottom: 3rem;
+}
+.passion_hero-btm .box-8 .pic {
+  width: 50%;
+  height: 600px;
+  background: url("../images/article_2022summer/passion_article_03/passion_hero_img_09.jpg") no-repeat center/cover;
+  -webkit-box-ordinal-group: 2;
+      -ms-flex-order: 1;
+          order: 1;
+}
 
+.passion_hero .box-8 .txt {
+  width: 50%;
+  -webkit-box-ordinal-group: 1;
+      -ms-flex-order: 0;
+          order: 0;
+  padding-right: 5rem;
+}
+
+.passion_hero .box-8 .txt:before {
+  content: '';
+  display: block;
+  width: 40px;
+  height: 29px;
+  background: url("../images/article_2022summer/passion_article_03/passion_hero_img_04.jpg") no-repeat center/contain;
+  margin: 3rem 0 1.5rem 0;
+}
+
+.passion_hero .box-8 .txt::after {
+  content: '';
+  display: block;
+  width: 40px;
+  height: 29px;
+  background: url("../images/article_2022summer/passion_article_03/passion_hero_img_05.jpg") no-repeat center/contain;
+  margin: 1.5rem 0 3rem 0;
+}
+.passion_hero .box-8 .name {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+.passion_hero-btm .box-9 {
+  border-bottom: 1px solid #ccc;
+  width: 100%;
+  position: relative;
+  padding-bottom: 3rem;
+}
+
+.passion_hero-btm .box-9 .pic {
+  width: 50%;
+  height: 600px;
+  background: url("../images/article_2022summer/passion_article_03/passion_hero_img_10.jpg") no-repeat center/cover;
+  -webkit-box-ordinal-group: 2;
+      -ms-flex-order: 1;
+          order: 1;
+}
+
+.passion_hero .box-9 .txt {
+  width: 50%;
+  -webkit-box-ordinal-group: 1;
+      -ms-flex-order: 0;
+          order: 0;
+  padding-right: 5rem;
+}
+
+.passion_hero .box-9 .txt:before {
+  content: '';
+  display: block;
+  width: 40px;
+  height: 29px;
+  background: url("../images/article_2022summer/passion_article_03/passion_hero_img_04.jpg") no-repeat center/contain;
+  margin: 3rem 0 1.5rem 0;
+}
+
+.passion_hero .box-9 .txt::after {
+  content: '';
+  display: block;
+  width: 40px;
+  height: 29px;
+  background: url("../images/article_2022summer/passion_article_03/passion_hero_img_05.jpg") no-repeat center/contain;
+  margin: 1.5rem 0 3rem 0;
+}
+.passion_hero .box-9 .name {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+.passion_hero-btm .box-10 {
+  border-bottom: 1px solid #ccc;
+  width: 100%;
+  position: relative;
+  padding-bottom: 3rem;
+}
+
+.passion_hero-btm .box-10 .pic {
+  width: 50%;
+  height: 600px;
+  background: url("../images/article_2022summer/passion_article_03/passion_hero_img_01.jpg") no-repeat center/cover;
+  -webkit-box-ordinal-group: 2;
+      -ms-flex-order: 1;
+          order: 1;
+}
+
+.passion_hero .box-10 .txt {
+  width: 50%;
+  -webkit-box-ordinal-group: 1;
+      -ms-flex-order: 0;
+          order: 0;
+  padding-right: 5rem;
+}
+
+.passion_hero .box-10 .txt:before {
+  content: '';
+  display: block;
+  width: 40px;
+  height: 29px;
+  background: url("../images/article_2022summer/passion_article_03/passion_hero_img_04.jpg") no-repeat center/contain;
+  margin: 3rem 0 1.5rem 0;
+}
+
+.passion_hero .box-10 .txt::after {
+  content: '';
+  display: block;
+  width: 40px;
+  height: 29px;
+  background: url("../images/article_2022summer/passion_article_03/passion_hero_img_05.jpg") no-repeat center/contain;
+  margin: 1.5rem 0 3rem 0;
+}
+.passion_hero .box-10 .name {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.passion_hero .box-2 .txt01:before {
+  content: '';
+  display: block;
+  width: 40px;
+  height: 29px;
+  background: url("../images/article_2022summer/passion_article_03/passion_hero_img_04.jpg") no-repeat center/contain;
+  margin: 3rem 0 1.5rem 0;
+}
+
+.passion_hero .box-2 .txt01::after {
+  content: '';
+  display: block;
+  width: 40px;
+  height: 29px;
+  background: url("../images/article_2022summer/passion_article_03/passion_hero_img_05.jpg") no-repeat center/contain;
+  margin: 1.5rem 0 3rem 0;
+}
 .passion_hero .box-4 .name {
   position: absolute;
   bottom: 0;
@@ -5944,6 +6098,48 @@ font-size: 2rem;
     padding-bottom: 0;
     padding-right: 0;
   }
+   .passion_hero-btm .box-10 .pic {
+    width: 100%;
+    -webkit-box-ordinal-group: 1;
+        -ms-flex-order: 0;
+            order: 0;
+  }
+  .passion_hero-btm .box-10 .txt {
+    width: 100%;
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+    padding-bottom: 0;
+    padding-right: 0;
+  }
+  .passion_hero-btm .box-8 .pic {
+    width: 100%;
+    -webkit-box-ordinal-group: 1;
+        -ms-flex-order: 0;
+            order: 0;
+  }
+  .passion_hero-btm .box-8 .txt {
+    width: 100%;
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+    padding-bottom: 0;
+    padding-right: 0;
+  }
+  .passion_hero-btm .box-9 .pic {
+    width: 100%;
+    -webkit-box-ordinal-group: 1;
+        -ms-flex-order: 0;
+            order: 0;
+  }
+  .passion_hero-btm .box-9 .txt {
+    width: 100%;
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+    padding-bottom: 0;
+    padding-right: 0;
+  }
 }
 
 @media screen and (max-width: 480px) {
@@ -5957,6 +6153,24 @@ font-size: 2rem;
     background-size: 200px;
   }
   .passion_hero-btm .box-4 .pic {
+    height: 300px;
+  }
+  .passion_hero-btm .box-10 {
+    background-size: 200px;
+  }
+  .passion_hero-btm .box-10 .pic {
+    height: 300px;
+  }
+  .passion_hero-btm .box-8 {
+    background-size: 200px;
+  }
+  .passion_hero-btm .box-8 .pic {
+    height: 300px;
+  }
+  .passion_hero-btm .box-9 {
+    background-size: 200px;
+  }
+  .passion_hero-btm .box-9 .pic {
     height: 300px;
   }
 }
@@ -6110,7 +6324,7 @@ font-size: 2rem;
 }
 
 .passion_log-btm .swiper-button-prev {
-  background: url("../images/article_2022spring/swiper_arrow_left.svg") no-repeat center/50px;
+  background: url("../images/article_2022summer/signal_article_03/swiper_arrow_left.svg") no-repeat center/50px;
   width: 80px;
   height: 80px;
   border-radius: 100%;
@@ -6131,7 +6345,7 @@ font-size: 2rem;
 }
 
 .passion_log-btm .swiper-button-next {
-  background: url("../images/article_2022spring/swiper_arrow_right.svg") no-repeat center/50px;
+  background: url("../images/article_2022summer/signal_article_03/swiper_arrow_right.svg") no-repeat center/50px;
   width: 80px;
   height: 80px;
   border-radius: 100%;
@@ -8666,7 +8880,7 @@ font-size: 2rem;
 
 /* 시그널 > 롤링페이퍼 */
 .signal_paper {
-  background: #cf8177;
+ /* background: #cf8177;*/
   padding-bottom: 8rem;
 }
 .signal_paper img{
@@ -8716,7 +8930,7 @@ font-size: 2rem;
 }
 
 .signal_paper-top .text .txt-normal {
-  color: #fff;
+color: #009740;
   font-size: 1.7rem;
 }
 
@@ -9404,7 +9618,7 @@ font-size: 2rem;
 
 /* 시그널 > Thanks for U */
 .signal_thanks {
-  background: #e8edf0;
+  background: #eae9ee;
 }
 
 .signal_thanks-top {
@@ -9474,7 +9688,13 @@ font-size: 2rem;
   flex-wrap: wrap;
   padding: 5rem;
 }
-
+.signal_thanks-btm .letter__obj {
+    text-align: center;
+    margin-top: 3rem;
+}
+.signal_thanks-btm img {
+    max-width: 100%;
+}
 @media screen and (max-width: 640px) {
   .signal_thanks-btm {
     padding: 0 3rem 3rem 3rem;
@@ -9535,6 +9755,7 @@ font-size: 2rem;
 .signal_thanks-btm .box-1 .txt .title {
   font-family: 'Goyang';
   padding-bottom: 10px;
+  color:#ba5351;
 }
 
 @media screen and (max-width: 993px) {
@@ -10892,12 +11113,12 @@ font-size: 2rem;
 .leadership-top .img {
   width: 50%;
   padding-bottom: 50%;
-  background: url("../images/article/leadership_img_01.png") no-repeat center/cover;
+  background: url("../images/article_2022summer/passion_article_03/passion_hero_img_01.jpg") no-repeat center/cover;
 }
 
 .leadership-top .text {
   width: 560px;
-  margin-left: auto;
+  margin-left: 400px;
   padding-right: 5rem;
   padding-left: 1.7rem;
 }
@@ -10905,8 +11126,8 @@ font-size: 2rem;
 .leadership-top .leader-title {
   font-family: 'GmarketSans', sans-serif;
   font-weight: 700;
-  font-size: 9rem;
-  line-height: 0.9;
+  font-size:7rem;
+  line-height: 1.2;
   text-align: right;
   letter-spacing: -0.05em;
   color: #000000;
@@ -10949,6 +11170,12 @@ font-size: 2rem;
   letter-spacing: -0.05em;
   line-height: 1.55;
 }
+.leadership .txt01 {
+  font-size: 1.8rem;
+  letter-spacing: -0.05em;
+  line-height: 1.55;
+  font-weight:300;
+}
 
 .leadership .box-1 {
   max-width: 1200px;
@@ -10961,7 +11188,7 @@ font-size: 2rem;
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
-  padding: 0 6rem;
+  padding: 0 0rem;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
   -webkit-box-align: end;
@@ -11002,7 +11229,7 @@ font-size: 2rem;
   max-width: 1200px;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 13rem;
+  
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -11017,7 +11244,7 @@ font-size: 2rem;
 }
 
 .leadership .box-2 .img {
-  width: 50%;
+  
 }
 
 .leadership .box-2 .text {
@@ -11131,7 +11358,14 @@ font-size: 2rem;
 }
 
 .leadership .box-2 {
-  padding-right: 5rem;
+  padding-right: 0rem;
+  border-bottom: 1px solid #ccc;
+}
+.passion_hero .box-2 .name{
+position: relative;
+margin-top:10px;
+    bottom: 0;
+    left: 0;
 }
 
 .leadership .box-2.reverse {
@@ -11145,7 +11379,7 @@ font-size: 2rem;
 
 @media screen and (max-width: 768px) {
   .leadership-top .leader-title {
-    font-size: 8rem;
+    font-size: 6rem;
   }
   .leadership-top .txt-k1 {
     font-size: 3.5rem;
@@ -11176,8 +11410,8 @@ font-size: 2rem;
     margin-bottom: 4rem;
   }
   .leadership .box-2 {
-    padding-right: 2rem !important;
-    padding-left: 2rem !important;
+    /*padding-right: 2rem !important;
+    padding-left: 2rem !important;*/
   }
   .leadership .box-2 .img {
     width: 100%;
@@ -15861,7 +16095,7 @@ font-size: 2rem;
     margin-top: 5rem;
   }
   .signal_map-btm .swiper-button-prev {
-  background: url("../images/article_2022spring/swiper_arrow_left.svg") no-repeat center/50px;
+  background: url("../images/article_2022summer/signal_article_03/swiper_arrow_left.svg") no-repeat center/50px;
   width: 80px;
   height: 80px;
   border-radius: 100%;
@@ -15889,7 +16123,7 @@ font-size: 2rem;
 }
 
 .signal_map-btm .swiper-button-next {
-  background: url("../images/article_2022spring/swiper_arrow_right.svg") no-repeat center/50px;
+  background: url("../images/article_2022summer/signal_article_03/swiper_arrow_right.svg") no-repeat center/50px;
   width: 80px;
   height: 80px;
   border-radius: 100%;
