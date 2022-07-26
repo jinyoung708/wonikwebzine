@@ -159,8 +159,17 @@
 
 
 .signal_detective {background: #fbc400 url('../images/article_2022summer/event_article_01/img01.png') no-repeat 0 bottom/contain;}
-.signal_detective-top {background: none;}
+.signal_detective-top {position: relative; background: none;}
 .signal_detective-top .text .text--typography {color: #000;}
+.signal_detective-top .ani_box {position: absolute; right: 0; top: 0; width: 500px; height: 500px; max-width: 50%;}
+.signal_detective-top .ani_box span {display: block; position: absolute; width: 80px; height: 110px; background: #fbc400 url('../images/article_2022summer/event_article_01/img03.png') no-repeat center center;}
+.signal_detective-top .ani_box .step01 {left: 70px; top: 0; background-position: -70px 0px;}
+.signal_detective-top .ani_box .step02 {left: 45px; top: 110px; background-position: -44px -110px;}
+.signal_detective-top .ani_box .step03 {left: 123px; top: 140px; background-position: -123px -140px;}
+.signal_detective-top .ani_box .step04 {left: 137px; top: 260px; background-position: -137px -260px;}
+.signal_detective-top .ani_box .step05 {left: 210px; top: 230px; background-position: -210px -230px;}
+.signal_detective-top .ani_box .step06 {left: 260px; top: 310px; background-position: -260px -310px;}
+.signal_detective-top .ani_box .step07 {left: 320px; top: 280px; background-position: -320px -280px;}
 .signal_detective-btm {align-items: baseline;}
 .signal_detective-btm .box {width: 48%; margin-right: 4%;}
 .signal_detective-btm .box-1 .txt {width: 100%; padding-right: 0;}
@@ -326,6 +335,8 @@
     .signal_map .txt_box .num_box {width: 100%; margin-right: 0;}
     .signal_map .txt_box > div {width: 48%; margin-left: 0; margin-right: 4%;}
     .signal_map .txt_box > div:last-child {margin-right: 0;}
+
+    .signal_detective-top .text {position: relative; z-index: 1;}
 }
 
 @media screen and (max-width: 768px) {
