@@ -6722,6 +6722,25 @@ font-size: 2rem;
   .insight_kstudy .box-4 {
     margin-bottom: 0;
   }
+  .insight_senior-top .text .text--typography {
+
+  font-weight: 700;
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    COLOR:#000;
+    MARGIN-LEFT: 10PX;
+    padding-top: 10px;
+  }
+  .insight_senior-top .text .txt-point {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #000;
+    MARGIN-LEFT: 10PX;
+	}
+	.insight_senior-top .txt-normal {
+    color: #000;
+    MARGIN-LEFT: 10PX;
+	}
 }
 
 @media screen and (max-width: 768px) {
@@ -7016,6 +7035,29 @@ font-size: 2rem;
   .insight_under-btm2 .box-1 .txt .line-2 .line-area .title {
     font-size: 3rem;
   }
+ .insight_senior-top .text {
+    background: none;
+    height: auto;
+}
+  .insight_senior-top .text .text--typography {
+
+  font-weight: 700;
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    COLOR:#000;
+    MARGIN-LEFT: 10PX;
+    padding-top: 10px;
+  }
+  .insight_senior-top .text .txt-point {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #000;
+    MARGIN-LEFT: 10PX;
+	}
+	.insight_senior-top .txt-normal {
+    color: #000;
+    MARGIN-LEFT: 10PX;
+	}
 }
 
 @media screen and (max-width: 768px) {
@@ -7052,7 +7094,7 @@ font-size: 2rem;
     padding: 3rem 2rem;
   }
   .insight_under-btm .box-2 .txt {
-    width: 50%;
+    width: 100%;
   }
   .insight_under-btm .box-1 {
     min-height: 350px;
@@ -7371,25 +7413,36 @@ font-size: 2rem;
 
 /* 인사이트 > 시니어클래스 */
 .insight_senior-top {
-  max-width: 1200px;
+  max-width: 1500px;
   margin: 0 auto 6rem;
 }
 
 .insight_senior-top .text {
-  background: url("../images/article_2022spring/insight_senior_img_01.jpg") no-repeat top/contain;
-  height: 786px;
+  background: url("../images/article_2022summer/insight_article_04/insight_senior_img_01.jpg") no-repeat top/contain;
+  height: 893px;
   background-size: 100%;
 }
 
 .insight_senior-top .text .text--typography {
   font-weight: 700;
-  font-size: 3.5rem;
-  margin-bottom: 2rem;
+    font-size: 4.5rem;
+    margin-bottom: 2rem;
+    color: #fff;
+    MARGIN-LEFT: 20PX;
+    padding-top: 60px;
 }
 
 .insight_senior-top .text .txt-point {
   font-size: 2rem;
   margin-bottom: 1rem;
+    color: #fff;
+	 MARGIN-LEFT: 20PX;
+}
+.insight_senior-top .txt-normal{
+ 
+    color: #fff;
+	 MARGIN-LEFT: 20PX;
+line-height: 1.65;
 }
 
 .insight_senior-top img {
@@ -7430,6 +7483,53 @@ font-size: 2rem;
   margin-bottom: 5rem;
 }
 
+.insight_senior-btm .box-2 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    
+}
+.insight_senior-btm .box-2 .title {
+    font-weight: 700;
+    font-size: 2rem;
+    line-height: 1.6;
+    padding-bottom: 2rem;
+    letter-spacing: -0.05em;
+}
+.insight_senior-btm .box-2 .title:before {
+    content: '';
+    display: block;
+    width: 40px;
+    height: 29px;
+    background: url(../images/article_2022summer/passion_article_03/passion_hero_img_04.jpg) no-repeat center/contain;
+    margin: 3rem 0 1.5rem 0;
+
+}
+.insight_senior-btm .box-2 .title::after {
+    content: '';
+    display: block;
+    width: 40px;
+    height: 29px;
+    background: url(../images/article_2022summer/passion_article_03/passion_hero_img_05.jpg) no-repeat center/contain;
+    margin: 1.5rem 0 3rem 0;
+}
+
+.insight_senior-btm .box-2 .txt {
+    width: 50%;
+    padding-right: 5rem;
+    line-height: 1.7;
+}
+.insight_senior-btm .box-2 .pic {
+    width: 50%;
+}
 .insight_senior-btm .img img {
   width: 100%;
 }
@@ -7516,6 +7616,13 @@ font-size: 2rem;
   .insight_senior-btm .box-txt-2 {
     max-width: 100%;
   }
+.insight_senior-btm .box-2 .txt {
+    width: 100%;
+	padding-right: 0rem;
+}
+.insight_senior-btm .box-2 .pic {
+    width: 100%;
+}
 }
 
 .insight_senior-btm .box-txt-2 .txt {
@@ -7644,6 +7751,25 @@ font-size: 2rem;
         -ms-flex-order: 2;
             order: 2;
   }
+  .insight_senior-top .text .text--typography {
+
+  font-weight: 700;
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    COLOR:#000;
+    MARGIN-LEFT: 10PX;
+    padding-top: 10px;
+  }
+  .insight_senior-top .text .txt-point {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #000;
+    MARGIN-LEFT: 10PX;
+	}
+	.insight_senior-top .txt-normal {
+    color: #000;
+    MARGIN-LEFT: 10PX;
+	}
 }
 
 .insight_senior-btm1 .box .name {
@@ -7672,6 +7798,25 @@ font-size: 2rem;
   .insight_senior-top .text .txt-normal br {
     display: none;
   }
+  .insight_senior-top .text .text--typography {
+
+  font-weight: 700;
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    COLOR:#000;
+    MARGIN-LEFT: 10PX;
+    padding-top: 10px;
+  }
+  .insight_senior-top .text .txt-point {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #000;
+    MARGIN-LEFT: 10PX;
+	}
+	.insight_senior-top .txt-normal {
+    color: #000;
+    MARGIN-LEFT: 10PX;
+	}
 }
 
 @media screen and (max-width: 640px) {
